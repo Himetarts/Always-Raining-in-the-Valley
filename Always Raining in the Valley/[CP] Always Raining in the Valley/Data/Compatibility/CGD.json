@@ -97,17 +97,7 @@
             "GiftReaction_Piña_Colada":  "You don't need to get me drunk, darling, I'm already *madly* into you. This is just icing on the cake",
             "GiftReaction_Piña_Colada~1":  "Ah, thank you dearest! You're the best. Alcohol budget was starting to get tight.$1",
             "GiftReaction_Piña_Colada~2": "Oh sweet, refreshments! Thanks love, you're positively the best.$9",  
-             //Field Snack
-             "GiftReaction_Field_Snack": "{{Random: Mmm, this one tastes like maple! Making me crave some pancake dinner.$1++Oh this is just seed-sational. Thank you, darling.$10++Oh thank Yoba, I need the extra shot of energy so bad.$6#$b#*MWAH* Thanks, poppet! You're a treat.$1|inputSeparator=++}}",
-             //Strange Bun
-                 "GiftReaction_Strange_Bun": "You know? I still have no clue what any of these have inside them or what makes them so damn good.$11#$b#I know I should *technically* be more concerned but it's not my fault these are my favorite treat.$10",
-             //ARV Modded Items
-                 "GiftReaction_Bear_Pancakes": "Mmmm, with fresh strawberries on the side. Thanks, poppet. This is going straight down.$1#$b#Yoba, these pancakes really are just the bomb.$9",
-                 "GiftReaction_Scalloped_Potatoes": "Potatoes? Butter? Chives? LOADS of cream?$9#$b#Just as terrible and fattening as my Grams would've wanted it. She'd be proud of you, lover.$10#$b#Man... These are so good.$4",
-                 "GiftReaction_Morning_Cat_Toast": "For me? Oh, thank you darling.#$b#I loaf you.$4",
-                 "GiftReaction_Summer_Pink_Lemonade": "OH, thank you!$1#$b#Yoba, I hate drinking normal water, these are so much better. Thank you, love.#$e#Mia didn't happen to put you up to this, did she?$10",
-                 "GiftReaction_Crab_Croissant": "For me? Man. This breakfast is almost too adorable for me to eat it.#$b#Almost.$10",          
-    },
+            },
     "When": {
         "Hearts:Sterling": "{{Range: 8, 10}}",
         "Relationship:Sterling |contains=Dating, Engaged": true,
@@ -131,16 +121,7 @@
     "Action": "EditData",
     "Target": "Characters/Dialogue/Sterling",
     "Entries": {
-            //Birthdays
-            "GiftReaction_Sunflower_Birthday": "",
-            "GiftReaction_Strange_Bun_Birthday": "I love this!$1",
-            "GiftReaction_Beer_Birthday": "",
-            "GiftReaction_Field_Snack_Birthday": "",
-            "GiftReaction_Bear_Pancakes_Birthday": "",
-            "GiftReaction_Scalloped_Potatoes_Birthday": "For my birthday?$7#$b#Oh, love I.... I think you're going to make me cry.$4#$b#No, nothing bad. This just smells so wonderful... It's making me realize how much I miss my grandma.$9#$b#Thank you, darling.$4",
-            "GiftReaction_Kitty_Muffin_Birthday": "",
-            "GiftReaction_Morning_Cat_Toast_Birthday": "",
-            "GiftReaction_Bear_Muffin_Birthday": "",  
+
         //Flowers
             "GiftReaction_Sunflower":"God, you're such a sweetheart, you know that?#$b#Sunflowers are my favorite, it makes me so happy every time you remember.$4",
             "GiftReactionCategory_-80": "{{Random:I never thought I would like getting flowers so much, thank you, poppet.$4++ These are so gorgeous, I'll go grab a vase for them!#$b#Just not nearly as beautiful as you.$4 ++ God, I can't believe I still blush every time you give me flowers. Thank you, sugar. These are beautiful.|inputSeparator=++}}",
@@ -163,20 +144,7 @@
             "GiftReaction_Piña_Colada": "... This isn't really funny, @.$5#$b#I'm really trying to stay sober, you don't have to mock me like this.$11",
             "GiftReaction_Piña_Colada~1": "Do you think I'm not fighting the urge to go to the saloon and drink myself until I don't wake up every day, @?$8#$b#Yeah? Then I'd appreciate it if you didn't try to shove alcohol in my face.",
             "GiftReaction_Piña_Colada~2": "This is very cruel of you, @. You know I'm struggling.$11#$b#You're supposed to be there for me, not drag me further into the hole.$5",
-            //Field Snack
-            "GiftReaction_Field_Snack": "",
-            //Strange Bun
-                "GiftReaction_Strange_Bun": "",
-                "GiftReaction_Blueberry_Tart": "Yknow, when I first got to the city I had a few dollars to my name and a crap studio appartment I lived in until I left.#$b#But I'd wake up every morning and run down to the bakery to spend my few dollars on a blueberry tart they were just so good.#$b#My former friends thought they were stupid and I eventually lost all interest in buying them.$13#$b#But smelling this treat that you made for me? Oh, darling. I never thought it'd be possible for me to feel 17 and full of hopes and dreams again. Thank you, love.$4",
-            //ARV Modded Items
-                "GiftReaction_Bear_Pancakes": "",
-                "GiftReaction_Scalloped_Potatoes": "",
-                "GiftReaction_Kitty_Muffin": "",
-                "GiftReaction_Morning_Cat_Toast": "",
-                "GiftReaction_Summer_Pink_Lemonade": "",
-                "GiftReaction_Bear_Muffin": "",
-                "GiftReaction_Crab_Croissant": "",          
-    },
+
     "When": {
         "Relationship:Sterling |contains=Married": true,
 }
