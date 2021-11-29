@@ -1,0 +1,44 @@
+{
+    "Changes": [
+
+
+//Sterling
+{
+    "Action": "EditData",
+    "Target": "Characters/Dialogue/Sterling",
+    "Entries":
+          {
+    "MobilePhoneGreeting": "Hey, hotstuff. How are you holding up?",
+    "MobilePhoneReminisce": "Well someone's feeling nostalgic today, aren't we?",
+    "MobilePhoneGoodBye": "See ya, @! You know where to reach me if you want to chat."
+    }
+  },
+  {
+    "Action": "EditData",
+    "Target": "Characters/Dialogue/Sterling",
+    "When":  {
+    "Relationship:Sterling": "Dating"
+    },
+    "Entries":
+    {
+      "MobilePhoneGreeting": "Hey, cupcake. Are you missing my voice that much, dear?",
+      "MobilePhoneReminisce": "How did you know my favorite activity is thinking of time spent with you?",
+      "MobilePhoneGoodBye": "Talk to you later, darling. Know I'm a ring away if you need me, aight?"
+    }
+  },
+   {
+    "Action": "EditData",
+    "Target": "Characters/Dialogue/Sterling",
+    "When":  {
+      "Relationship:Sterling": "Married"
+      },
+    "Entries":
+    {
+      "MobilePhoneGreeting": "Why hello, you've reached the office of the luckiest married man alive. How can I help, hotstuff?",
+      "MobilePhoneReminisce": "Mmm, nothing like going over my favorite memories with you. What would you like to talk about, lover?",
+      "MobilePhoneGoodBye": "I'm now going to go ahead and kiss the phone until you hang up on me. Mwah, mwah mw-"
+    }
+   }
+
+               ]
+}

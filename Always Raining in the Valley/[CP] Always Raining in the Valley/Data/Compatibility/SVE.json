@@ -1,0 +1,19 @@
+{
+    "Changes":
+    [
+        /*********
+        ** Sterling Mountain event
+        *********/
+        {
+            "LogName": "Sterling Train - SVE Version",
+            "Action": "EditData",
+            "Target": "Data/Events/Mountain",
+            "Entries":
+            {
+                "40180003/f Sterling 500/t 1900 2300": "none/-100 -100/farmer 53 6 0 Sterling -500 999 0/addConversationTopic SterlingTrain 14/globalFadeToClear/viewport 56 8/move farmer 0 1 2/pause 500/playSound trainWhistle/pause 1000/faceDirection farmer 3/pause 1000/emote farmer 8/pause 1000/move farmer -5 0 3 true/globalFade/viewport -999 -999/changeLocation Railroad/skippable/warp farmer 29 56/warp Sterling 21 42 positionOffset Sterling 0 16/globalFadeToClear/viewport 29 44 true/pause 500/jump Sterling 11/showFrame Sterling 5 true/positionOffset Sterling 2 6/pause 2/positionOffset Sterling 2 6/pause 2/positionOffset Sterling 2 6/pause 5/positionOffset Sterling 2 6/pause 2/positionOffset Sterling 2 6/pause 2/positionOffset Sterling 2 6/pause 2/positionOffset Sterling 2 6/pause 5/positionOffset Sterling 2 6/pause 1/positionOffset Sterling 2 6/positionOffset Sterling 2 6/pause 5/positionOffset Sterling 2 6/pause 2/positionOffset Sterling 2 6/pause 2/positionOffset Sterling 2 6/pause 1/positionOffset Sterling 2 6/pause 2/positionOffset Sterling 2 6/pause 2/positionOffset Sterling 2 6/pause 2/positionOffset Sterling 2 6/pause 1/positionOffset Sterling 2 6/pause 2/positionOffset Sterling 2 6/pause 1/positionOffset Sterling 2 6/pause 1/positionOffset Sterling 2 6/pause 1/positionOffset Sterling 2 6/pause 1/positionOffset Sterling 2 6/showFrame Sterling 4/pause 500/jump Sterling 11/showFrame Sterling 7 true/positionOffset Sterling 2 -6/pause 2/positionOffset Sterling 2 -6/pause 2/positionOffset Sterling 2 -6/pause 5/positionOffset Sterling 2 -6/pause 2/positionOffset Sterling 2 -6/pause 2/positionOffset Sterling 2 -6/pause 2/positionOffset Sterling 2 -6/pause 5/positionOffset Sterling 2 -6/pause 1/positionOffset Sterling 2 -6/positionOffset Sterling 2 -6/pause 5/positionOffset Sterling 2 -6/pause 2/positionOffset Sterling 2 -6/pause 2/positionOffset Sterling 2 -6/pause 1/positionOffset Sterling 2 -6/pause 2/positionOffset Sterling 2 -6/pause 2/positionOffset Sterling 2 -6/pause 2/positionOffset Sterling 2 -6/pause 1/positionOffset Sterling 2 -6/pause 2/positionOffset Sterling 2 -6/pause 1/positionOffset Sterling 2 -6/pause 1/positionOffset Sterling 2 -6/pause 1/positionOffset Sterling 2 -6/pause 1/positionOffset Sterling 2 -6/showFrame Sterling 4/pause 500/jump Sterling 11/showFrame Sterling 5 true/positionOffset Sterling 2 6/pause 2/positionOffset Sterling 2 6/pause 2/positionOffset Sterling 2 6/pause 5/positionOffset Sterling 2 6/pause 2/positionOffset Sterling 2 6/pause 2/positionOffset Sterling 2 6/pause 2/positionOffset Sterling 2 6/pause 5/positionOffset Sterling 2 6/pause 1/positionOffset Sterling 2 6/positionOffset Sterling 2 6/pause 5/positionOffset Sterling 2 6/pause 2/positionOffset Sterling 2 6/pause 2/positionOffset Sterling 2 6/pause 1/positionOffset Sterling 2 6/pause 2/positionOffset Sterling 2 6/pause 2/positionOffset Sterling 2 6/pause 2/positionOffset Sterling 2 6/pause 1/positionOffset Sterling 2 6/pause 2/positionOffset Sterling 2 6/pause 1/positionOffset Sterling 2 6/pause 1/positionOffset Sterling 2 6/pause 1/positionOffset Sterling 2 6/pause 1/positionOffset Sterling 2 6/jump Sterling/faceDirection Sterling 0 true/pause 90/faceDirection Sterling 3 true/pause 90/faceDirection Sterling 2 true/pause 90/faceDirection Sterling 1 true/showFrame Sterling 4/end",
+            },
+                "When": { "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true }, 
+        },
+
+]
+}

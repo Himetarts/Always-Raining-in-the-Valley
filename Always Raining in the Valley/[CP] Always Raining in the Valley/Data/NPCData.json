@@ -1,0 +1,37 @@
+{
+"Changes": [
+	
+//-------------------------
+// D I S P O S I T I O N S 
+//-------------------------
+
+	{
+		"LogName": "NPC Dispositions",
+		"Action": "EditData",
+		"Target": "Data/NPCDispositions",
+		"Entries": {
+		
+	        "Sterling": "adult/polite/outgoing/positive/male/datable/null/Town/summer 15//Custom_ARVHouse 29 8/Sterling",
+    	    "Mia": "adult/polite/outgoing/positive/female/non-datable/null/Town/spring 8//Custom_ARVHouse 17 4/Mia",
+			"Henry": "adult/polite/neutral/negative/male/non-datable/null/Town/fall 23//Custom_ARVHouse 5 4/Henry"
+			
+		}
+	},
+	
+//------------------------
+// G I F T S              	
+//------------------------
+
+	{
+		"LogName": "Gift tastes",
+		"Action": "EditData",
+		"Target": "Data/NPCGiftTastes",
+		"Entries": {
+		
+	        "Sterling": "Oh my god, are you serious? This is amazing! You really didn't have to go this far./203 211 403 421 234 200/Oh! Thank you for thinking of me, you really didn't have to./-80 376 346 410 459 239 597 595 591 593/I definitely don't have any use for this, are you sure it wouldn't be more useful to you?/723 272 213/Uhh, this really isn't funny dude. /612 238 493 118 282/Thanks. It'll go to use somehow./167 171/.",
+
+		}
+	}
+
+]
+}

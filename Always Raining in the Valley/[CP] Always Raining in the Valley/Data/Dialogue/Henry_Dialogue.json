@@ -1,0 +1,73 @@
+{
+"Changes": 
+    [
+        {
+            "LogName": "Henry Dialogue",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Henry",
+            "Entries": 	
+            {
+        //Conversation Topics
+
+            "Introduction": "Howdy stranger. Don't think I've seen you around town before.#$b#My name's Henry. I work on my family's farm over in Grampleton.#$b#I don't get to spend much time around town, but maybe I'll see you around.",
+            "danceRejection": "Oh. Thanks but...#$b#Sorry. I'm really not much of a dancer.$4#$b#But uh...Good luck out there?$4",
+            "divorced": "...What is it,@?$9#$b#Look, I've been really busy since going back to the old farm. It's been-$7#$b#Forget it. I don't want to talk to you about this.$3",
+            "dumped_Girls": "Sorry @, but I'm pretty busy right now.$7",
+            "breakUp": "Huh? What's this for?#$b#Oh it's...Oh.$2#$b#Alright. It's fine. I get it, really.$6#$b#...I guess I'll see you around then.$6",
+
+
+        //Special Dates
+
+            "spring_12": "I managed to convince my father to let me attend the egg festival tomorrow, which is really exciting for me.$1#$b#I'm supposed to bring a carton of our own eggs to advertise the farm, but I'm actually just hoping to pet some chickens this year.$10",
+            "spring_23": "So @, were you planning on going to the flower dance tomorrow?#$b#I wasn't planning on it at first, but I'm starting to feel like I should.$8#$b#You know...Just to keep Mia company in case she doesn't find a dance partner.$4",
+            "spring_7": "Oh hey @. Think you could do me a favor?#$b#I wasn't able to get tomorrow off, so do you think you could get Mia something nice for her birthday?$3#$b#She's done so much for me...And I know something from you would make her smile.$4#$b#Please. I can't get her much, but it would mean the world to me if you could do this.$4",
+            "spring_28": "Summer's just around the corner. Hope you're able to get all your crops harvested before the weather shifts.#$b#Every season it feels like everything changes so fast that crops just die over night if you don't get them in time.$1",
+            "summer_10": "I'll admit, I wasn't planning on attending this luau thing, but Sterling insisted I come along.#$b#They insist it'll be fun, but it'll be hard not to just be thinking about all the work I should be doing instead.$6",
+            "summer_14": "Oh thank goodness it's you.$3#$b#Listen, tomorrow is Sterling's birtday and I'll be working all day.$3#$b#Could you please keep an eye on him and make sure he doesn't get too crazy celebrating? You know how he can be sometimes.$6",
+            "summer_28": "Hard to believe the year's almost halfway over already, isn't it?#$b#Hope you're ready for the busy season, @. Next thing you know we'll be prepping for winter.",
+            "fall_15":   "The big fair's coming up! Do you have anything you're excited to show off?$1#$b#Mia, Sterling and I will be in Grampleton for ours since my family will be competing over there. But I hope things go well for you over here.$1",
+            "fall_23": "...Did someone tell you it was my birthday?$3#$b#I told those two I didn't want to do anything. It's just another day, nothing worth celebrating.$3#$b#But...Thanks for coming to say hi anyway. I appreciate it.$6",
+            "fall_26": "I've never understood all the excitement around spirit's eve? Isn't it all a bit...dark?$7#$b#Well, so long as you all have fun I guess. Just don't expect me to be participating in any of those activities.$7",
+            "fall_28": "Winter is coming...$3#$b#I wish that excited me like it did when I was a little kid.$3#$b#Now I'm just worried about being able to pay my part of the rent and keep the farm afloat.$3#$b#Oh! No, don't worry about me.$6#$b#It's fine, really. I'll just have a lot on my plate for the next few weeks.$6",
+            "winter_7":  "Winter may be off to a rough start, but at least my favorite festival of the year is coming up.$1#$b#It feels like I rarely have time to fish this time of year, so this is going to be a real nice treat.$1",
+            "winter_15": "Gosh, there sure is a lot of nice stuff here tonight.#$b#I don't really have the money to spare for any of it, but it's at least fun to window shop sometimes?$6",
+            "winter_16": "Did you see that guy with the submarine? Crazy to think he actually lets people ride it.#$b#I'll definitely have to save up to try deep sea fishing next year. That sounds like an amazing experience.$1",
+            "winter_17": "I love Mia, but I'll never be able to understand her shopping habits.$3#$b#She's normally so smart and responsible, but if you put something nice in front of her she forgets how to read price tags.$3#$b#At least she has Sterling and I to keep her on track.$1",
+            "winter_24": "Oh dear. It's almost time for the feast and I still don't have a gift ready.$3#$b#I've just been too busy to make anything, and I definitely can't afford anything nice...#$b#Maybe I can convince my father to give me a carton of eggs...",
+            "winter_28": "Looks like winter's just about over.#$b#It was tough, but I'm glad we all made it through in one piece.$1#$b#Hope you're prepared to do it all over again. There's no breaks for people like us.$6",
+
+
+        //Daily Dialogue
+            "Mon":"I know a lot of people picture flowers when they think of Spring. But me?#$b#I always think of potatoes. Practical, delicious and economic. The perfect crop, if you ask me.$1",
+            "Tue": "Could you do me a favor and check up on Sterling when you have the time?#$b#He's a great guy, but I worry about him while I'm away.$2",
+            "Wed": "Can you believe how much some people seem to litter?$9#$b#Feels like you can't go fishing without pulling up someone's trash.$7",
+            "Thu": "Let me know if you need any tips for running the farm.#$b#No matter how long you've been at it, there's always more to learn.$1",
+            "Fri": "Doing farm work with glasses is such a hassle.$7#$b#Maybe I should get something more practical. Like perscription goggles...$8",
+            "Sat": "Sterling's been getting after me lately. He says I 'talk about work and the farm too much.'$3#$b#But...That's been my whole life. What else am I supposed to talk about?$2",
+            "Sun": "Mia and my cousin always tell me I should at least take Sundays off.#$b#But I guess I don't need to tell a fellow farmer why that's not possible.$6",
+            "summer_Mon": "I've been trying to each Mia how to fish lately.#$b#Weird to think that city folk are so smart but don't even know how bait a hook, isn't it?$10",
+            "summer_Tue": "I promised Max I'd take him for a walk on the beach today, but there's just no time.$3#$b#Maybe next week...$3",
+            "summer_Wed": "There really is nothing quite like stargazing on a summer night.#$b#You should try and make time to enjoy the beauty of nature.$10",
+            "summer_Thu": "Do you ever talk to your animals while you're tending to them?#$b#I've always felt like they understand more than we realize.",
+            "summer_Fri": "I've been saving up to get a seed maker for the farm, but it seems like something always comes up.$3#$b#Money's a funny thing like that. You can never really guess where it'll end up going.$3",
+            "summer_Sat": "I was really hoping to grow something more colorful this year. Like red cabbages or poppies.#$b#But it looks like we'll just be growing wheat again this year. Lots of wheat.$3",
+            "summer_Sun": "Sometimes I wish that I could paint just so I could capture the beauty of a summer sunset.#$b#But then I start thinking about...$2#$b#Sorry. I really should get going.$2",
+            "fall_Mon": "Fall sure is a busy time of year for folks like us, isn't it?#$b#There's always so much preperation to be made before winter comes. It's kind of overwhelming.$6",
+            "fall_Tue": "Fallen leaves make fore great mulch. All you have to do is chop them up and spread a few layers over your soil.#$b#It'll take some time for them to decompose, but it can really help the soil. You should try it out sometime.",
+            "fall_Wed": "It won't be easy, but I'm trying to grow a giant pumpkin crop this year.#$b#It's going to work this time. It has to.$3",
+            "fall_Thu": "Every fall my father insists that we plant fairy roses throughout our fields.$9#$b#He says they'll attract fairies to bless our crops, but...$3#$b#Sorry. You don't need to worry about all that.$6",
+            "fall_Fri": "I know Sterling's doing his best, but some days I just don't have the patience for him.$7#$b#I already have so much on my plate. I can't be babysitting him every night.$3",
+            "fall_Sat": "So you really just go around town saying hi to people?#$b#Must be nice to have so much free time.$6",
+            "fall_Sun": "Winter will be here before you know it. Make sure you're prepared for it.$3#$b#If you need any help getting things ready, just let me know. I don't mind coming by to help out a bit.$6",
+            "winter_Mon": "If you're ever walking by our place and catch a whiff of something tasty, feel free to come on by.#$b#Mia always makes enough to go around.$1",
+            "winter_Tue": "Mia and Sterling seem to think I shouldn't have to work this much during winter. They really don't get it.$3#$b#Between all the maintainance, snow shoveling, tending to the livestock and chopping extra firewood, there's just so much to do.$3#$b#But I guess I don't have to explain that to a fellow farmer.$6",
+            "winter_Wed": "If you can't afford coffee or tea, there's nothing wrong with drinking a plain old glass of hot water to warm the belly.$1#$b#It's not much, but sometimes you just have to work with what you've got.",
+            "winter_Thu": "Winter's always a tough time of the year for folks like us.$3#$b#It really makes me appreciate having Mia and Sterling around to help lighten the load. I'll have to work extra hard come spring to pay them back.",
+            "winter_Fri": "Mia and Sterling have been trying to get me to go ice skating with them. Again.$9#$b#But I'm not falling for that one again. Not after what happened last time...$7",
+            "winter_Sat": "When Sterling and I were kids, us and my sister would go out and build a big snowman where the scarecrow usually stood.$1#$b#We weren't allowed to waste a carrot on the nose, but we always found ways to get creative.$10",
+            "winter_Sun": "Since we can't grow crops this time of year, my father has me chopping extra firewood to sell to the locals.#$b#But at least all the hard work keeps the cold from getting to me.$6",
+        
+            }
+        }
+    ]
+}
