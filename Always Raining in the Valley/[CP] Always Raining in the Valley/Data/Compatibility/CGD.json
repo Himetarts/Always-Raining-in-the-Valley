@@ -123,7 +123,7 @@
     "Entries": {
 
         //Flowers
-            "GiftReaction_Sunflower":"God, you're such a sweetheart, you know that?#$b#Sunflowers are my favorite, it makes me so happy every time you remember.$4",
+            "GiftReaction_Sunflower": "God, you're such a sweetheart, you know that?#$b#Sunflowers are my favorite, it makes me so happy every time you remember.$4",
             "GiftReactionCategory_-80": "{{Random:I never thought I would like getting flowers so much, thank you, poppet.$4++ These are so gorgeous, I'll go grab a vase for them!#$b#Just not nearly as beautiful as you.$4 ++ God, I can't believe I still blush every time you give me flowers. Thank you, sugar. These are beautiful.|inputSeparator=++}}",
        //Cranberries    
         "GiftReaction_Cranberries": "Woah there! Careful stallion. I am INCREDIBLY allergic. Unless you're trying to become a young window, best keep those away from me.$3^Woah there! Careful dollface. I am INCREDIBLY allergic. Unless you're trying to become a young window, best keep those away from me.$3",
@@ -144,11 +144,11 @@
             "GiftReaction_Piña_Colada": "... This isn't really funny, @.$5#$b#I'm really trying to stay sober, you don't have to mock me like this.$11",
             "GiftReaction_Piña_Colada~1": "Do you think I'm not fighting the urge to go to the saloon and drink myself until I don't wake up every day, @?$8#$b#Yeah? Then I'd appreciate it if you didn't try to shove alcohol in my face.",
             "GiftReaction_Piña_Colada~2": "This is very cruel of you, @. You know I'm struggling.$11#$b#You're supposed to be there for me, not drag me further into the hole.$5",
-
+        },
     "When": {
         "Relationship:Sterling |contains=Married": true,
-}
-},
+            }
+            
 }
 /*
     {
