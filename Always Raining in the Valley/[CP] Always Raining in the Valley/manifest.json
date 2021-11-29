@@ -2,7 +2,7 @@
   "Name": "Always Raining in the Valley",
   "Author": "Hime Tarts",
   "Description": "A heartwarming expansion about three people making their way in the world.",
-  "Version": "1.0.2",
+  "Version": "1.0.3",
   "UniqueID": "Himetarts.ARV.CP",
   "ContentPackFor": {
     "UniqueID": "Pathoschild.ContentPatcher"
