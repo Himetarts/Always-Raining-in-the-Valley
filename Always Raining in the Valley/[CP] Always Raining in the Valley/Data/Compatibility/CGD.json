@@ -59,7 +59,7 @@
             "Hearts:Sterling": "{{Range: 0, 8}}",
             "Relationship:Sterling |contains=Married": false,
 	}
-},
+    },
 {
     "LogName": "Sterling",
     "Action": "EditData",
@@ -148,6 +148,7 @@
     "When": {
         "Relationship:Sterling |contains=Married": true,
 }
+},
 }
 /*
     {
