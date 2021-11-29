@@ -132,8 +132,8 @@
     "Target": "Characters/Dialogue/Sterling",
     "Entries": {
             //Birthdays
-            "GiftReaction_Sunflower_Birthday": "I love this!$1",
-            "GiftReaction_Strange_Bun_Birthday": "",
+            "GiftReaction_Sunflower_Birthday": "",
+            "GiftReaction_Strange_Bun_Birthday": "I love this!$1",
             "GiftReaction_Beer_Birthday": "",
             "GiftReaction_Field_Snack_Birthday": "",
             "GiftReaction_Bear_Pancakes_Birthday": "",
