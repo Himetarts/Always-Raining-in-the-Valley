@@ -106,7 +106,7 @@
   
 //GENERIC DIALOGUE 
 
-	"spring_Mon": "I'm not actually for long.#$b#Mia and Henry are letting me stay with them while I figure myself out.#$b#Trying to turn a new leaf and all.$10",
+	"spring_Mon": "I'm not actually here for long.#$b#Mia and Henry are letting me stay with them while I figure myself out.#$b#Trying to turn a new leaf and all.$10",
 	"spring_Mon2": "Is... Sebastian always that strange?$3#$b#I thought we could talk about our bikes but he side-eyed me and went back to work$3#$b#I guess not everyone is as friendly now as when I was a kiddo.$11",
 	"spring_Mon4": "Does the country air feel weird to you sometimes?#$b#Like, after spending so long in the city. This is almost too clean...$0",
 	"spring_Mon6": "Hey, angel, did it hurt when you fell from h-$1#$b#OW! Fine, I get it, I get it. That one was bad$10",
@@ -139,7 +139,7 @@
 	"spring_Sat2": "I'm surprised you don't mind hanging around me.#$e#Most people usually grow annoyed by now.$1#$e#Guess I'll be sure to tease you harder and see how you hold up. $9.",
 	"spring_Sat4": "I got a text from one of my old friends today.#12#$e#I don't know if I can even call them friends anymore.$12#$b#They watched me waste way in a haze of substances and trouble and had me chug on them harder.$8#$e#Maybe it's best I block their number...",
 	"spring_Sat6": "I'm actually growing a love for black coffee.#$b# Stopped drinking because it reminded me too much of my ex.#$e#Now I'm worried I might only be adding another addiction to the list instead of trading it for another...$3",
-	"spring_Sat8": "Hey, handsome^Hey, gorgeous#$b#I saw this on my way to work today. It made me think of you.[290]$9",
+	"spring_Sat8": "Hey, handsome^Hey, gorgeous#$b#I saw this on my way to work today. It made me think of you.[595 18]$9",
 	"spring_Sat10": "%Sterling seems rather out of it.",
 	"spring_Sun": "Do you ever just lay down in your fields and look at the stars?#$b#If you haven't, I'd be happy to take you stargazing one of these days.$1",
 	"spring_Sun2": "Oh hey, hotstuff. You on your way to the mine?#$b#You should take this, I found one the other day and they're strangely delicious.[225]$9#$e#What do you mean I shouldn't 'just eat strange stuff I find'?$11",
@@ -205,7 +205,7 @@
 	"fall_Wed2": "I honestly don't miss the city. There's some things I'm happier having left behind.#$b#Hm? Oh, nothing important. Trouble mostly.#$b#I can still show you trouble if you ask, though.$10",
 	"fall_Wed4": "Sorry farmer, I'm a little busy today. Dictionaries are such a drag to try and navigate, but I'm not about to let Aideen win with her big fancy words.$8#$e#...What's a cockalorum anyway...$5",
 	"fall_Wed6": "Why am I always hitting on you?#$b#Well, I'll spare you asking if you're jealous since I'm feeling nice today$10#$b#But unfortunately, not everyone's even half as fun to harass as you. Sorry, sugar.$10",
-	"fall_Wed8": "Oh hey there pretty face.s#$b#Sorry, I'm having a bit of a... Rough day today.$2#$e#Oh no, just some emotional stuff. Not the shakes, don't worry. Though I fear those might come later...$3",
+	"fall_Wed8": "Oh hey there pretty face.#$b#Sorry, I'm having a bit of a... Rough day today.$2#$e#Oh no, just some emotional stuff. Not the shakes, don't worry. Though I fear those might come later...$3",
 	"fall_Wed10": "You know, it's considerably nicer not having to fight with Mia almost every weekend.#$b#We just enjoy each other's company, like family. I guess taking sobriety seriously is not all bad,$9#$e#... Hopefully I can remember that next time I got the shakes.$3",
 	"fall_Thu": "So you worked for Joja when you lived in the city? I can see why you were so desperate to drop everything.$1#$b#Me? I switched between bartending at nights and being a barista during the day at my best. But more often I couldn't really hold a job down.#$e#So I guess Pierre is not that big of a change, retail's not too different here or there.$3",
 	"fall_Thu2": "It's... A rough day today$11.#$e#Sorry farmer, this shit is hard to talk about.$12",
