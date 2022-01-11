@@ -1,6 +1,25 @@
 {
     "Changes":
     [
+
+        //Marriage Events
+        {
+            "LogName": "Marriage Events",
+            "Action": "EditData",
+            "Target": "Data/Events/FarmHouse",
+            "When": 
+            { "Relationship:Sterling": "Married",},
+            "Entries":
+            {
+              
+                  //11 Part 1: Invitation to AA
+                  
+                  "40180012/f Sterling 2750/t 650 1100": "sweet/-999 -999/farmer 11 16 3 Sterling 7 14 2/addConversationTopic SterlingAADate 7/skippable/makeInvisible 6 14 5 6/viewport -100 -100 true unfreeze/move farmer -4 0"
+
+
+            }
+            },
+
         //Sterling Town Events
         {
             "LogName": "Town Sterling",

@@ -108,7 +108,7 @@
           "Entries": 
                 {
                 "marriage_Tue":"1100 SeedShop 5 22 3\"Strings\\schedules\\Sterling:married.004\"/1200 SeedShop 13 28 1\"Strings\\schedules\\Sterling:married.004\"/1230 SeedShop 13 25 1\"Strings\\schedules\\Sterling:married.004\"/1300 SeedShop 13 28 1\"Strings\\schedules\\Sterling:married.004\"/1400 SeedShop 6 19 0\"Strings\\schedules\\Sterling:married.001\"/1440 Beach 33 19 2\"Strings\\schedules\\Sterling:married.005\"/1930 BusStop -1 23 3",
-                "marriage_Sat": "920 Beach 21 20 2\"Strings\\schedules\\Sterling:married.005\"/1300 Custom_EastScarpe 36 52 3\"Strings\\schedules\\Sterling:married.002\"/1500 Custom_ARVHose 21 20 1\"Strings\\schedules\\Sterling:married.006\"/1900 BusStop -1 23 3" 
+                "marriage_Sat": "920 Beach 21 20 2\"Strings\\schedules\\Sterling:married.005\"/1300 Custom_EastScarpe 36 52 3\"Strings\\schedules\\Sterling:married.002\"/1500 Custom_ARVHouse 21 20 1\"Strings\\schedules\\Sterling:married.006\"/1900 BusStop -1 23 3" 
                 },
             "When": {"Season":"Summer"}
           },
@@ -131,7 +131,7 @@
         "Entries": 
               {
                 "Mon":"610 SeedShop 5 22 3 SterlingStocking/1230 SeedShop 5 21 3 SterlingStocking/1710 Saloon 22 18 3 SterlingDrinking/2200 Custom_ARVHouse 21 20 1/2310 Custom_ARVHouse 29 8 3 SterlingSleep",
-                "Fri":"610 SeedShop 5 22 3 SterlingStocking/1330 SeedShop 5 21 3 SterlingStocking/1710 Saloon 26 21 3 SterlingDrinking/2300 Custom_ARVHouse 21 20 1/110 Custom_ARVHouse 29 8 3 SterlingSleep",
+                "Fri":"610 SeedShop 5 22 3 SterlingStocking/1330 SeedShop 5 21 3 SterlingStocking/1710 Saloon 26 21 3 SterlingDrinking/2300 Custom_ARVHouse 21 20 1/2500 Custom_ARVHouse 29 8 3 SterlingSleep",
                 "Sat":"610 SeedShop 5 21 3 SterlingStocking/1430 SeedShop 5 22 3 SterlingStocking/1710 Saloon 22 18 3 SterlingDrinking/2200 Custom_ARVHouse 21 20 1/2310 Custom_ARVHouse 29 8 3 SterlingSleep"
               },
               "When": {
