@@ -1,0 +1,11 @@
+{
+  "Name": "ARV's Music",
+  "Author": "HimeTarts",
+  "Version": "1.0.4",
+  "Description": "Music for ARV's events.",
+  "UniqueID": "HimeTarts.ARV.SAAT",
+  "ContentPackFor": {
+    "UniqueID": "ZeroMeters.SAAT.Mod",
+    "MinimumVersion": "1.0.0"
+  }
+}
