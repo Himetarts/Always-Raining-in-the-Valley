@@ -24,7 +24,7 @@
   
 	"IsColored": false, 
   
-	"Recipe": {
+	/*"Recipe": {
 			  "ResultCount": 1, 
 			  
 			  "Ingredients": [
@@ -45,7 +45,7 @@
 			   "IsDefault": "False", 
 			   
 			   "CanPurchase": "False", 
-			},
+			},*/
   
 	"GiftTastes": { 
 					"Love": [ "Sophia", "Juna", "Jas", "Caroline", "Sterling", "Henry", "Mia", "Haley", "Juna" ], 

@@ -66,7 +66,7 @@
     "Target": "Characters/Dialogue/Sterling",
     "Entries": {
          //Birthdays
-         "GiftReaction_Sunflower_Birthday": "... Holy crap.$13#$b#F-For like, me?$1#$b#You really went and grew my favorte flowers for my birthday- I-- Holy crap, love.$4#$b#I've never felt this loved before. Thank you so much. Thank you.$13",
+         "GiftReaction_Sunflower_Birthday": "... Holy crap.$13#$b#F-For like, me?$1#$b#You really went and grew my favorite flowers for my birthday- I-- Holy crap, love.$4#$b#I've never felt this loved before. Thank you so much. Thank you.$13",
          "GiftReaction_Strange_Bun_Birthday": "!$7#$b#Shoot muffin. You really want me to go and marry you, don't cha?$10#$b#Happy birthday to me! I love these things.$9#$b#Now tell me, did you happen to loot these from some weird monster? Or maybe uncovered it in a deep level of the mines?",
          "GiftReaction_Beer_Birthday": "Oh my. No better birthday gift than my love enabling my addiction.$10#$b#Thanks, lover.$9",
          "GiftReaction_Field_Snack_Birthday": "OH! Did you make these love?$1#$b#For my birthday? Thank you!$9#$b#You know it's funny, one day you live at the city, and the next you live in the valley and your significant other is making you tree-seed snacks for your birthday.$10",
@@ -167,7 +167,7 @@
             "GiftReaction_Field_Snack": "",
             //Strange Bun
                 "GiftReaction_Strange_Bun": "",
-                "GiftReaction_Blueberry_Tart": "Yknow, when I first got to the city I had a few dollars to my name and a crap studio appartment I lived in until I left.#$b#But I'd wake up every morning and run down to the bakery to spend my few dollars on a blueberry tart they were just so good.#$b#My former friends thought they were stupid and I eventually lost all interest in buying them.$13#$b#But smelling this treat that you made for me? Oh, darling. I never thought it'd be possible for me to feel 17 and full of hopes and dreams again. Thank you, love.$4",
+                "GiftReaction_Blueberry_Tart": "Yknow, when I first got to the city I had a few dollars to my name and a crap studio apartment I lived in until I left.#$b#But I'd wake up every morning and run down to the bakery to spend my few dollars on a blueberry tart they were just so good.#$b#My former friends thought they were stupid and I eventually lost all interest in buying them.$13#$b#But smelling this treat that you made for me? Oh, darling. I never thought it'd be possible for me to feel 17 and full of hopes and dreams again. Thank you, love.$4",
             //ARV Modded Items
                 "GiftReaction_Bear_Pancakes": "",
                 "GiftReaction_Scalloped_Potatoes": "",

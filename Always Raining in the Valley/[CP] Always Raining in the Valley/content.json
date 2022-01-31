@@ -268,7 +268,7 @@
   //ARV Includes
     {
       "Action": "Include",
-      "FromFile": "Data/Animations.json, Data/DynamicChanges.json, Data/EventData.json, Data/FestivalDialogue.json, Data/Mail.json, Data/NPCData.json, Data/Romance.json, Data/DogPathing.json,  Data/Dialogue/Mia_Dialogue.json, Data/Dialogue/Henry_Dialogue.json, Data/Dialogue/Sterling_Dialogue.json, Data/MarriageDialogue/MarriageDialogueSterling.json, Data/schedules/Sterling_schedule.json, Data/schedules/Mia_schedule.json, Data/schedules/Henry_schedule.json, Data/Strings.json, Data/ConversationTopics.json"
+      "FromFile": "Data/Animations.json, Data/DynamicChanges.json, Data/FestivalDialogue.json, Data/Mail.json, Data/NPCData.json, Data/Romance.json, Data/DogPathing.json,  Data/Dialogue/Mia_Dialogue.json, Data/Dialogue/Henry_Dialogue.json, Data/Dialogue/Sterling_Dialogue.json, Data/MarriageDialogue/MarriageDialogueSterling.json, Data/schedules/Sterling_schedule.json, Data/schedules/Mia_schedule.json, Data/schedules/Henry_schedule.json, Data/Strings.json, Data/ConversationTopics.json"
     },
 
     //Compatiblity Includes
@@ -282,6 +282,11 @@
       "Action": "Load",
       "Target": "Data/Events/Custom_ARVHouse",
       "FromFile": "Data/Dialogue/blank.json",
+    },
+    {
+      "Action": "Include",
+      "FromFile": "Data/EventData/SterlingEvents, Data/EventData/SterlingMarriage"
+
     },
 
   //Festival Locations

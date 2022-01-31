@@ -7,8 +7,8 @@
             "Action": "EditData",
             "Target": "strings/StringsFromCSFiles",
             "Entries": {
-                "Utility.cs.5371": "@... Sterling... #$b# As the mayor of Pelican Town, and regional bearer of the matrimonial seal, I now pronounce you husband and wife!$h",
-                "Utility.cs.5377": "@... Sterling... #$b# As the mayor of Pelican Town, and regional bearer of the matrimonial seal, I now pronounce you husband and..., well, husband!$h",
+                "Utility.cs.5377": "@... Sterling... #$b# As the mayor of Pelican Town, and regional bearer of the matrimonial seal, I now pronounce you husband and wife!$h",
+                "Utility.cs.5371": "@... Sterling... #$b# As the mayor of Pelican Town, and regional bearer of the matrimonial seal, I now pronounce you husband and..., well, husband!$h",
                 "Utility.cs.5367": "There comes a time in everyone's life when we find ourselves taking unexpected paths. Sometimes, for reasons that may not even seem logical to us at the time#$b#And yet today, I find myself binding in marriages two people who found themselves escaping their lives, and joining us at the valley.#$b#Sterling, @, truth was$h#$b#It is my great honor on this day {0} of {1}, to unite @ and Sterling in the bonds of marriage.",
                 "Utility.cs.5369": "When @ first arrived in Pelican Town, no one knew if she'd fit in with our community...#$b#But from this day forward, @ is going to be as much a part of this town as any of us!$h#$b#It is my great honor on this day {0} of {1}, to unite @ and Sterling in the bonds of marriage.",
             },
