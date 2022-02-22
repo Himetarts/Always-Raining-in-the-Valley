@@ -1,0 +1,34 @@
+[
+    {
+        "Id": "musicTrain",
+        "Filepath": "Music/SterlingTrain.wav",
+        "Category": "Music",
+        "Settings": {
+            "Loop": true
+        }
+    },
+    {
+        "Id": "passingTrain",
+        "Filepath": "Music/HornAndTrain.wav",
+        "Category": "Music",
+        "Settings": {
+            "Loop": true
+        }
+    },
+    {
+        "Id": "ARVTheme",
+        "Filepath": "Music/ARVtheme.wav",
+        "Category": "Music",
+        "Settings": {
+            "Loop": true
+        }
+    },
+    {
+        "Id": "ARVCrowds",
+        "Filepath": "Music/ARVCrowds.wav",
+        "Category": "Ambient",
+        "Settings": {
+            "Loop": true
+        }
+    },
+]

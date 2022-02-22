@@ -35,8 +35,8 @@
     "IsRequired": true
  },
  {
-  "UniqueID": "Platonymous.CustomMusic",
-  "IsRequired": true,
+  "UniqueID": "ZeroMeters.SAAT.API",
+  "IsRequired": true, 
 },
  {
     "UniqueID": "DIGUS.MailFrameworkMod",

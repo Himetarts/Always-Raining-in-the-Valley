@@ -116,6 +116,15 @@
             "Target": "Maps/TitleARVHouse",
             "FromFile": "assets/Maps/TitleARVHouse.tmx"
         },
+        
+            /*********
+            ** Adds ARVAAHall Map
+            *********/
+            {
+                "Action": "Load",
+                "Target": "Maps/ARVAAHall",
+                "FromFile": "assets/Maps/AAHall.tmx"
+            },
     
         /*********
         ** Temp Actors
@@ -285,7 +294,7 @@
     },
     {
       "Action": "Include",
-      "FromFile": "Data/EventData/SterlingEvents, Data/EventData/SterlingMarriage"
+      "FromFile": "Data/EventData/SterlingEvents.json, Data/EventData/SterlingMarriage.json"
 
     },
 
