@@ -67,7 +67,7 @@
       {
         "LogName": "Sterling Marriage Events Mountain",
         "Action": "EditData",
-        "Target": "Data/Events/Mountain",
+        "Target": "Data/Events/Forest",
         "When": 
         { "Relationship:Sterling": "Married",},
         "Entries":
