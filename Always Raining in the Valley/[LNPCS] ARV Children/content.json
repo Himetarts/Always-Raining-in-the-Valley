@@ -1,0 +1,28 @@
+
+
+{ "Format": "1.24.0",
+
+    {"Action": "Load",
+    "Target": "Characters/Dialogue/{{Candidus42.LittleNPCs/FirstLittleNPCName}}",
+    "FromFile": "Data/{{Candidus42.LittleNPCs/FirstLittleNPCGender}}Dialogue.json"
+    },,
+    {
+    "Action": "Load",
+    "Target": "Characters/Dialogue/{{Candidus42.LittleNPCs/SecondLittleNPCName}}",
+    "FromFile": "Data/{{Candidus42.LittleNPCs/SecondLittleNPCGender}}Dialogue.json"
+    }, 
+
+
+    //Portraits Load
+    
+    {"Action": "Load",
+    "Target": "Portraits/{{Candidus42.LittleNPCs/FirstLittleNPCName}}",
+    "FromFile": "Assets/Portraits/{{season}}_{{Candidus42.LittleNPCs/FirstLittleNPCGender}}portrait.json"
+    },,
+    {
+    "Action": "Load",
+    "Target": "Portraits/{{Candidus42.LittleNPCs/SecondLittleNPCName}}",
+    "FromFile": "Assets/Portraits/{{season}}_{{Candidus42.LittleNPCs/SecondLittleNPCGender}}portrait.json"
+    }, 
+
+}
