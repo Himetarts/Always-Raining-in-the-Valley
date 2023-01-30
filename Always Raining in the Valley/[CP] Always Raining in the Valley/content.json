@@ -152,6 +152,12 @@
             "Target": "Characters/SterlingBikeD",
             "FromFile": "assets/Maps/tempActors/SterlingBikeD.png"
         },
+        {
+            "Action": "Load",
+            "Target": "Characters/CanvasA",
+            "FromFile": "assets/maps/tempActors/CanvasA.png"
+          },
+
 
         /*********
         ** NPC Data
@@ -227,6 +233,24 @@
       "Action": "Load",
       "Target": "Portraits/Sterling_plaid",
       "FromFile": "assets/Portraits/Sterling/Fall/03.png"
+    },
+    {
+        "LogName": "Sterling Stains on Face",
+        "Action": "Load",
+        "Target": "Portraits/Sterling_mess",
+        "FromFile": "assets/Portraits/Sterling/sterling_mess"
+    },
+    {
+        "LogName": "Sterling Underwear",
+        "Action": "Load",
+        "Target": "Portraits/Sterling_underwear",
+        "FromFile": "assets/Portraits/Sterling/sterling_underwear"
+    },
+    {
+        "LogName": "Sterling Underwear",
+        "Action": "Load",
+        "Target": "Characters/Sterling_underwear",
+        "FromFile": "assets/Portraits/Characters/sterling_underwear"
     },
     {
       "LogName": "Shane Drunk",
