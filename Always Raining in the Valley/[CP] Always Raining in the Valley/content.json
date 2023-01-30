@@ -157,6 +157,11 @@
             "Target": "Characters/CanvasA",
             "FromFile": "assets/maps/tempActors/CanvasA.png"
           },
+          {
+            "Action": "Load",
+            "Target": "Characters/Props",
+            "FromFile": "assets/maps/tempActors/Props.png"
+          },
 
 
         /*********
@@ -238,19 +243,19 @@
         "LogName": "Sterling Stains on Face",
         "Action": "Load",
         "Target": "Portraits/Sterling_mess",
-        "FromFile": "assets/Portraits/Sterling/sterling_mess"
+        "FromFile": "assets/Portraits/Sterling/sterling_mess.png"
     },
     {
         "LogName": "Sterling Underwear",
         "Action": "Load",
         "Target": "Portraits/Sterling_underwear",
-        "FromFile": "assets/Portraits/Sterling/sterling_underwear"
+        "FromFile": "assets/Portraits/Sterling/sterling_underwear.png"
     },
     {
         "LogName": "Sterling Underwear",
         "Action": "Load",
         "Target": "Characters/Sterling_underwear",
-        "FromFile": "assets/Portraits/Characters/sterling_underwear"
+        "FromFile": "assets/Portraits/Sterling/sterling_underwear.png"
     },
     {
       "LogName": "Shane Drunk",
