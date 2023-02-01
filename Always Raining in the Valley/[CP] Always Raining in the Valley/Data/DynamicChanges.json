@@ -87,6 +87,57 @@
             "FromFile": "assets/Characters/Henry/henry_beach.png"
           },
 
+    //EVENT CHANGES
+    //Sterling
+    {
+      "LogName": "Sterling Bike Sprite",
+      "Action": "Load",
+      "Target": "Characters/Sterling_motorbike",
+      "FromFile": "assets/Characters/Sterling/sterling_motorbike.png"
+    },
+    {
+      "LogName": "Sterling Bike Portrait",
+      "Action": "Load",
+      "Target": "Portraits/Sterling_motorbike",
+      "FromFile": "assets/Portraits/Sterling/sterling_motorbike.png"
+    },
+    {
+      "LogName": "Sterling Uniform Sprite",
+      "Action": "Load",
+      "Target": "Characters/Sterling_uniform",
+      "FromFile": "assets/Characters/Sterling/sterling_uniform.png"
+    },
+    {
+      "LogName": "Sterling Plaid",
+      "Action": "Load",
+      "Target": "Characters/Sterling_plaid",
+      "FromFile": "assets/Characters/Sterling/Fall/03.png"
+    },
+    {
+      "LogName": "Sterling Plaid",
+      "Action": "Load",
+      "Target": "Portraits/Sterling_plaid",
+      "FromFile": "assets/Portraits/Sterling/Fall/03.png"
+    },
+    {
+        "LogName": "Sterling Stains on Face",
+        "Action": "Load",
+        "Target": "Portraits/Sterling_mess",
+        "FromFile": "assets/Portraits/Sterling/sterling_mess.png"
+    },
+    {
+        "LogName": "Sterling Underwear",
+        "Action": "Load",
+        "Target": "Portraits/Sterling_underwear",
+        "FromFile": "assets/Portraits/Sterling/sterling_underwear.png"
+    },
+    {
+        "LogName": "Sterling Underwear",
+        "Action": "Load",
+        "Target": "Characters/Sterling_underwear",
+        "FromFile": "assets/Characters/Sterling/sterling_underwear.png"
+    },
+
      //FESTIVAL PORTRAIT CHANGES
      //Spirit's eve   
      {
