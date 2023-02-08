@@ -45,6 +45,49 @@
         }
     },
 
+    "DynamicTokens":
+    [
+        //Mini Date 1: 
+        //Does Sterling get the kids ready for bed?
+        {
+            "Name": "ARVReadyForBed",
+            "Value": "",
+            "When": {
+                "HasValue: {{ChildGenders}}": "true"
+                    }
+        },
+        {
+            "Name": "ARVReadyForBed",
+            "Value": "",
+            "When": {
+                "HasValue: {{ChildGenders|valueAt=1}}": true
+                    }
+        },
+        {
+            "Name": "ARVReadyForBed",
+            "Value": "",
+            "When": {
+                "HasValue: {{ChildGenders}}": "false"
+                    }
+        },
+        //Mini Date 4:
+        //Add children to winter event
+        {
+            
+            "Name": "ARVWinterKids",
+            "Value": "",
+            "When": {
+                "HasValue: {{ChildGenders}}": "female"
+                    }
+        },
+        {
+            "Name": "ARVWinterKids",
+            "Value": "",
+            "When": {
+                "HasValue: {{ChildGenders}}": "female"
+                    }
+        },
+    ],
     /*********
     ** ARV Patches 
     *********/ 
@@ -125,7 +168,15 @@
                 "Target": "Maps/ARVAAHall",
                 "FromFile": "assets/Maps/AAHall.tmx"
             },
-    
+             /*********
+            ** Adds The Cooper farms
+            *********/
+            {
+                "Action": "Load",
+                "Target": "Maps/CooperFarms",
+                "FromFile": "assets/Maps/Farm/CooperFarms.tmx"
+            },
+
         /*********
         ** Temp Actors
         *********/
@@ -162,7 +213,36 @@
             "Target": "Characters/Props",
             "FromFile": "assets/maps/tempActors/Props.png"
           },
-
+          {
+            "Action": "Load",
+            "Target": "Characters/Props2",
+            "FromFile": "assets/maps/tempActors/Props2.png"
+          },
+          {
+            "Action": "Load",
+            "Target": "Characters/Mess1",
+            "FromFile": "assets/maps/tempActors/Mess1.png"
+          },
+          {
+            "Action": "Load",
+            "Target": "Characters/Mess3",
+            "FromFile": "assets/maps/tempActors/Mess3.png"
+          },
+          {
+            "Action": "Load",
+            "Target": "Characters/Mess2",
+            "FromFile": "assets/maps/tempActors/Mess2.png"
+          },
+          {
+            "Action": "Load",
+            "Target": "Characters/SterlingTractor",
+            "FromFile": "assets/maps/tempActors/sterlingtractor.png"
+          },
+          {
+            "Action": "Load",
+            "Target": "Characters/HenryDad, Portraits/HenryDad",
+            "FromFile": "assets/{{Target}}.png"
+          },
 
         /*********
         ** NPC Data
@@ -209,54 +289,7 @@
             "FromFile": "assets/Portraits/Sterling/sterling_uniform.png"
         },
         
-        {
-      "LogName": "Sterling Bike Sprite",
-      "Action": "Load",
-      "Target": "Characters/Sterling_motorbike",
-      "FromFile": "assets/Characters/Sterling/sterling_motorbike.png"
-    },
-    {
-      "LogName": "Sterling Bike Portrait",
-      "Action": "Load",
-      "Target": "Portraits/Sterling_motorbike",
-      "FromFile": "assets/Portraits/Sterling/sterling_motorbike.png"
-    },
-    {
-      "LogName": "Sterling Uniform Sprite",
-      "Action": "Load",
-      "Target": "Characters/Sterling_uniform",
-      "FromFile": "assets/Characters/Sterling/sterling_uniform.png"
-    },
-    {
-      "LogName": "Sterling Plaid",
-      "Action": "Load",
-      "Target": "Characters/Sterling_plaid",
-      "FromFile": "assets/Characters/Sterling/Fall/03.png"
-    },
-    {
-      "LogName": "Sterling Plaid",
-      "Action": "Load",
-      "Target": "Portraits/Sterling_plaid",
-      "FromFile": "assets/Portraits/Sterling/Fall/03.png"
-    },
-    {
-        "LogName": "Sterling Stains on Face",
-        "Action": "Load",
-        "Target": "Portraits/Sterling_mess",
-        "FromFile": "assets/Portraits/Sterling/sterling_mess.png"
-    },
-    {
-        "LogName": "Sterling Underwear",
-        "Action": "Load",
-        "Target": "Portraits/Sterling_underwear",
-        "FromFile": "assets/Portraits/Sterling/sterling_underwear.png"
-    },
-    {
-        "LogName": "Sterling Underwear",
-        "Action": "Load",
-        "Target": "Characters/Sterling_underwear",
-        "FromFile": "assets/Portraits/Sterling/sterling_underwear.png"
-    },
+      
     {
       "LogName": "Shane Drunk",
       "Action": "Load",
