@@ -236,7 +236,7 @@
           {
             "Action": "Load",
             "Target": "Characters/SterlingTractor",
-            "FromFile": "assets/maps/tempActors/sterlingtractor.png"
+            "FromFile": "assets/maps/tempActors/{{season}}_sterlingtractor.png"
           },
           {
             "Action": "Load",
