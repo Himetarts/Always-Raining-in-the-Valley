@@ -175,7 +175,9 @@
             "Action": "EditData",
             "Target": "{{PeacefulEnd.CustomCompanions/Companions:Himetarts.ARVCC.HenryDogPath}}",
             "Entries": { 
+               "Companion": {
                 "IdleArguments": [27, 5, 180000, 0],
+               },
                     },
             "When": { "DayOfWeek": "Thursday, Saturday",
                         "Weather":"Sun, Wind, Snow", 
