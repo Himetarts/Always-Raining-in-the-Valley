@@ -12,7 +12,7 @@
 		{
          "Operation": "Append",
          "Target": ["Entries", "Set-Up_additionalCharacters"],
-         "Value": "Sterling 101 52 right/Mia 50 down/Henry 102 52 up",
+         "Value": "Sterling 101 52 right/Mia 100 52 up/Henry 102 52 up",
          "Delimiter": "/"
 		},
 	
