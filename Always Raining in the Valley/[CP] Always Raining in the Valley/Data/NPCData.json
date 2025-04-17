@@ -5,18 +5,120 @@
 // D I S P O S I T I O N S 
 //-------------------------
 
+
+//STERLING
 	{
-		"LogName": "NPC Dispositions",
+		"LogName": "Sterling NPC Dispositions",
 		"Action": "EditData",
-		"Target": "Data/NPCDispositions",
+		"Target": "Data/Characters",
 		"Entries": {
-		
-	        "Sterling": "adult/polite/outgoing/positive/male/datable/null/Town/summer 15//Custom_ARVHouse 29 8/Sterling",
-    	    "Mia": "adult/polite/outgoing/positive/female/non-datable/null/Town/spring 8//Custom_ARVHouse 17 4/Mia",
-			"Henry": "adult/polite/neutral/negative/male/non-datable/null/Town/fall 23//Custom_ARVHouse 5 4/Henry"
-			
+			"Sterling": {
+				"DisplayName": "Sterling",
+				"Gender": "Male",
+				"Age": "Adult",
+				"Manner": "Polite",
+				"SocialAnxiety": "Outgoing",
+				"Optimism": "Positive",
+				"BirthSeason": "Summer",
+				"BirthDay": 15,
+				"HomeRegion": "Town",
+				"CanBeRomanced": "true",
+				"LoveInterest": null,
+				"SocializeConditions": true,
+				"ExcludeFromIntroductionsQuest": false,
+				"ExcludeFromPerfectionScore": false,
+				"EndSlideShow": "MainGroup",
+				"SpawnIfMissing": true,
+				"SocialTab": "UnknownUntilMet",
+				"Calendar": "HiddenUntilMet",
+				"ShakePortraits": [24, 25],
+				"SpouseRoom":{
+					"MapAsset": "ARVSpouseRooms",},
+				"Home": [
+					{
+						"ID": "Default",
+						"Location": "Custom_ARVHouse",
+						"Tile": {"X": "29", "Y": "8",},
+						"Direction": "Down"
+					}
+				]
+	       
+		}
+
 		}
 	},
+
+	//MIA
+	{
+		"LogName": "Mia NPC Dispositions",
+		"Action": "EditData",
+		"Target": "Data/Characters",
+		"Entries": {
+			"Mia": {
+				"DisplayName": "Mia",
+				"Gender": "Female",
+				"Age": "Adult",
+				"Manner": "Polite",
+				"SocialAnxiety": "Outgoing",
+				"Optimism": "Positive",
+				"BirthSeason": "Spring",
+				"BirthDay": 8,
+				"HomeRegion": "Town",
+				"CanBeRomanced": false,
+				"LoveInterest": null,
+				"SocializeConditions": false,
+				"ExcludeFromIntroductionsQuest": true,
+				"ExcludeFromPerfectionScore": true,
+				"EndSlideShow": "MainGroup",
+				"Home": [
+					{
+						"ID": "Default",
+						"Location": "Custom_ARVHouse",
+						"Tile": {"X": "17", "Y": "4",},
+						"Direction": "Down"
+					}
+				]
+	       
+		}
+
+		}
+	},
+	//HENRY
+	{
+		"LogName": "Henry NPC Dispositions",
+		"Action": "EditData",
+		"Target": "Data/Characters",
+		"Entries": {
+			"Henry": {
+				"DisplayName": "Henry",
+				"Gender": "Male",
+				"Age": "Adult",
+				"Manner": "Polite",
+				"SocialAnxiety": "Neutral",
+				"Optimism": "Negative",
+				"BirthSeason": "Fall",
+				"BirthDay": 23,
+				"HomeRegion": "Town",
+				"CanBeRomanced": false,
+				"LoveInterest": null,
+				"SocializeConditions": false,
+				"ExcludeFromIntroductionsQuest": true,
+				"ExcludeFromPerfectionScore": true,
+				"EndSlideShow": "MainGroup",
+				"Home": [
+					{
+						"ID": "Default",
+						"Location": "Custom_ARVHouse",
+						"Tile": {"X": "5", "Y": "4",},
+						"Direction": "Down"
+					}
+				]
+	       
+		}
+
+		}
+	},
+
 	
 //------------------------
 // G I F T S              	

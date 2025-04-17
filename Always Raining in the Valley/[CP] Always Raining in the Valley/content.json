@@ -1,5 +1,5 @@
 {
-    "Format": "1.23.0",
+    "Format": "1.25.0",
 
     /*********
     ** Custom Locations
@@ -317,29 +317,13 @@
     "FromFile": "Data/Dialogue/blank.json",
  
    },
-    {
-      "LogName": "Mia's AntiSocial Flag",
-      "Action": "EditData",
-      "Target": "Data/AntiSocialNPCs",
-      "Entries": {
-         "Mia": true
-      }
-   },
-  {
-    "LogName": "Henry's AntiSocial Flag",
-      "Action": "EditData",
-      "Target": "Data/AntiSocialNPCs",
-      "Entries": {
-         "Henry": true
-      }
-  },
 
 
 //ARV Files
   //ARV Includes
     {
       "Action": "Include",
-      "FromFile": "Data/Animations.json, Data/DynamicChanges.json, Data/FestivalDialogue.json, Data/Mail.json, Data/NPCData.json, Data/Romance.json, Data/DogPathing.json,  Data/Dialogue/Mia_Dialogue.json, Data/Dialogue/Henry_Dialogue.json, Data/Dialogue/Sterling_Dialogue.json, Data/MarriageDialogue/MarriageDialogueSterling.json, Data/schedules/Sterling_schedule.json, Data/schedules/Mia_schedule.json, Data/schedules/Henry_schedule.json, Data/Strings.json, Data/ConversationTopics.json"
+      "FromFile": "Data/Animations.json, Data/DynamicChanges.json, Data/FestivalDialogue.json, Data/Mail.json, Data/NPCData.json, Data/Romance.json, Data/DogPathing.json,  Data/Dialogue/Mia_Dialogue.json, Data/Dialogue/Henry_Dialogue.json, Data/Dialogue/Sterling_Dialogue.json, Data/MarriageDialogue/MarriageDialogueSterling.json, Data/schedules/Sterling_schedule.json, Data/schedules/Mia_schedule.json, Data/schedules/Henry_schedule.json, Data/Strings.json, Data/ConversationTopics.json, Data/Music.json"
     },
 
     //Compatiblity Includes
