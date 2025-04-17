@@ -170,19 +170,7 @@
                  "Update": "OnLocationChange" 
                 
         }, 
-        {
-            "LogName": "Max goes to Sterling's room",
-            "Action": "EditData",
-            "Target": "{{PeacefulEnd.CustomCompanions/Companions:Himetarts.ARVCC.HenryDogPath}}",
-            "Entries": { 
-                "IdleArguments": [27, 5, 180000, 0],
-                    },
-            "When": { "DayOfWeek": "Thursday, Saturday",
-                        "Weather":"Sun, Wind, Snow", 
-                        "Season": "Spring, Fall, Winter"},
-             "Update": "OnLocationChange" 
-        },
-  
+       
      //Max Sleep Rainy
         {
         "LogName": "Makes Max sleep on rainy days",

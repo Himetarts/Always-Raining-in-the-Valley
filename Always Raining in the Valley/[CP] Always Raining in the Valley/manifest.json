@@ -20,11 +20,7 @@
    },
    {
     "UniqueID": "PeacefulEnd.CustomCompanions",
-    "IsRequired": true,
-  },
-  {
-    "UniqueID": "SuperAardvark.AntiSocial",
-    "IsRequired": true,
+    "IsRequired": false,
   },
   {
     "UniqueID": "misscoriel.courtship",
@@ -32,15 +28,11 @@
  },
  {
     "UniqueID": "PurrplingCat.CustomGiftDialogue",
-    "IsRequired": true
+    "IsRequired": false
  },
  {
-  "UniqueID": "Platonymous.CustomMusic",
-  "IsRequired": true,
-},
- {
     "UniqueID": "DIGUS.MailFrameworkMod",
-    "IsRequired": true
+    "IsRequired": false
  },
  {
   "UniqueID": "balverines.Denver",

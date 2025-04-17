@@ -1,5 +1,5 @@
 {
-    "Format": "1.23.0",
+    "Format": "1.25.0",
 
     /*********
     ** Custom Locations
@@ -45,6 +45,49 @@
         }
     },
 
+    "DynamicTokens":
+    [
+        //Mini Date 1: 
+        //Does Sterling get the kids ready for bed?
+        {
+            "Name": "ARVReadyForBed",
+            "Value": "",
+            "When": {
+                "HasValue: {{ChildGenders}}": "true"
+                    }
+        },
+        {
+            "Name": "ARVReadyForBed",
+            "Value": "",
+            "When": {
+                "HasValue: {{ChildGenders|valueAt=1}}": true
+                    }
+        },
+        {
+            "Name": "ARVReadyForBed",
+            "Value": "",
+            "When": {
+                "HasValue: {{ChildGenders}}": "false"
+                    }
+        },
+        //Mini Date 4:
+        //Add children to winter event
+        {
+            
+            "Name": "ARVWinterKids",
+            "Value": "",
+            "When": {
+                "HasValue: {{ChildGenders}}": "female"
+                    }
+        },
+        {
+            "Name": "ARVWinterKids",
+            "Value": "",
+            "When": {
+                "HasValue: {{ChildGenders}}": "female"
+                    }
+        },
+    ],
     /*********
     ** ARV Patches 
     *********/ 
@@ -116,7 +159,24 @@
             "Target": "Maps/TitleARVHouse",
             "FromFile": "assets/Maps/TitleARVHouse.tmx"
         },
-    
+        
+            /*********
+            ** Adds ARVAAHall Map
+            *********/
+            {
+                "Action": "Load",
+                "Target": "Maps/ARVAAHall",
+                "FromFile": "assets/Maps/AAHall.tmx"
+            },
+             /*********
+            ** Adds The Cooper farms
+            *********/
+            {
+                "Action": "Load",
+                "Target": "Maps/CooperFarms",
+                "FromFile": "assets/Maps/Farm/CooperFarms.tmx"
+            },
+
         /*********
         ** Temp Actors
         *********/
@@ -143,6 +203,46 @@
             "Target": "Characters/SterlingBikeD",
             "FromFile": "assets/Maps/tempActors/SterlingBikeD.png"
         },
+        {
+            "Action": "Load",
+            "Target": "Characters/CanvasA",
+            "FromFile": "assets/maps/tempActors/CanvasA.png"
+          },
+          {
+            "Action": "Load",
+            "Target": "Characters/Props",
+            "FromFile": "assets/maps/tempActors/Props.png"
+          },
+          {
+            "Action": "Load",
+            "Target": "Characters/Props2",
+            "FromFile": "assets/maps/tempActors/Props2.png"
+          },
+          {
+            "Action": "Load",
+            "Target": "Characters/Mess1",
+            "FromFile": "assets/maps/tempActors/Mess1.png"
+          },
+          {
+            "Action": "Load",
+            "Target": "Characters/Mess3",
+            "FromFile": "assets/maps/tempActors/Mess3.png"
+          },
+          {
+            "Action": "Load",
+            "Target": "Characters/Mess2",
+            "FromFile": "assets/maps/tempActors/Mess2.png"
+          },
+          {
+            "Action": "Load",
+            "Target": "Characters/SterlingTractor",
+            "FromFile": "assets/maps/tempActors/{{season}}_sterlingtractor.png"
+          },
+          {
+            "Action": "Load",
+            "Target": "Characters/HenryDad, Portraits/HenryDad",
+            "FromFile": "assets/{{Target}}.png"
+          },
 
         /*********
         ** NPC Data
@@ -189,36 +289,7 @@
             "FromFile": "assets/Portraits/Sterling/sterling_uniform.png"
         },
         
-        {
-      "LogName": "Sterling Bike Sprite",
-      "Action": "Load",
-      "Target": "Characters/Sterling_motorbike",
-      "FromFile": "assets/Characters/Sterling/sterling_motorbike.png"
-    },
-    {
-      "LogName": "Sterling Bike Portrait",
-      "Action": "Load",
-      "Target": "Portraits/Sterling_motorbike",
-      "FromFile": "assets/Portraits/Sterling/sterling_motorbike.png"
-    },
-    {
-      "LogName": "Sterling Uniform Sprite",
-      "Action": "Load",
-      "Target": "Characters/Sterling_uniform",
-      "FromFile": "assets/Characters/Sterling/sterling_uniform.png"
-    },
-    {
-      "LogName": "Sterling Plaid",
-      "Action": "Load",
-      "Target": "Characters/Sterling_plaid",
-      "FromFile": "assets/Characters/Sterling/Fall/03.png"
-    },
-    {
-      "LogName": "Sterling Plaid",
-      "Action": "Load",
-      "Target": "Portraits/Sterling_plaid",
-      "FromFile": "assets/Portraits/Sterling/Fall/03.png"
-    },
+      
     {
       "LogName": "Shane Drunk",
       "Action": "Load",
@@ -246,35 +317,19 @@
     "FromFile": "Data/Dialogue/blank.json",
  
    },
-    {
-      "LogName": "Mia's AntiSocial Flag",
-      "Action": "EditData",
-      "Target": "Data/AntiSocialNPCs",
-      "Entries": {
-         "Mia": true
-      }
-   },
-  {
-    "LogName": "Henry's AntiSocial Flag",
-      "Action": "EditData",
-      "Target": "Data/AntiSocialNPCs",
-      "Entries": {
-         "Henry": true
-      }
-  },
 
 
 //ARV Files
   //ARV Includes
     {
       "Action": "Include",
-      "FromFile": "Data/Animations.json, Data/DynamicChanges.json, Data/EventData.json, Data/FestivalDialogue.json, Data/Mail.json, Data/NPCData.json, Data/Romance.json, Data/DogPathing.json,  Data/Dialogue/Mia_Dialogue.json, Data/Dialogue/Henry_Dialogue.json, Data/Dialogue/Sterling_Dialogue.json, Data/MarriageDialogue/MarriageDialogueSterling.json, Data/schedules/Sterling_schedule.json, Data/schedules/Mia_schedule.json, Data/schedules/Henry_schedule.json, Data/Strings.json, Data/ConversationTopics.json"
+      "FromFile": "Data/Animations.json, Data/DynamicChanges.json, Data/FestivalDialogue.json, Data/Mail.json, Data/NPCData.json, Data/Romance.json, Data/DogPathing.json,  Data/Dialogue/Mia_Dialogue.json, Data/Dialogue/Henry_Dialogue.json, Data/Dialogue/Sterling_Dialogue.json, Data/MarriageDialogue/MarriageDialogueSterling.json, Data/schedules/Sterling_schedule.json, Data/schedules/Mia_schedule.json, Data/schedules/Henry_schedule.json, Data/Strings.json, Data/ConversationTopics.json, Data/Music.json"
     },
 
     //Compatiblity Includes
     {
     "Action": "Include",
-    "FromFile": "Data/Compatibility/RSV.json, Data/Compatibility/SVE.json, Data/Compatibility/CGD.json"
+    "FromFile": "Data/Compatibility/SVE.json, Data/Compatibility/CGD.json"
     },
 
     //Event Includes
@@ -282,6 +337,11 @@
       "Action": "Load",
       "Target": "Data/Events/Custom_ARVHouse",
       "FromFile": "Data/Dialogue/blank.json",
+    },
+    {
+      "Action": "Include",
+      "FromFile": "Data/EventData/SterlingEvents.json, Data/EventData/SterlingMarriage.json"
+
     },
 
   //Festival Locations
@@ -313,5 +373,19 @@
 				"HasMod": "aedenthorn.MobilePhone"
 			}
 		},
+
+            {
+                "Action": "EditImage",
+                "Target": "Maps/z_RSVspousePic",
+                "FromFile": "assets/Characters/Sterling/wedding_sterling.png", 
+                "When": 
+                    {
+                    "Query: '{{Spouse}}' = 'Sterling'": true 
+                    },
+        
+                "Update": "OnLocationChange, OnTimeChange",
+            },  
+                          
+        
   ]
 }

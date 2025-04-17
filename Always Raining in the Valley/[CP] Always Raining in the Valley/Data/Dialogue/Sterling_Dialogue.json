@@ -9,7 +9,14 @@
     "Entries": 	
 {
 	"Introduction": "Oh hey. You're new here, aren't you?#$b# The name's Sterling, I moved here not too long ago myself.$h#$b#Maybe it'll give us something to talk about over some beers. First one's on me, alright?#$b#See you around.$h",
-	"danceRejection": "Oh! That's pretty sweet of you to ask.#$b#I kind of have two left feet though, I'll have to pass.$3",
+	"FlowerDance_Decline": "Oh! That's pretty sweet of you to ask.#$b#I kind of have two left feet though, I'll have to pass.$3",
+	FlowerDance_Accept_Spouse
+	FlowerDance_Accept
+	WinterStar_GiveGift_Before_Spouse
+	WinterStar_GiveGift_Before
+	WinterStar_GiveGift_After_Spouse
+	WinterStar_GiveGift_After
+	WinterStar_ReceiveGift
     "divorced": "Oh NOW you want to 'communicate?$5#$b#Buzz off, you threw away all your chances.$8",
     "breakUp": "I... W-Wait, what?$11#$b#God I'm such an idiot, aren't I? Thinking I could actually have do better for once.$8#$b#It's whatever, enjoy yourself, @. You deserve a good life.$5",
     "dumped_Guys": "You're disgusting, @. And exactly the sort of person I moved from the city for.$8#$b#It's great to know that no matter where I am, all I do is get drawn to trash.$8",
