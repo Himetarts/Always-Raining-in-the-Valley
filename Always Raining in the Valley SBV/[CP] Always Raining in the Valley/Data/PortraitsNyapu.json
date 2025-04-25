@@ -1,0 +1,685 @@
+{
+	"Changes": [
+        {
+			"LogName": "Nyapu Default Portrait",
+			"Action": "EditImage",
+			"Target": "Portraits/Mia, Portraits/Henry, Portraits/Sterling",
+			"FromFile": "assets/PortraitsNyapu/{{TargetWithoutPath}}/{{season}}_{{TargetWithoutPath}}.png",
+        },
+        {
+            "Action": "EditImage",
+            "Target": "Portraits/Sterling",
+			"FromFile": "assets/PortraitsNyapu/Sterling/{{season}}/{{Random:01, 02, 03, 04 |key=sterling-outfit}}.png",
+            "When": { "SeasonalsLite": "false" } 			
+        }, 
+        {
+            "LogName": "Sterling Uniform",
+            "Action": "EditImage",
+            "Target": "Portraits/Sterling_uniform",
+			"FromFile": "assets/PortraitsNyapu/Sterling/sterling_uniform.png"
+        },
+		{
+			"Action": "EditImage",
+			"Target": "Portraits/HenryDad, Portraits/Shane_HappyDrunk",
+			"FromFile": "assets/PortraitsNyapu/{{TargetWithoutPath}}.png"
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Maps/z_RSVspousePic",
+			"FromFile": "assets/PortraitsNyapu/Sterling/wedding_sterling.png", 
+			"When": {"Query: '{{Spouse}}' = 'Sterling'": true },
+			"Update": "OnLocationChange, OnTimeChange",
+		},
+		
+      //Sterling
+      {
+        "LogName": "Nyapu Sterling Uniform",
+        "Action": "EditImage",
+        "Target": "Portraits/Sterling",
+		"FromFile": "assets/PortraitsNyapu/Sterling/sterling_uniform.png",
+        "When": {"LocationName": "SeedShop"},
+        "Update": "OnLocationChange"
+      },
+
+          //Beach Changes
+          {
+            "LogName": "Nyapu Sterling Beach",
+            "Action": "EditImage",
+            "Target": "Portraits/Sterling",
+            "FromFile": "assets/PortraitsNyapu/Sterling/Sterling_beach.png",
+            "When": {"LocationName": "Beach"},
+            "Update": "OnLocationChange"
+          },
+          {
+            "LogName": "Nyapu Sterling Ginger Island",
+            "Action": "EditImage",
+            "Target": "Portraits/Sterling_Beach",
+            "FromFile": "assets/PortraitsNyapu/Sterling/Sterling_beach.png"
+          },
+
+      //Mia
+        {
+          "LogName": "Nyapu Mia Workout",
+          "Action": "EditImage",
+          "Target": "Portraits/Mia",
+          "FromFile": "assets/PortraitsNyapu/Mia/mia_sports.png",
+          "When": {"LocationName": "SeedShop",
+                   "DayOfWeek": "Tuesday"},
+          "Update": "OnLocationChange"
+        },
+          {
+            "LogName": "Nyapu Mia Ginger Island",
+            "Action": "EditImage",
+            "Target": "Portraits/Mia_Beach",
+            "FromFile": "assets/PortraitsNyapu/Mia/mia_beach.png"
+          },
+
+      // Henry 
+           {
+            "LogName": "Nyapu Henry Ginger Island",
+            "Action": "EditImage",
+            "Target": "Portraits/henry_beach",
+            "FromFile": "assets/PortraitsNyapu/Henry/henry_beach.png"
+          },
+
+    //EVENT CHANGES
+    //Sterling
+    {
+      "LogName": "Nyapu Sterling Motorbike",
+      "Action": "EditImage",
+      "Target": "Portraits/Sterling_motorbike",
+      "FromFile": "assets/PortraitsNyapu/Sterling/sterling_motorbike.png"
+    },
+    {
+      "LogName": "Nyapu Sterling Plaid",
+      "Action": "EditImage",
+      "Target": "Portraits/Sterling_plaid",
+      "FromFile": "assets/PortraitsNyapu/Sterling/Fall/03.png"
+    },
+    {
+        "LogName": "Nyapu Sterling Stains on Face",
+        "Action": "EditImage",
+        "Target": "Portraits/Sterling_mess",
+        "FromFile": "assets/PortraitsNyapu/Sterling/sterling_mess.png"
+    },
+    {
+        "LogName": "Nyapu Sterling Underwear",
+        "Action": "EditImage",
+        "Target": "Portraits/Sterling_underwear",
+        "FromFile": "assets/PortraitsNyapu/Sterling/sterling_underwear.png"
+    },
+
+     //FESTIVAL PORTRAIT CHANGES
+     //Spirit's eve   
+     {
+      "LogName": "Nyapu Mia Eve",
+      "Action": "EditImage",
+      "Target": "Portraits/Mia",
+      "FromFile": "assets/PortraitsNyapu/Mia/mia_{{Random:royal, super|key=dressup}}.png",
+      "When":{"Day":"27",
+              "Season":"Fall"}
+    },
+  
+    {
+      "LogName": "Nyapu Sterling Eve",
+      "Action": "EditImage",
+      "Target": "Portraits/Sterling",
+      "FromFile": "assets/PortraitsNyapu/Sterling/sterling_{{Random:royal, super|key=dressup}}.png",
+      "When":{"Day":"27",
+              "Season":"Fall"}
+    },
+  
+
+     //Egg Festival
+
+            //Sterling
+        {
+            "LogName": "Nyapu Sterling EggFestival",
+            "Action": "EditImage",
+            "Target": "Portraits/Sterling",
+            "FromFile": "assets/PortraitsNyapu/Sterling/sterling_sdvfair.png",
+            "Update": "OnLocationChange",
+            "When": {
+            "DayEvent": "egg festival",
+            "LocationName": "Temp"
+            }
+        },
+		
+          //Mia
+        {
+          "LogName": "Nyapu Mia EggFestival",
+          "Action": "EditImage",
+          "Target": "Portraits/Mia",
+          "FromFile": "assets/PortraitsNyapu/Mia/mia_eggfestival.png",
+          "Update": "OnLocationChange",
+          "When": {
+          "DayEvent": "egg festival",
+          "LocationName": "Temp"
+          }
+      },
+
+       //Henry
+       {
+        "LogName": "Nyapu Henry EggFestival",
+        "Action": "EditImage",
+        "Target": "Portraits/Henry",
+        "FromFile": "assets/PortraitsNyapu/Henry/henry_eggfestival.png",
+        "Update": "OnLocationChange",
+        "When": {
+        "DayEvent": "egg festival",
+        "LocationName": "Temp"
+        }
+    },
+
+        // Flower dance
+
+            //Sterling
+          {
+            "LogName": "Nyapu Sterling Flower Dance",
+            "Action": "EditImage",
+            "Target": "Portraits/Sterling",
+            "FromFile": "assets/PortraitsNyapu/Sterling/sterling_flowerdance.png",
+            "Update": "OnLocationChange",
+            "When": {
+              "DayEvent": "flower dance",
+              "LocationName": "Temp"
+            }
+          },
+
+              //Mia
+          {
+            "LogName": "Nyapu Mia Flower Dance",
+            "Action": "EditImage",
+            "Target": "Portraits/Mia",
+            "FromFile": "assets/PortraitsNyapu/Mia/mia_flowerdance.png",
+            "Update": "OnLocationChange",
+            "When": {
+              "DayEvent": "flower dance",
+              "LocationName": "Temp"
+            }
+          },
+
+                //Henry
+          {
+            "LogName": "Nyapu Henry Flower Dance",
+            "Action": "EditImage",
+            "Target": "Portraits/Henry",
+            "FromFile": "assets/PortraitsNyapu/Henry/henry_flowerdance.png",
+            "Update": "OnLocationChange",
+            "When": {
+              "DayEvent": "flower dance",
+              "LocationName": "Temp"
+            }
+          },
+
+        //Luau
+
+            //Sterling
+          {
+            "LogName": "Nyapu Sterling Luau",
+            "Action": "EditImage",
+            "Target": "Portraits/Sterling",
+            "FromFile": "assets/PortraitsNyapu/Sterling/sterling_luau.png",
+            "Update": "OnLocationChange",
+            "When": {
+              "DayEvent": "luau",
+              "LocationName": "Temp"
+            }
+          },
+
+            //Mia
+           {
+            "LogName": "Nyapu Mia Luau",
+            "Action": "EditImage",
+            "Target": "Portraits/Mia",
+            "FromFile": "assets/PortraitsNyapu/Mia/mia_beach.png",
+            "Update": "OnLocationChange",
+            "When": {
+              "DayEvent": "luau",
+              "LocationName": "Temp"
+            }
+          },
+
+             //Henry
+             {
+              "LogName": "Nyapu Henry Luau",
+              "Action": "EditImage",
+              "Target": "Portraits/Henry",
+              "FromFile": "assets/PortraitsNyapu/Henry/henry_{{Random:luau01,luau02 |key=henry-luauoutfits}}.png",
+              "Update": "OnLocationChange",
+              "When": {
+                "DayEvent": "luau",
+                "LocationName": "Temp"
+           }
+        },  
+        
+          //Moonlight Jellies
+
+            //Sterling
+          {
+            "LogName": "Nyapu Sterling Jellies",
+            "Action": "EditImage",
+            "Target": "Portraits/Sterling",
+            "FromFile": "assets/PortraitsNyapu/Sterling/sterling_moonlight.png",
+            "Update": "OnLocationChange",
+            "When": {
+              "DayEvent": "dance of the moonlight jellies",
+              "LocationName": "Temp"
+            }
+          },
+             //Mia
+           {
+            "LogName": "Nyapu Mia Jellies",
+            "Action": "EditImage",
+            "Target": "Portraits/Mia",
+            "FromFile": "assets/PortraitsNyapu/Mia/mia_moonlightjellies.png",
+            "Update": "OnLocationChange",
+            "When": {
+              "DayEvent": "dance of the moonlight jellies",
+              "LocationName": "Temp"
+            }
+          },  
+             //Henry
+             {
+              "LogName": "Nyapu Henry Jellies",
+              "Action": "EditImage",
+              "Target": "Portraits/Henry",
+              "FromFile": "assets/PortraitsNyapu/Henry/henry_{{Random:moonlightjellies01,moonlightjellies02 |key=henry-jellies}}.png",
+              "Update": "OnLocationChange",
+              "When": {
+                "DayEvent": "dance of the moonlight jellies",
+                "LocationName": "Temp"
+           }
+        },  
+        //Stardew Valley Fair
+
+            //Sterling
+          {
+            "LogName": "Nyapu Sterling SDV Fair",
+            "Action": "EditImage",
+            "Target": "Portraits/Sterling",
+            "FromFile": "assets/PortraitsNyapu/Sterling/sterling_sdvfair.png",
+            "Update": "OnLocationChange",
+            "When": {
+              "DayEvent": "stardew valley fair",
+              "LocationName": "Temp"
+            }
+          },
+            //Mia
+           {
+            "LogName": "Nyapu Mia SDV Fair",
+            "Action": "EditImage",
+            "Target": "Portraits/Mia",
+            "FromFile": "assets/PortraitsNyapu/Mia/mia_svfair.png",
+            "Update": "OnLocationChange",
+            "When": {
+              "DayEvent": "stardew valley fair",
+              "LocationName": "Temp"
+            }
+          },
+            //Henry
+          {
+           "LogName": "Nyapu Henry SDV Fair",
+           "Action": "EditImage",
+           "Target": "Portraits/Henry",
+           "FromFile": "assets/PortraitsNyapu/Henry/henry_{{Random:svfair01,svfair02 |key=henry-fair}}.png",
+           "Update": "OnLocationChange",
+           "When": {
+             "DayEvent": "stardew valley fair",
+             "LocationName": "Temp"
+        }
+     },  
+  
+
+        //Ice Festival
+
+            //Sterling
+          {
+            "LogName": "Nyapu Sterling Ice Festival",
+            "Action": "EditImage",
+            "Target": "Portraits/Sterling",
+            "FromFile": "assets/PortraitsNyapu/Sterling/sterling_icefestival.png",
+            "Update": "OnLocationChange",
+            "When": {
+              "DayEvent": "festival of ice",
+              "LocationName": "Temp"
+            }
+          },
+            //Mia
+          {
+            "LogName": "Nyapu Mia Ice Festival",
+            "Action": "EditImage",
+            "Target": "Portraits/Mia",
+            "FromFile": "assets/PortraitsNyapu/Mia/mia_icefestival.png",
+            "Update": "OnLocationChange",
+            "When": {
+              "DayEvent": "festival of ice",
+              "LocationName": "Temp"
+            }
+          },
+
+            //Henry
+            {
+              "LogName": "Nyapu Henry Ice Festival",
+              "Action": "EditImage",
+              "Target": "Portraits/Henry",
+              "FromFile": "assets/PortraitsNyapu/Henry/henry_icefestival.png",
+              "Update": "OnLocationChange",
+              "When": {
+                "DayEvent": "festival of ice",
+                "LocationName": "Temp"
+              }
+            },
+        
+        //Feast of the Winter Star
+
+              //Sterling
+            {
+                "LogName": "Nyapu Sterling Winter Star",
+                "Action": "EditImage",
+                "Target": "Portraits/Sterling",
+                "FromFile": "assets/PortraitsNyapu/Sterling/sterling_{{Random:winterstar01,winterstar02 |key=sterling-winterstar}}.png",
+                "Update": "OnLocationChange",
+                "When": {
+                  "DayEvent": "feast of the winter star",
+                  "LocationName": "Temp"
+             }
+          },      
+            //Mia 
+            {
+              "LogName": "Nyapu Mia Winter Star",
+              "Action": "EditImage",
+              "Target": "Portraits/Mia",
+              "FromFile": "assets/PortraitsNyapu/Mia/mia_{{Random:winterstar01,winterstar02 |key=mia-winterstar}}.png",
+              "Update": "OnLocationChange",
+              "When": {
+                "DayEvent": "feast of the winter star",
+                "LocationName": "Temp"
+           }
+        },   
+              //Henry
+             {
+              "LogName": "Nyapu Henry Winter Star",
+              "Action": "EditImage",
+              "Target": "Portraits/Henry",
+              "FromFile": "assets/PortraitsNyapu/Henry/henry_{{Random:feast01,feast02 |key=henry-winterstar}}.png",
+              "Update": "OnLocationChange",
+              "When": {
+                "DayEvent": "feast of the winter star",
+                "LocationName": "Temp"
+           }
+        },
+//----------------------------------------
+
+      //RSV Ember of Resolutions
+
+            /*Sterling
+          {
+            "LogName": "Nyapu Sterling SDV Fair",
+            "Action": "EditImage",
+            "Target": "Portraits/Sterling",
+            "FromFile": "assets/PortraitsNyapu/Sterling/sterling_sdvfair.png",
+            "Update": "OnLocationChange",
+            "When": {
+              "DayEvent": "Ember of Resolutions",
+              "LocationName": "Temp"
+         }
+          },
+            //Mia
+           {
+            "LogName": "Nyapu Mia SDV Fair",
+            "Action": "EditImage",
+            "Target": "Portraits/Mia",
+            "FromFile": "assets/PortraitsNyapu/Mia/mia_svfair.png",
+            "Update": "OnLocationChange",
+            "When": {
+              "DayEvent": "Ember of Resolutions",
+              "LocationName": "Temp"
+         }
+          },
+            //Henry
+          {
+           "LogName": "Nyapu Henry SDV Fair",
+           "Action": "EditImage",
+           "Target": "Portraits/Henry",
+           "FromFile": "assets/PortraitsNyapu/Henry/henry_{{Random:svfair01,svfair02 |key=henry-fair}}.png",
+           "Update": "OnLocationChange",
+           "When": {
+            "DayEvent": "Ember of Resolutions",
+            "LocationName": "Temp"
+       }
+     },
+     */
+
+    //RSV Gathering Festival
+
+        //Sterling
+      {
+        "LogName": "Nyapu Sterling RSV Gathering",
+        "Action": "EditImage",
+        "Target": "Portraits/Sterling",
+        "FromFile": "assets/PortraitsNyapu/Sterling/sterling_sdvfair.png",
+        "Update": "OnLocationChange",
+        "When": {
+          "DayEvent": "Ridgeside Gathering",
+          "LocationName": "Temp"
+     }
+      },
+        //Mia
+       {
+        "LogName": "Nyapu Mia RSV Gathering",
+        "Action": "EditImage",
+        "Target": "Portraits/Mia",
+        "FromFile": "assets/PortraitsNyapu/Mia/mia_svfair.png",
+        "Update": "OnLocationChange",
+        "When": {
+          "DayEvent": "Ridgeside Gathering",
+          "LocationName": "Temp"
+        }
+      },
+        //Henry
+      {
+       "LogName": "Nyapu Henry RSV Gathering",
+       "Action": "EditImage",
+       "Target": "Portraits/Henry",
+       "FromFile": "assets/PortraitsNyapu/Henry/henry_{{Random:svfair01,svfair02 |key=henry-fair}}.png",
+       "Update": "OnLocationChange",
+       "When": {
+        "DayEvent": "Ridgeside Gathering",
+        "LocationName": "Temp"
+		}
+	  },   
+
+
+//Max Sunberry Summer
+
+    //Sleeping in Dog house
+    {
+        "LogName": "Max Sleeps in his DogHouse",
+        "Action": "EditMap",
+        "Target": "Maps/Custom_SBV_SunberryVillage",
+        "MapTiles": [
+                    {
+            "Position": {
+                "X": "26",
+                "Y": "45"
+                },
+            "Layer": "Back",
+            "SetProperties": {
+            "CustomCompanions": "Spawn 1 Himetarts.ARVCC.NyapuSleepDogOutside"
+                       },
+                    },
+                 ],
+              "When": 
+                {"Weather":"Sun",
+                 "Season": "Summer",
+                 "DayOfWeek": "Monday, Wednesday, Friday"},
+            
+               "Update": "OnLocationChange"
+    },
+
+    //Running outside
+    {
+        "LogName": "Max Runs around",
+        "Action": "EditMap",
+        "Target": "Maps/Custom_SBV_SunberryVillage",
+        "MapTiles": [
+                    {
+            "Position": {
+                "X": "26",
+                "Y": "47"
+                },
+            "Layer": "Back",
+            "SetProperties": {
+            "CustomCompanions": "Spawn 1 Himetarts.ARVCC.NyapuHenryDogOutside"
+                       },
+                    },
+                 ],
+              "When": 
+                {"Weather":"Sun",
+                 "Season": "Summer",
+                 "DayOfWeek": "Tuesday, Thursday, Saturday, Sunday"},
+            
+               "Update": "OnLocationChange"
+    },
+
+//Max Wander
+
+     //Tuesday
+      	{
+            "LogName": "Max's Spawn Tue",
+            "Action": "EditMap",
+            "Target": "Maps/Custom_ARVHouse",
+            "MapTiles": [
+                    {
+                       "Position": {
+                  "X": "13",
+                  "Y": "21"
+                    },
+                       "Layer": "Back",
+                       "SetProperties": {
+                          "CustomCompanions": "Spawn 1 Himetarts.ARVCC.NyapuHenryDogIdle"
+                       },
+                    },
+                 ],
+             "When": { "DayOfWeek": "Tuesday",
+            "Weather":"Sun, Wind, Snow" },
+            "Season": "Spring, Fall, Winter",
+             "Update": "OnLocationChange"
+        },
+     //Wednesday
+        {
+              "LogName": "Max's spawn Wed",
+              "Action": "EditMap",
+              "Target": "Maps/Custom_ARVHouse",
+              "MapTiles": [
+                      {
+                         "Position": {
+                    "X": "20",
+                    "Y": "23"
+                      },
+                         "Layer": "Back",
+                         "SetProperties": {
+                            "CustomCompanions": "Spawn 1 Himetarts.ARVCC.NyapuHenryDogIdle"
+                         },
+                      },
+                   ],
+               "When": { "DayOfWeek": "Wednesday", 
+               "Weather":"Sun, Wind, Snow" },
+               "Update": "OnLocationChange"
+        },
+     //Sunday
+        {
+            "LogName": "Max's spawn Sun",
+            "Action": "EditMap",
+            "Target": "Maps/Custom_ARVHouse",
+            "MapTiles": [
+                    {
+                       "Position": {
+                  "X": "18",
+                  "Y": "20"
+                    },
+                       "Layer": "Back",
+                       "SetProperties": {
+                          "CustomCompanions": "Spawn 1 Himetarts.ARVCC.NyapuHenryDogIdle"
+                       },
+                    },
+                 ],
+             "When": { "DayOfWeek": "Sunday",
+             "Weather":"Sun, Wind, Snow" },
+             "Season": "Spring, Fall, Winter",
+             "Update": "OnLocationChange"
+        },
+          
+//Max Set path
+
+     //Monday Friday
+        {
+         "LogName": "Max Path Henry's Room",
+        "Action": "EditMap",
+        "Target": "Maps/Custom_ARVHouse",
+            "MapTiles": [
+                    {
+                    "Position": {
+                  "X": "8",
+                  "Y": "7"
+                    },
+                "Layer": "Back",
+                "SetProperties": {
+                        "CustomCompanions": "Spawn 1 Himetarts.ARVCC.NyapuHenryDogPath"
+                       },
+                    },
+                 ],
+                 "When": { "DayOfWeek": "Monday, Friday", 
+                           "Weather": "Sun, Wind, Snow" },
+                           "Season": "Spring, Fall, Winter",
+                 "Update": "OnLocationChange" 
+             
+        }, 
+    //Thursday, Saturday
+        {
+            "LogName": "Max Path Sterling's Room",
+            "Action": "EditMap",
+            "Target": "Maps/Custom_ARVHouse",
+            "MapTiles": [
+                    {
+                       "Position": {
+                  "X": "20",
+                  "Y": "22"
+                    },
+                       "Layer": "Back",
+                       "SetProperties": {
+                          "CustomCompanions": "Spawn 1 Himetarts.ARVCC.NyapuHenryDogPath"
+                       },
+                    },
+                 ],
+                 "When": { "DayOfWeek": "Thursday, Saturday",
+                            "Weather":"Sun, Wind, Snow" },
+                            "Season": "Spring, Fall, Winter",
+                 "Update": "OnLocationChange" 
+                
+        }, 
+       
+     //Max Sleep Rainy
+        {
+        "LogName": "Makes Max sleep on rainy days",
+        "Action": "EditMap",
+        "Target": "Maps/Custom_ARVHouse",
+        "MapTiles": [
+                    {
+            "Position": {
+                "X": "1",
+                "Y": "7"
+                },
+            "Layer": "Back",
+            "SetProperties": {
+            "CustomCompanions": "Spawn 1 Himetarts.ARVCC.NyapuSleepHenryDog"
+                       },
+                    },
+                 ],
+              "When": 
+              {"Weather":"Rain, Storm"},
+             "Update": "OnLocationChange"
+          },
+	]
+}

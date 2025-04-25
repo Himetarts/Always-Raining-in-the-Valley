@@ -1,0 +1,219 @@
+{
+    "Changes": [
+ //CUSTOM GIFT DIALOGUE
+ //Sterling
+	{
+		"LogName": "Sterling",
+        "Action": "EditData",
+        "Target": "Characters/Dialogue/Sterling",
+        "Entries": {
+                //Birthdays
+                    //Sunflower
+                    "AcceptBirthdayGift_(O)421": "... F-For- Me?$7#$b#I-I....$7#$b#Sorry farmer, I'm making a scene- It's just...$13#$b#It's... It's my favorite flower.$4#$b#It feels weird to admit that. Even weirder to receive them on my birthday...$4#$e#It's so touching, thank you.$13#$b#I won't forget this birthday in quite some time.$4#$b#I'll be sure to get you something extra nice for yours, alright?$1",
+                    //Strange Bun
+                    "AcceptBirthdayGift_(O)203": "Yoba's wrinkly mother-- For me?!$7#$b#This is the BEST birthday gift! These things are so tasty, I don't know why my family thinks I'm insane.#$e#Thank you so much farmer!$1#$b#Here, wanna split it with me$10?#$b#Nothing like a Strange Bun to say 'Live another long, happy year.'$10",
+                    //Beer
+                    "GiftReaction_Beer_": "Ah, thanks for the drink farmer. I'll invite the next round next time you come by the Saloon.#$e#Oh! It's for my birthday? Thanks for remembering.$1",
+                    //Field Snack
+                    "GiftReaction_Field_Snack_Birthday": "Mmm, nothing like a good energy bar to get my birthday started. Thanks, farmer!#$b#To top it all off, the ones you make are BOMB.$1#$b#Thanks for thinking of me.$9",
+                    //Bear Pancakes
+                    "GiftReaction_Bear_Pancakes_Birthday": "For me? $7#$b#Oh my god these are JUST like Mia makes them. You are the BEST farmer.$1#$b#This is such a birthday treat, has to be my favorite.",
+                    //Scalloped Potatoes
+                    "GiftReaction_Scalloped_Potatoes_Birthday": "Mmm, just like grandma used to make them.#$b#Henry's been the only one who has really been able to capture the flavor but he rarely has time to make it.#$b#The flavor always brings me back to her warm touch...$4#$b#Thank you, @. This genuinely means a lot to me.#$b#Best birthday gift ever.$9",
+                    //Kitty Muffin
+                    "GiftReaction_Kitty_Muffin_Birthday": "OHHH. I LOVE these!$1#$b#It's for my birthday? You're the BEST farmer.$9",
+                    //Morning Cat Toast
+                    "GiftReaction_Morning_Cat_Toast_Birthday": "MMM Nothing like a breakfast of champions before a GREAT birthday day.$1#$b#Thank you so much farmer! These are just how Mia makes them too.$1",
+                    //Bear Muffin
+                    "GiftReaction_Bear_Muffin_Birthday": "OHHH. I LOVE these!$1#$b#It's for my birthday? You're the BEST farmer.$9",             
+
+            //Flowers
+                //Sunflower
+                "GiftReaction_Sunflower":"...!$7#$b#These... They're, so pretty.$4#$b#I knew sunflowers were pretty but I never thought about someone gifting them to me I...$4#$b#Sorry, I'm getting self conscious. Been the one giving flowers all my life, I suppose. It's a strange... Welcome change",
+                //Flowers Categories
+                "GiftReactionCategory_-80": "...!$7#$b#For... Me? Do you have the right person?$7#$b#N-No I just... Sorry, I don't mean to be weird.$7#$b#I've never really... Gotten flowers before in my life. Didn't really think dudes could get them.#$b#...Thank you.$4",
+            //Cranberries    
+                "GiftReaction_Cranberries": "Uhh, careful there farmer! I'm incredibly allergic to these, and the reaction if I come near them won't be any pretty, I promise.$3",
+            //Field Snack
+                "GiftReaction_Field_Snack": "{{Random: Mmm, nothing like a good snack to get through the day.#$b#Thanks farmer!++Oh man I love these, nothing like your field snacks, farmer.++Ohhh yes, come to me baby.$10#$b#Sorry farmer, I was talking to the field-snacks.$|inputSeparator=++}}",
+            //Strange Bun
+                "GiftReaction_Strange_Bun": "Ohh farmer, you have no idea how much I kneaded one of these.$10#$b#I was so bready for a tasty snack. Dough you want to share it with me?$9",
+            //ARV Modded Items
+                "GiftReaction_Bear_Pancakes": "Oh dear Yoba these are so cute. I lose my mind when Mia makes them.$1#$b#Thanks, hotstuff. You're a real one.$9",
+                "GiftReaction_Scalloped_Potatoes": "Potatoes? Butter? Chives? LOADS of cream?$9#$b#Dear lord, farmer, you're just trying to earn your way straight into my heart.$10",
+                "GiftReaction_Kitty_Muffin": "Ohhh, shoot, farmer! The day ain't got muffin on me with one of these bad boys.$10#$b#Thank you so much, hotstuff.$10",
+                "GiftReaction_Morning_Cat_Toast": "Man, this reminds me how much I hate cat puns.$11#$b#Just kitten!$9#$b#I find them HISSterical.$10",
+                "GiftReaction_Summer_Pink_Lemonade": "Ah!$1#$b#Thanks farmer, I was real thirsty. This is great.$10",
+                "GiftReaction_Bear_Muffin": "OH! Thanks farmer, these are....#$b#These are...$2#$b#Bear with me farmer, I'll think of a pun soon.$3",
+                "GiftReaction_Crab_Croissant": "I see you've developed an appreciation for Mia's food.$10#$b#Oh don't worry, that is the HIGHEST of compliments.$10#$b#Mia is a great cook, isn't she? These are delicious, thank you farmer.",
+
+
+            //Alcoholic Drinks
+
+                //Beer
+                "GiftReaction_Beer": "{{Random: Ah! Nothing like a good beer to really hit it where it matters. Thanks farmer, you're a doll. $1++Are you trying to like speedrun our friendship with my favorite drinks farmer?$10#$b#Because if you are, it's working. Keep it up, I can feel my imaginary heart meter going  up.$10++Nothing like a beer to lighten the spirits, you're really trying to get on my good side, aren't you?$10#$b#Worry not farmer, you've already stolen my heart away. Lucky you I'll take the beer as due payment for it.$10++What's that, trying to get me drunk to lower my standards, @?$10#$b#Worry not, alcohol in my system or not, you're just as hot.$10#$b#And also my standards are already on the ground.$1|inputSeparator=++}}",
+
+                //Pale Ale
+                "GiftReaction_Pale_Ale": "{{Random:OH! You're the best farmer, thank you!#$b#You know, back in the city it was really hard getting your hands on pale ale. Some hipster drink it was. Happy to get my hands on this treat.+Oh this looks so good. Are the hops from your farm? $1#$b#I look forwards to trying it.$9++%farm 's pale ale? I can't wait to try!#$b#You know, I was really excited to try Gus' pale ale when I came to town.#$b#Unfortunately it wasn't ale it's cracked up to be!$10|inputSeparator=++}}",
+				
+                //Mead
+                "GiftReaction_Mead": "{{Random: You're a true friend, you know that farmer?$10#$b#After all, a friend in Mead is a friend indeed!$9++OHO, I mead to know why you're so kind to me. Why thank you, farmer.$10++Mmm, nothing like a drink to lighten up a day. You're the best!$10#$b#Had I known valley people were so generous I would've moved sooner.|inputSeparator=++}}",
+
+                //Wine
+				"GiftReaction_Wine": "{{Random: You have no idea how much I needed a drink today.#$b#Ahhh... Yeah, that hits the spot. Thanks, farmer.$9++Are you trying to like speedrun our friendship with my favorite drinks farmer?$10#$b#Because if you are, it's working. Keep it up, I can feel my imaginary heart meter going  up.$10++Ohhh farmer, you're so bottleful to me when you're so generous. I love it when great minds drink alike.#$b#Nothing like a good drink to wine down.$9|inputSeparator=++}}",
+
+                //Pi;a Colada
+				"GiftReaction_Piña_Colada": "{{Random:Are you trying to like speedrun our friendship with my favorite drinks farmer?$10#$b#Because if you are, it's working. Keep it up, I can feel my imaginary heart meter going  up.$10++Mmm, nothing like a pina colada and getting caught in the rain. $1++You have no idea how much I needed a drink today.#$b#Ahhh... Yeah, that hits the spot. Thanks, farmer.$9|inputSeparator=++}}",       
+		},
+            "When": {
+            "Hearts:Sterling": "{{Range: 0, 8}}",
+            "Relationship:Sterling |contains=Married": false,
+	}
+},
+{
+    "LogName": "Sterling",
+    "Action": "EditData",
+    "Target": "Characters/Dialogue/Sterling",
+    "Entries": {
+
+         //Birthdays
+         "GiftReaction_Sunflower_Birthday": "... Holy crap.$13#$b#F-For like, me?$1#$b#You really went and grew my favorite flowers for my birthday- I-- Holy crap, love.$4#$b#I've never felt this loved before. Thank you so much. Thank you.$13",
+         "GiftReaction_Strange_Bun_Birthday": "!$7#$b#Shoot muffin. You really want me to go and marry you, don't cha?$10#$b#Happy birthday to me! I love these things.$9#$b#Now tell me, did you happen to loot these from some weird monster? Or maybe uncovered it in a deep level of the mines?",
+         "GiftReaction_Beer_Birthday": "Oh my. No better birthday gift than my love enabling my addiction.$10#$b#Thanks, lover.$9",
+         "GiftReaction_Field_Snack_Birthday": "OH! Did you make these love?$1#$b#For my birthday? Thank you!$9#$b#You know it's funny, one day you live at the city, and the next you live in the valley and your significant other is making you tree-seed snacks for your birthday.$10",
+         "GiftReaction_Bear_Pancakes_Birthday": "Mia's special pancakes? For MY birthday?$1#$b#Love did you learn how to make these from Mia just for me?$1#$b#I swear I don't deserve you, thank you, sunshine.$9",
+         "GiftReaction_Scalloped_Potatoes_Birthday": "Yoba this smells wonderful. Did you make this for me? $1#$b#God, love. You're a Yoba sent, my grandma and Henry would be jealous at how much you nailed this.$9#$b#Thank you, cupcake, you didn't have to go this far just for my birthday.",
+         "GiftReaction_Kitty_Muffin_Birthday": "Yoba cupcake, you're such a great cook. Do you ever get tired being this awesome?$1#$b#These muffins are my favorite birthday treat, thanks doll.$10",
+         "GiftReaction_Morning_Cat_Toast_Birthday": "For my birthday? Thank you love!$9#$b#Why don't we toast to us?$10 ",
+         "GiftReaction_Bear_Muffin_Birthday": "Yoba cupcake, you're such a great cook. Do you ever get tired being this awesome?$1#$b#These muffins are my favorite birthday treat, thanks doll.$10",    
+        //Flowers
+            "GiftReaction_Sunflower":"Ahh man I...$4#$b#These are gorgeous, thank you so much. I-I don't know what to say, they're my favorite.#$b#No partner had ever given me flowers before.$4",
+            "GiftReactionCategory_-80": "... @!$9#$b#Thank you so much, I... I really like flowers.#$b#It feels weird to admit, isn't that normally a girl thing?$9",
+        //Cranberries
+        "GiftReaction_Cranberries": "Ahhh, love, you should know I'm *very* allergic to Cranberries. They come near me, and I grow very, very sick.$3#$b#Best sell them, poppet, I'm not eager on dying any time soon.$3", 
+        //Alcoholic Drinks
+
+            //Beer
+            "GiftReaction_Beer": "{{Random: Why thank you, hotstuff. This one is going straight to daddy's gut.$10#$b#.... I promise to never call myself daddy again if you don't stop getting me drinks.$3++You don't need to get me drunk, darling, I'm already *madly* into you. This is just icing on the cake++Mmm, finally someone who'll actually enable me. It was getting tiring getting yelled at every time I opened a beer.#$b#*smooch* Thank you, love! I'll think of you while I drink it.$1++Thank you, love. I.... I don't know, should I really?#$b#I think I'll save it for tomorrow...|inputSeparator=++}}",
+
+            //Pale Ale
+            "GiftReaction_Pale_Ale": "{{Random: Ah, thank you dearest! You're the best. Alcohol budget was starting to get tight.$1++When my friend fell asleep at the bar I poured ale at him. It was a brewed awakening.$9++Ahh... Just when I said I tried not drinking tonight.$3#$b#Oh well! There's always tomorrow!$9|inputSeparator=++}}",
+
+            //Mead
+            "GiftReaction_Mead":  "{{Random: You don't need to get me drunk, darling, I'm already *madly* into you. This is just icing on the cake++Ah, thank you dearest! You're the best. Alcohol budget was starting to get tight.$1++Oh sweet, refreshments! Thanks love, you're positively the best.$9|inputSeparator=++}}",
+
+            //Wine
+            "GiftReaction_Wine":  "{{Random: You don't need to get me drunk, darling, I'm already *madly* into you. This is just icing on the cake++Ah, thank you dearest! You're the best. Alcohol budget was starting to get tight.$1++Oh sweet, refreshments! Thanks love, you're positively the best.$9|inputSeparator=++}}",
+
+            //Pina Colada
+            "GiftReaction_Piña_Colada":  "{{Random: You don't need to get me drunk, darling, I'm already *madly* into you. This is just icing on the cake++Ah, thank you dearest! You're the best. Alcohol budget was starting to get tight.$1++Oh sweet, refreshments! Thanks love, you're positively the best.$9|inputSeparator=++}}",
+
+             //Field Snack
+             "GiftReaction_Field_Snack": "{{Random: Mmm, this one tastes like maple! Making me crave some pancake dinner.$1++Oh this is just seed-sational. Thank you, darling.$10++Oh thank Yoba, I need the extra shot of energy so bad.$6#$b#*MWAH* Thanks, poppet! You're a treat.$1|inputSeparator=++}}",
+             //Strange Bun
+             "GiftReaction_Strange_Bun": "You know? I still have no clue what any of these have inside them or what makes them so damn good.$11#$b#I know I should *technically* be more concerned but it's not my fault these are my favorite treat.$10",
+             
+             //ARV Modded Items
+                 "GiftReaction_Bear_Pancakes": "Mmmm, with fresh strawberries on the side. Thanks, poppet. This is going straight down.$1#$b#Yoba, these pancakes really are just the bomb.$9",
+                 "GiftReaction_Scalloped_Potatoes": "Potatoes? Butter? Chives? LOADS of cream?$9#$b#Just as terrible and fattening as my Grams would've wanted it. She'd be proud of you, lover.$10#$b#Man... These are so good.$4",
+                 "GiftReaction_Morning_Cat_Toast": "For me? Oh, thank you darling.#$b#I loaf you.$4",
+                 "GiftReaction_Summer_Pink_Lemonade": "OH, thank you!$1#$b#Yoba, I hate drinking normal water, these are so much better. Thank you, love.#$e#Mia didn't happen to put you up to this, did she?$10",
+                 "GiftReaction_Crab_Croissant": "For me? Man. This breakfast is almost too adorable for me to eat it.#$b#Almost.$10",          
+    },
+                "When": {
+                "Hearts:Sterling": "{{Range: 8, 10}}",
+                "Relationship:Sterling |contains=Dating, Engaged": true,
+}
+},
+
+{
+    "LogName": "NPC Dispositions",
+    "Action": "EditData",
+    "Target": "Data/NPCGiftTastes",
+    "Entries": {
+    
+        "Sterling": "{{Random: Oh dear, this is for me? Angel you didn't have to. This is more than I could ever ask for.$4 ++ Oh sheesh, darling you just know me too well, don't you? Thank you sugarcups. ++ A surprise? You've already given me the gift of the most wonderful person I know. Everything after is just icing. ++ You are genuinely the  most kind, thoughtful person I have ever met.$4#$b#Have I mentioned sexy already? You are also, quite so very sexy. *kiss* $10|inputSeparator=++}}/203 211 403 421 234/{{Random: Oh! Thank you for thinking of me, you really didn't have to. ++ Ah! Thank you, angel. This is lovely. $1++ A wonderful offering you have there. How about I trade you a kiss for it?$10#$b#No? How about ten?$1 ++ Wow! You didn't have to, poppet. Thank you. $1 |inputSeparator=++}}/-80 376 410 459 239 597 595 591 593/Uhh darling, I'm not a huge fan of this.$3/723 272 213/Uhh, this really isn't funny, love.$11/612 238 493 118 282 346 303 348/Thanks. It'll go to use somehow./167 171/."
+    },
+    "When": {
+        "Relationship:Sterling |contains=Engaged, Married": true,
+    },
+},
+{
+    "LogName": "Sterling Marriage",
+    "Action": "EditData",
+    "Target": "Characters/Dialogue/Sterling",
+    "Entries": {
+            //Birthdays
+            "GiftReaction_Sunflower_Birthday": "",
+            "GiftReaction_Strange_Bun_Birthday": "I love this!$1",
+            "GiftReaction_Beer_Birthday": "",
+            "GiftReaction_Field_Snack_Birthday": "",
+            "GiftReaction_Bear_Pancakes_Birthday": "",
+            "GiftReaction_Scalloped_Potatoes_Birthday": "For my birthday?$7#$b#Oh, love I.... I think you're going to make me cry.$4#$b#No, nothing bad. This just smells so wonderful... It's making me realize how much I miss my grandma.$9#$b#Thank you, darling.$4",
+            "GiftReaction_Kitty_Muffin_Birthday": "",
+            "GiftReaction_Morning_Cat_Toast_Birthday": "",
+            "GiftReaction_Bear_Muffin_Birthday": "",  
+
+        //Flowers
+            "GiftReaction_Sunflower":"God, you're such a sweetheart, you know that?#$b#Sunflowers are my favorite, it makes me so happy every time you remember.$4",
+            "GiftReactionCategory_-80": "{{Random:I never thought I would like getting flowers so much, thank you, poppet.$4++ These are so gorgeous, I'll go grab a vase for them!#$b#Just not nearly as beautiful as you.$4 ++ God, I can't believe I still blush every time you give me flowers. Thank you, sugar. These are beautiful.|inputSeparator=++}}",
+
+       //Cranberries    
+        "GiftReaction_Cranberries": "Woah there! Careful stallion. I am INCREDIBLY allergic. Unless you're trying to become a young window, best keep those away from me.$3^Woah there! Careful dollface. I am INCREDIBLY allergic. Unless you're trying to become a young window, best keep those away from me.$3",
+
+        //Alcoholic Drinks
+
+            //Beer
+            "GiftReaction_Beer": "{{Random: ... This isn't really funny, @.$5#$b#I'm really trying to stay sober, you don't have to mock me like this.$11++Do you think I'm not fighting the urge to go to the saloon and drink myself until I don't wake up every day, @?$8#$b#Yeah? Then I'd appreciate it if you didn't try to shove alcohol in my face.++I... I didn't cut off Shane and my old friends for you to be the one to start enabling me.$5#$b#Please, I don't want it to be you too.$2++This is very cruel of you, @. You know I'm struggling.$11#$b#You're supposed to be there for me, not drag me further into the hole.$5|inputSeparator=++}}",
+
+
+            //Pale Ale
+            "GiftReaction_Pale_Ale": "{{Random:... This isn't really funny, @.$5#$b#I'm really trying to stay sober, you don't have to mock me like this.$11++I... I didn't cut off Shane and my old friends for you to be the one to start enabling me.$5#$b#Please, I don't want it to be you too.$2++This is very cruel of you, @. You know I'm struggling.$11#$b#You're supposed to be there for me, not drag me further into the hole.$5|inputSeparator=++}}",
+
+            //Mead
+            "GiftReaction_Mead": "{{Random:... This isn't really funny, @.$5#$b#I'm really trying to stay sober, you don't have to mock me like this.$11++This is very cruel of you, @. You know I'm struggling.$11#$b#You're supposed to be there for me, not drag me further into the hole.$5++I... I didn't cut off Shane and my old friends for you to be the one to start enabling me.$5#$b#Please, I don't want it to be you too.$2|inputSeparator=++}}",
+
+            //Wine
+            "GiftReaction_Wine": "{{Random:... This isn't really funny, @.$5#$b#I'm really trying to stay sober, you don't have to mock me like this.$11++Just... One cup of wine won't hurt, right?$3#$b#.... Fuck.$6#$b#Don't do that, okay? Don't try to give me alcohol. I'm going to end up rationalizing it, and drinking it and....$5#$b#You're the biggest support I have right now. I need you to be on my side, addiction is hard.$11++Hmmm, maybe we could cook with this? Some salmon maybe, like Mia used to make it.#$b#But if that's the case please... Please don't bring it too me. You know how tempted I get. I need your support in this.$3|inputSeparator=++}}",
+    
+            //Pina Colada
+            "GiftReaction_Piña_Colada": "{{Random:... This isn't really funny, @.$5#$b#I'm really trying to stay sober, you don't have to mock me like this.$11++Do you think I'm not fighting the urge to go to the saloon and drink myself until I don't wake up every day, @?$8#$b#Yeah? Then I'd appreciate it if you didn't try to shove alcohol in my face.++This is very cruel of you, @. You know I'm struggling.$11#$b#You're supposed to be there for me, not drag me further into the hole.$5|inputSeparator=++}}",
+
+            //Field Snack
+            "GiftReaction_Field_Snack": "",
+
+            //Strange Bun
+                "GiftReaction_Strange_Bun": "",
+
+            //Blueberry Tart
+                "GiftReaction_Blueberry_Tart": "Yknow, when I first got to the city I had a few dollars to my name and a crap studio apartment I lived in until I left.#$b#But I'd wake up every morning and run down to the bakery to spend my few dollars on a blueberry tart they were just so good.#$b#My former friends thought they were stupid and I eventually lost all interest in buying them.$13#$b#But smelling this treat that you made for me? Oh, darling. I never thought it'd be possible for me to feel 17 and full of hopes and dreams again. Thank you, love.$4",
+
+            //ARV Modded Items
+                "GiftReaction_Bear_Pancakes": "",
+                "GiftReaction_Scalloped_Potatoes": "",
+                "GiftReaction_Kitty_Muffin": "",
+                "GiftReaction_Morning_Cat_Toast": "",
+                "GiftReaction_Summer_Pink_Lemonade": "",
+                "GiftReaction_Bear_Muffin": "",
+                "GiftReaction_Crab_Croissant": "",          
+    },
+    "When": {"HasSeenEvent |contains= 40180011": true,
+}
+/*
+    {
+		"LogName": "Henry Trash flowers",
+        "Action": "EditData",
+        "Target": "Characters/Dialogue/Henry",
+        "Entries": {
+            
+            "GiftReactionCategory_-20": "More litter? Where does this stuff keep coming from?#$b#Whatever the case, thanks for picking that up. I'll go ahead and throw that away for you.$10",
+  
+		
+	       
+
+		}
+	}
+*/
+
+]
+}

@@ -1,0 +1,497 @@
+{
+  "Changes": [
+
+
+/////////////////////
+// COOKING RECIPES //
+/////////////////////
+
+{
+  "LogName": "ARV Recipes",
+  "Action": "EditData",
+  "Target": "Data/CookingRecipes",
+  "Entries": {
+    "HimeTarts.ARV_Bear_Muffin": "246 1 245 1 398 1 597 1/25 5/HimeTarts.ARV_Bear_Muffin/none",
+    "HimeTarts.ARV_Berry_Parfait": "-6 1 410 1 400 1 296 1 638 1/25 5/HimeTarts.ARV_Berry_Parfait/none",
+    "HimeTarts.ARV_Froggy_Burger": "216 1 250 1 256 1/25 5/HimeTarts.ARV_Froggy_Burger/none",
+    "HimeTarts.ARV_Owl_Rice_Crisp": "423 3 245 1 613 1/25 5/HimeTarts.ARV_Owl_Rice_Crisp/none",
+    "HimeTarts.ARV_Summer_Pink_Lemonade": "296 2 635 1 245 1/25 5/HimeTarts.ARV_Summer_Pink_Lemonade/none",
+    "HimeTarts.ARV_Kitty_Muffin": "246 1 -5 1 296 1 254 1/25 5/HimeTarts.ARV_Kitty_Muffin/none",
+    }
+},
+
+/*{
+    "LogName": "ARV Other Recipes",
+    "Action": "EditData",
+    "Target": "Data/CookingRecipes",
+    "Entries": {
+
+      "HimeTarts.ARV_Bear_Pancakes": "246 1 -5 1 400 1/25 5/HimeTarts.ARV_Bear_Pancakes/none",
+      "HimeTarts.ARV_Berry_Delight_Cake": "-5 1 -6 1 296 1 410 1 400 1/25 5/HimeTarts.ARV_Berry_Delight_Cake/none",
+      "HimeTarts.ARV_Crab_Croissant": "-6 1 245 1 -5 1 400 1 258 1/25 5/HimeTarts.ARV_Crab_Croissant/none",
+      
+      "HimeTarts.ARV_Morning_Cat_Toast": "216 1 258 1 400 2/25 5/HimeTarts.ARV_Morning_Cat_Toast/none",
+      "HimeTarts.ARV_Plain_Croissant": "-6 1 245 1 -5 2/25 5/HimeTarts.ARV_Plain_Croissant/none",
+      "HimeTarts.ARV_Scalloped_Potatoes": "192 3 724 1 725 1/25 5/HimeTarts.ARV_Scalloped_Potatoes/none"
+      "HimeTarts.ARV_Starshot_Cappuccino": "433 1 268 1/25 5/HimeTarts.ARV_Starshot_Cappuccino/none",
+     
+      
+      }
+  },
+*/
+
+/////////////
+// OBJECTS //
+/////////////
+{
+    "LogName": "Load Images",
+    "Action": "Load",
+    "Target": "Mods/Himetarts.ARV/Objects",
+    "FromFile": "assets/Objects.png"
+},
+{
+    "LogName":"Add ARV Objects",
+    "Action": "EditData",
+    "Target": "Data/Objects",
+    "Entries": {
+            "HimeTarts.ARV_Bear_Muffin": {
+                "Name": "HimeTarts.ARV_Bear_Muffin",
+                "DisplayName": "{{i18n:Entries.DisplayName}}",
+                "Description": "{{i18n:Entries.Description}}",
+                "Type": "Cooking",          
+                "Category": -7,
+                "Edibility": 50,
+                "Price": 300,
+                "ContextTags":
+                [
+                    "color_blue",
+                    "food_bakery", 
+                    "food_cake", 
+                    "food_party", 
+                    "food_sweet", 
+                    "food_nonvegan"
+                ],
+
+                "Texture": "Mods\\HimeTarts.ARV\\Objects",
+                "SpriteIndex": 0
+        },
+            "HimeTarts.ARV_Bear_Pancakes": {
+            "Name": "HimeTarts.ARV_Bear_Pancakes",
+            "DisplayName": "{{i18n:HimeTarts.ARV_Bear_Pancakes.DisplayName}}",
+            "Description": "{{i18n:HimeTarts.ARV_Bear_Pancakes.Description}}",
+            "Type": "Cooking",          
+            "Category": -7,
+            "Edibility": 40,
+            "Buff": {
+                "BuffId": null,
+                "IconTexture": null,
+                "IconSpriteIndex": 0,
+                "Duration": 120,
+                "IsDebuff": false,
+                "GlowColor": null,
+                "CustomAttributes": {
+                  "FarmingLevel": 0,
+                  "FishingLevel": 0,
+                  "MiningLevel": 0,
+                  "LuckLevel": 1,
+                  "ForagingLevel": 0,
+                  "MaxStamina": 0,
+                  "MagneticRadius": 0,
+                  "Speed": 0,
+                  "Defense": 0,
+                  "Attack": 0
+                }
+            },
+            "Price": 150,
+            "ContextTags":
+            [
+                "color_brown",
+                "food_bakery", 
+                "food_breakfast", 
+                "food_sweet", 
+                "food_nonvegan"
+            ],
+        
+            "Texture": "Mods\\HimeTarts.ARV\\Objects",
+            "SpriteIndex": 1
+        },
+            "HimeTarts.ARV_Berry_Delight_Cake": {
+            "Name": "HimeTarts.ARV_Berry_Delight_Cake",
+            "DisplayName": "{{i18n:HimeTarts.ARV_Berry_Delight_Cake.DisplayName}}",
+            "Description": "{{i18n:HimeTarts.ARV_Berry_Delight_Cake.Description}}",
+            "Type": "Cooking",          
+            "Category": -7,
+            "Edibility": 50,
+            "Buff": {
+                "BuffId": null,
+                "IconTexture": null,
+                "IconSpriteIndex": 0,
+                "Duration": 240,
+                "IsDebuff": false,
+                "GlowColor": null,
+                "CustomAttributes": {
+                  "FarmingLevel": 2,
+                  "FishingLevel": 0,
+                  "MiningLevel": 0,
+                  "LuckLevel": 0,
+                  "ForagingLevel": 2,
+                  "MaxStamina": 0,
+                  "MagneticRadius": 0,
+                  "Speed": 0,
+                  "Defense": 1,
+                  "Attack": 0
+                }
+            },
+            "Price": 650,
+            "ContextTags":
+            [
+                "color_pink","food_bakery", "food_sweet", "food_party", "food_nonvegan"
+            ],
+        
+            "Texture": "Mods\\HimeTarts.ARV\\Objects",
+            "SpriteIndex": 2
+        },
+            "HimeTarts.ARV_Berry_Parfait": {
+            "Name": "HimeTarts.ARV_Berry_Parfait",
+            "DisplayName": "{{i18n:HimeTarts.ARV_Berry_Parfait.DisplayName}}",
+            "Description": "{{i18n:HimeTarts.ARV_Berry_Parfait.Description}}",
+            "Type": "Cooking",          
+            "Category": -7,
+            "Edibility": 50,
+            "Price": 550,
+            "Buff": {
+                "BuffId": null,
+                "IconTexture": null,
+                "IconSpriteIndex": 0,
+                "Duration": 180,
+                "IsDebuff": false,
+                "GlowColor": null,
+                "CustomAttributes": {
+                  "FarmingLevel": 0,
+                  "FishingLevel": 0,
+                  "MiningLevel": 0,
+                  "LuckLevel": 2,
+                  "ForagingLevel": 0,
+                  "MaxStamina": 0,
+                  "MagneticRadius": 0,
+                  "Speed": 2,
+                  "Defense": 1,
+                  "Attack": 0
+                }
+            },
+            "ContextTags":
+            [
+                "color_pink","food_sweet", "food_nonvegan"
+            ],
+         
+            "Texture": "Mods\\HimeTarts.ARV\\Objects",
+            "SpriteIndex": 3
+        },
+            "HimeTarts.ARV_Crab_Croissant": {
+            "Name": "HimeTarts.ARV_Crab_Croissant",
+            "DisplayName": "{{i18n:HimeTarts.ARV_Crab_Croissant.DisplayName}}",
+            "Description": "{{i18n:HimeTarts.ARV_Crab_Croissant.Description}}",
+            "Type": "Cooking",          
+            "Category": -7,
+            "Edibility": 50,
+            "Buff": {
+                "BuffId": null,
+                "IconTexture": null,
+                "IconSpriteIndex": 0,
+                "Duration": 180,
+                "IsDebuff": false,
+                "GlowColor": null,
+                "CustomAttributes": {
+                  "FarmingLevel": 0,
+                  "FishingLevel": 0,
+                  "MiningLevel": 0,
+                  "LuckLevel": 1,
+                  "ForagingLevel": 0,
+                  "MaxStamina": 2,
+                  "MagneticRadius": 0,
+                  "Speed": 2,
+                  "Defense": 0,
+                  "Attack": 0
+                }
+            },
+            "Price": 500,
+            "ContextTags":
+            [
+                "color_pink","food_bakery", "food_cake", "food_party", "food_sweet", "food_nonvegan", "food_breakfast"
+            ],
+         
+            "Texture": "Mods\\HimeTarts.ARV\\Objects",
+            "SpriteIndex": 4
+        },
+            "HimeTarts.ARV_Froggy_Burger": {
+            "Name": "HimeTarts.ARV_Froggy_Burger",
+            "DisplayName": "{{i18n:HimeTarts.ARV_Froggy_Burger.DisplayName}}",
+            "Description": "{{i18n:HimeTarts.ARV_Froggy_Burger.Description}}",
+            "Type": "Cooking",          
+            "Category": -7,
+            "Edibility": 60,
+            "Price": 270,
+            "Buff": {
+                "BuffId": null,
+                "IconTexture": null,
+                "IconSpriteIndex": 0,
+                "Duration": 180,
+                "IsDebuff": false,
+                "GlowColor": null,
+                "CustomAttributes": {
+                  "FarmingLevel": 2,
+                  "FishingLevel": 0,
+                  "MiningLevel": 0,
+                  "LuckLevel": 0,
+                  "ForagingLevel": 2,
+                  "MaxStamina": 0,
+                  "MagneticRadius": 1,
+                  "Speed": 0,
+                  "Defense": 0,
+                  "Attack": 0
+                }
+            },
+            "ContextTags":
+            [
+                "color_pink"
+            ],
+         
+            "Texture": "Mods\\HimeTarts.ARV\\Objects",
+            "SpriteIndex": 5
+        },
+            "HimeTarts.ARV_Kitty_Muffin": {
+            "Name": "HimeTarts.ARV_Kitty_Muffin",
+            "DisplayName": "{{i18n:HimeTarts.ARV_Kitty_Muffin.DisplayName}}",
+            "Description": "{{i18n:HimeTarts.ARV_Kitty_Muffin.Description}}",
+            "Type": "Cooking",          
+            "Category": -7,
+            "Edibility": 40,
+            "Buff": {
+                "BuffId": null,
+                "IconTexture": null,
+                "IconSpriteIndex": 0,
+                "Duration": 120,
+                "IsDebuff": false,
+                "GlowColor": null,
+                "CustomAttributes": {
+                  "FarmingLevel": 0,
+                  "FishingLevel": 0,
+                  "MiningLevel": 0,
+                  "LuckLevel": 1,
+                  "ForagingLevel": 0,
+                  "MaxStamina": 0,
+                  "MagneticRadius": 0,
+                  "Speed": 0,
+                  "Defense": 1,
+                  "Attack": 0
+                }
+            },
+            "Price": 300,
+            "ContextTags":
+            [
+                "food_bakery", 
+                "food_cake", 
+                "food_party", 
+                "food_sweet", 
+                "food_nonvegan"
+            ],
+         
+            "Texture": "Mods\\HimeTarts.ARV\\Objects",
+            "SpriteIndex": 6
+        },
+            "HimeTarts.ARV_Morning_Cat_Toast": {
+            "Name": "HimeTarts.ARV_Morning_Cat_Toast",
+            "DisplayName": "{{i18n:HimeTarts.ARV_Morning_Cat_Toast.DisplayName}}",
+            "Description": "{{i18n:HimeTarts.ARV_Morning_Cat_Toast.Description}}",
+            "Type": "Cooking",          
+            "Category": -7,
+            "Edibility": 40,
+            "Price": 300,
+            "Buff": {
+                "BuffId": null,
+                "IconTexture": null,
+                "IconSpriteIndex": 0,
+                "Duration": 120,
+                "IsDebuff": false,
+                "GlowColor": null,
+                "CustomAttributes": {
+                  "FarmingLevel": 3,
+                  "FishingLevel": 1,
+                  "MiningLevel": 0,
+                  "LuckLevel": 0,
+                  "ForagingLevel": 0,
+                  "MaxStamina": 0,
+                  "MagneticRadius": 0,
+                  "Speed": 0,
+                  "Defense": 1,
+                  "Attack": 0
+                }
+            },
+            "ContextTags":
+            [
+                "food_bakery", 
+                "food_cake", 
+                "food_party", 
+                "food_sweet", 
+                "food_nonvegan", 
+                "food_breakfast"
+            ],
+         
+            "Texture": "Mods\\HimeTarts.ARV\\Objects",
+            "SpriteIndex": 7
+        },
+            "HimeTarts.ARV_Owl_Rice_Crisp": {
+            "Name": "HimeTarts.ARV_Owl_Rice_Crisp",
+            "DisplayName": "{{i18n:HimeTarts.ARV_Owl_Rice_Crisp.DisplayName}}",
+            "Description": "{{i18n:HimeTarts.ARV_Owl_Rice_Crisp.Description}}",
+            "Type": "Cooking",          
+            "Category": -7,
+            "Edibility": 36,
+            "Price": 320,
+            "ContextTags":
+            [
+                "color_tan"
+            ],
+         
+            "Texture": "Mods\\HimeTarts.ARV\\Objects",
+            "SpriteIndex": 8
+        },
+            "HimeTarts.ARV_Plain_Croissant": {
+            "Name": "HimeTarts.ARV_Plain_Croissant",
+            "DisplayName": "{{i18n:HimeTarts.ARV_Plain_Croissant.DisplayName}}",
+            "Description": "{{i18n:HimeTarts.ARV_Plain_Croissant.Description}}",
+            "Type": "Cooking",          
+            "Category": -7,
+            "Edibility": 36,
+            "Price": 150,
+            "ContextTags":
+            [
+                "food_bakery", 
+                "food_cake", 
+                "food_sweet", 
+                "food_nonvegan", 
+                "food_breakfast"
+            ],
+         
+            "Texture": "Mods\\HimeTarts.ARV\\Objects",
+            "SpriteIndex": 9
+        },
+            "HimeTarts.ARV_Scalloped_Potatoes": {
+            "Name": "HimeTarts.ARV_Scalloped_Potatoes",
+            "DisplayName": "{{i18n:HimeTarts.ARV_Scalloped_Potatoes.DisplayName}}",
+            "Description": "{{i18n:HimeTarts.ARV_Scalloped_Potatoes.Description}}",
+            "Type": "Cooking",          
+            "Category": -7,
+            "Edibility": 60,
+            "Price": 575,
+            "Buff": {
+                "BuffId": null,
+                "IconTexture": null,
+                "IconSpriteIndex": 0,
+                "Duration": 240,
+                "IsDebuff": false,
+                "GlowColor": null,
+                "CustomAttributes": {
+                  "FarmingLevel": 0,
+                  "FishingLevel": 0,
+                  "MiningLevel": 2,
+                  "LuckLevel": 2,
+                  "ForagingLevel": 0,
+                  "MaxStamina": 0,
+                  "MagneticRadius": 0,
+                  "Speed": 0,
+                  "Defense": 2,
+                  "Attack": 1
+                }
+            },
+            "ContextTags":
+            [
+                "food_nonvegan"
+            ],
+         
+            "Texture": "Mods\\HimeTarts.ARV\\Objects",
+            "SpriteIndex": 10
+        },
+            "HimeTarts.ARV_Starshot_Cappuccino": {
+            "Name": "HimeTarts.ARV_Starshot_Cappuccino",
+            "DisplayName": "{{i18n:HimeTarts.ARV_Starshot_Cappuccino.DisplayName}}",
+            "Description": "{{i18n:HimeTarts.ARV_Starshot_Cappuccino.Description}}",
+            "Type": "Cooking",          
+            "Category": -7,
+            "Edibility": 40,
+            "IsDrink": true,
+            "Buff": {
+                "BuffId": null,
+                "IconTexture": null,
+                "IconSpriteIndex": 0,
+                "Duration": 240,
+                "IsDebuff": false,
+                "GlowColor": null,
+                "CustomAttributes": {
+                  "FarmingLevel": 0,
+                  "FishingLevel": 0,
+                  "MiningLevel": 0,
+                  "LuckLevel": 2,
+                  "ForagingLevel": 0,
+                  "MaxStamina": 0,
+                  "MagneticRadius": 0,
+                  "Speed": 1,
+                  "Defense": 0,
+                  "Attack": 1
+                }
+            },
+            "Price": 900,
+            "ContextTags":
+            [
+                "food_coffee", 
+                "food_bakery", 
+                "food_sweet", 
+                "food_nonvegan"
+            ],
+         
+            "Texture": "Mods\\HimeTarts.ARV\\Objects",
+            "SpriteIndex": 11
+        },
+            "HimeTarts.ARV_Summer_Pink_Lemonade": {
+            "Name": "HimeTarts.ARV_Summer_Pink_Lemonade",
+            "DisplayName": "{{i18n:HimeTarts.ARV_Summer_Pink_Lemonade.DisplayName}}",
+            "Description": "{{i18n:HimeTarts.ARV_Summer_Pink_Lemonade.Description}}",
+            "Type": "Cooking",          
+            "Category": -7,
+            "Edibility": 40,
+            "IsDrink": true,
+            "Buff": {
+                "BuffId": null,
+                "IconTexture": null,
+                "IconSpriteIndex": 0,
+                "Duration": 240,
+                "IsDebuff": false,
+                "GlowColor": null,
+                "CustomAttributes": {
+                  "FarmingLevel": 0,
+                  "FishingLevel": 0,
+                  "MiningLevel": 0,
+                  "LuckLevel": 0,
+                  "ForagingLevel": 0,
+                  "MaxStamina": 2,
+                  "MagneticRadius": 0,
+                  "Speed": 0,
+                  "Defense": 1,
+                  "Attack": 1
+                }
+            },
+            "Price": 250,
+            "ContextTags":
+            [
+                "food_sweet"
+            ],
+         
+            "Texture": "Mods\\HimeTarts.ARV\\Objects",
+            "SpriteIndex": 12
+        }
+
+}
+}
+
+  ]
+}

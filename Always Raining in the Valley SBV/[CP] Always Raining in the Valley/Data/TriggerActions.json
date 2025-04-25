@@ -1,0 +1,127 @@
+{
+    "Changes": [
+        {
+            "LogName": "Add Mail Trigger Actions",
+            "Action": "EditData",
+            "Target": "Data/TriggerActions",
+            "Entries": {
+                "{{ModId}}_BearPancakesLetter": {
+                    "Id": "{{ModId}}_BearPancakesLetter",
+                    "Trigger": "DayEnding",
+                    "Condition": "PLAYER_HEARTS Current Mia 4", // for hime: condition to send the letter when player has 4 hearts with Mia.
+                    "Action": "AddMail Current {{ModId}}_BearPancakes"
+                },
+                "{{ModId}}_CatToastLetter": {
+                    "Id": "{{ModId}}_CatToastLetter",
+                    "Trigger": "DayEnding",
+                    "Condition": "PLAYER_HEARTS Current Mia 6",
+                    "Action": "AddMail Current {{ModId}}_CatToast"
+                },
+                /*{
+        "Id": "arv.crabcroissant",
+        "Title": "A Fun Breakfast Experiment!",
+        "Text": "",
+        "Recipe": "HimeTarts.ARV_Crab_Croissant",
+        "LetterBG": "MiaLetter.png",
+        "Repeatable": false,
+        "FriendshipConditions": [
+          {
+            "NpcName": "Mia",
+            "FriendshipLevel": 6
+          }
+        ]
+      },*/ //commented this one out because its incomplete, so convert to the same structure here when ur ready! 
+                "{{ModId}}_FroggyBurgerLetter": {
+                    "Id": "{{ModId}}_FroggyBurgerLetter",
+                    "Trigger": "DayEnding",
+                    "Condition": "PLAYER_MONEY_EARNED Current 75000",
+                    "Action": "AddMail Current {{ModId}}_FroggyBurger"
+                },
+                "{{ModId}}_OwlRiceCrispLetter": {
+                    "Id": "{{ModId}}_OwlRiceCrispLetter",
+                    "Trigger": "DayEnding",
+                    "Condition": "SEASON_DAY summer 5, YEAR 2",
+                    "Action": "AddMail Current {{ModId}}_OwlRiceCrisp"
+                },
+                "{{ModId}}_BerryParfaitLetter": {
+                    "Id": "{{ModId}}_BerryParfaitLetter",
+                    "Trigger": "DayEnding",
+                    "Condition": "PLAYER_HEARTS Current Sterling 4, SEASON_DAY summer 1, YEAR 1",
+                    "Action": "AddMail Current {{ModId}}_BerryParfait"
+                },
+                "{{ModId}}_KittyMuffinLetter": {
+                    "Id": "{{ModId}}_KittyMuffinLetter",
+                    "Trigger": "DayEnding",
+                    "Condition": "PLAYER_HEARTS Current Sterling 8, PLAYER_HAS_SEEN_EVENT Current 40180010",
+                    "Action": "AddMail Current {{ModId}}_KittyMuffin"
+                },
+                "{{ModId}}_BearMuffinLetter": {
+                    "Id": "{{ModId}}_BearMuffinLetter",
+                    "Trigger": "DayEnding",
+                    "Condition": "PLAYER_MONEY_EARNED Current 250000",
+                    "Action": "AddMail Current {{ModId}}_BearMuffin"
+                },
+                "{{ModId}}_BerryDelightsLetter": {
+                    "Id": "{{ModId}}_BerryDelightsLetter",
+                    "Trigger": "DayEnding",
+                    "Condition": "PLAYER_HEARTS Current Sterling 8, PLAYER_HEARTS Current Mia 8, PLAYER_HEARTS Current Henry 8,",
+                    "Action": "AddMail Current {{ModId}}_BerryDelights"
+                },
+                "{{ModId}}_PlainCroissantLetter": {
+                    "Id": "{{ModId}}_PlainCroissantLetter",
+                    "Trigger": "DayEnding",
+                    "Condition": "PLAYER_HEARTS Current Henry 4",
+                    "Action": "AddMail Current {{ModId}}_PlainCroissant"
+                },
+                "{{ModId}}_ScallopedPotatoesLetter": {
+                    "Id": "{{ModId}}_ScallopedPotatoesLetter",
+                    "Trigger": "DayEnding",
+                    "Condition": "PLAYER_HEARTS Current Henry 8",
+                    "Action": "AddMail Current {{ModId}}_ScallopedPotatoes"
+                },
+                "{{ModId}}_MiaWelcomeLetter": {
+                    "Id": "{{ModId}}_MiaWelcomeLetter",
+                    "Trigger": "DayEnding",
+                    "Condition": "SEASON_DAY spring 7, YEAR 1",
+                    "Action": "AddMail Current {{ModId}}_MiaWelcome"
+                },
+                "{{ModId}}_MiaSummerLetter": {
+                    "Id": "{{ModId}}_MiaSummerLetter",
+                    "Trigger": "DayEnding",
+                    "Condition": "SEASON_DAY summer 5, YEAR 1",
+                    "Action": "AddMail Current {{ModId}}_MiaSummer"
+                },
+                "{{ModId}}_MiaSummer2Letter": {
+                    "Id": "{{ModId}}_MiaSummer2Letter",
+                    "Trigger": "DayEnding",
+                    "Condition": "SEASON_DAY summer 3, YEAR 2",
+                    "Action": "AddMail Current {{ModId}}_MiaSummer2"
+                },
+                "{{ModId}}_HenryWelcomeLetter": {
+                    "Id": "{{ModId}}_HenryWelcomeLetter",
+                    "Trigger": "DayEnding",
+                    "Condition": "PLAYER_NPC_RELATIONSHIP Current Henry Friendly",
+                    "Action": "AddMail Current {{ModId}}_HenryWelcome"
+                },
+                "{{ModId}}_SterlingBikeLetter": {
+                    "Id": "{{ModId}}_SterlingBikeLetter",
+                    "Trigger": "DayEnding",
+                    "Condition": "PLAYER_HAS_SEEN_EVENT Current 40180006",
+                    "Action": "AddMail Current {{ModId}}_SterlingBike"
+                },
+                "{{ModId}}_SterlingDinnerLetter": {
+                    "Id": "{{ModId}}_SterlingDinnerLetter",
+                    "Trigger": "DayEnding",
+                    "Condition": "PLAYER_HAS_SEEN_EVENT Current 40180009, PLAYER_HEARTS Current Sterling 8",
+                    "Action": "AddMail Current {{ModId}}_SterlingDinner"
+                },
+                "{{ModId}}_SterlingBirthday2Letter": {
+                    "Id": "{{ModId}}_SterlingBirthday2Letter",
+                    "Trigger": "DayEnding",
+                    "Condition": "SEASON_DAY summer 15, YEAR 2",
+                    "Action": "AddMail Current {{ModId}}_SterlingBirthday2"
+                },
+            }
+        }
+    ]
+}

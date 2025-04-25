@@ -1,0 +1,159 @@
+﻿{
+    "Changes": [
+
+        //MARRIAGE
+        {
+            "LogName": "Sterling - Marriage Fix",
+            "Action": "EditData",
+            "Target": "strings/StringsFromCSFiles",
+            "Entries": {
+                "Utility.cs.5377": "{{i18n:Utility.cs.5377}}",
+				"Utility.cs.5371": "{{i18n:Utility.cs.5371}}",
+				"Utility.cs.5367": "{{i18n:Utility.cs.5367}}",
+				"Utility.cs.5369": "{{i18n:Utility.cs.5369}}",
+
+            },
+            "When": {
+                "Relationship:Sterling": "Engaged, Married"
+            }
+        },
+
+
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Sterling",
+            "Entries": {
+       "Event.cs.1801": "{{i18n:Event.cs.1801}}",
+		"NPC.cs.4001": "{{i18n:NPC.cs.4001}}",
+		"NPC.cs.4440": "{{i18n:NPC.cs.4440}}",
+		"NPC.cs.4441": "{{i18n:NPC.cs.4441}}",
+
+ 
+                
+            }
+        },
+   
+	
+/*	//FLOWER DANCE
+		{
+			"LogName": "Flower Dance Just Met",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Sterling",
+			"Entries": {
+				"Event.cs.1736": "$q -1 null#...Yes?#$r -1 0 danceAsk#(Ask Sterling to be your dance partner)#$r -1 0 null#Nevermind...",
+				"Event.cs.1738": "$q -1 null#...Yes?#$r -1 0 danceAsk#(Ask Sterling to be your dance partner)#$r -1 0 null#Nevermind...",
+				"Event.cs.1635": "...No.",
+			},
+			"When": {
+				"Hearts:Sterling": "0, 1, 2"
+			}
+		},
+		{
+			"LogName": "CFD Flower Dance Friendliest",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Sterling",
+			"Entries": {
+				"Event.cs.1736": "$q -1 null#...What's up, @?#$r -1 0 danceAsk#(Ask Sterling to be your dance partner)#$r -1 0 null#Nevermind...",
+				"Event.cs.1738": "$q -1 null#...What's up, @?#$r -1 0 danceAsk#(Ask Sterling to be your dance partner)#$r -1 0 null#Nevermind...",
+				"Event.cs.1632": "Fine, but only because it's you.$6",
+				"Event.cs.1633": "Fine, but only because it's you.$6",
+				"Event.cs.1634": "Fine, but only because it's you.$6",
+				"Event.cs.1635": "Sorry, @. I already said I'd dance with someone else.",
+			},
+			"When": {
+				"Hearts:Sterling": "3, 4, 5, 6, 7, 8"
+			}
+		},
+		{
+			"LogName": "CFD Flower Dance Romantic",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Sterling",
+			"Entries": {
+				"Event.cs.1736": "$q -1 null#...Yeah, bud?#$r -1 0 danceAsk#(Ask Sterling to be your dance partner)#$r -1 0 null#Nevermind...",
+				"Event.cs.1738": "$q -1 null#...Yeah, bud?#$r -1 0 danceAsk#(Ask Sterling to be your dance partner)#$r -1 0 null#Nevermind...",
+				"Event.cs.1632": "Dance? Hoo-boy. All right, gimme a minute to see if I still remember how to do this...$6",
+				"Event.cs.1633": "Dance? Hoo-boy. All right, gimme a minute to see if I still remember how to do this...$6",
+				"Event.cs.1634": "Dance? Hoo-boy. All right, gimme a minute to see if I still remember how to do this...$6",
+				"Event.cs.1635": "Dance? Hoo-boy. All right, gimme a minute to see if I still remember how to do this...$6",
+			},
+			"When": {
+				"Relationship:Sterling": "Dating, Engaged, Married",
+			},
+		},
+
+//EXTRA DIALOGUE
+		{
+			"LogName": "CFD Extra Dialogue",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Sterling",
+			"Entries": {
+				"ExtraDialogue_NewChild_SecondChild1": "Just look at our family... We've come a long way, haven't we?$6",
+				"ExtraDialogue_NewChild_SecondChild2": "Three great kids... We've come a long way, haven't we?$6",
+				"ExtraDialogue_NewChild_Adoption": "So, you ready to be the best parents %kid1 could ever have?$6#$b#It's a pretty tall order, but I think we'll manage.$h",
+				"ExtraDialogue_NewChild_FirstChild": "So, you ready to be the best parents %kid1 could ever have?$6#$b#It's a pretty tall order, but I think we'll manage.$h",
+				"ExtraDialogue_Spouse_KitchenBlocked": "You've got a bunch of your stuff blocking the kitchen... I don't know where you wanna keep all that, so could you tidy it up?",
+				"ExtraDialogue_Spouse_MonstersInHouse": "Uh... peach? What are these monsters doing in here?",
+				"ExtraDialogue_Mines_PlayerKilled_Spouse_PlayerMale": "You were gone so long I started to get worried about you! What happened down there? Can you walk?$10",
+				"ExtraDialogue_Mines_PlayerKilled_Spouse_PlayerFemale": "You were gone so long I started to get worried about you! What happened down there? Can you walk?$10",
+				},
+			},*/
+		{
+			"LogName": "CFD Dumpster Dive Strangers",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Sterling",
+			"Entries": {
+"ExtraDialogue_Town_DumpsterDiveComment_Adult": "{{i18n:Sterling.ExtraDialogue_Town_DumpsterDiveComment_Adult.2}}",
+
+			},
+			"When": {
+				"Hearts:Sterling": "{{Range: 0, 1,}}",
+			},
+		},
+		{
+			"LogName": "CFD Dumpster Dive Friends",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Sterling",
+			"Entries": {
+				"ExtraDialogue_Town_DumpsterDiveComment_Adult": "{{i18n:Sterling.ExtraDialogue_Town_DumpsterDiveComment_Adult.1}}",
+
+			},
+			"When": {
+				"Hearts:Sterling": "{{Range: 2, 3, 4, 5, 6, 7, 8}}",
+			},
+		},
+		{
+			"LogName": "CFD Dumpster Dive Dating",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Sterling",
+			"Entries": {
+					"ExtraDialogue_Town_DumpsterDiveComment_Adult": "{{i18n:Sterling.ExtraDialogue_Town_DumpsterDiveComment_Adult}}",
+
+			},
+			"When": {
+				"Relationship:Sterling": "Dating, Engaged, Married",
+			},
+		},
+//Movie Invite
+		{
+			"LogName": "Movie Invitation Reactions Married",
+			"Action": "EditData",
+			"Target": "Strings/Characters",
+			"Entries": {
+				"Characters_MovieInvite_Spouse_Sterling": "{{i18n:Characters_MovieInvite_Spouse_Sterling}}",
+
+			},
+		}, 
+//Summit Event
+
+		{
+			"LogName": "Summit Event Dialogue",
+			"Action": "EditData",
+			"Target": "Data/ExtraDialogue",
+			"Entries": {
+				"SummitEvent_Dialogue3_Sterling": "When we met, I showed you all the worst parts of me...$3#$b#And you chose to stick with me, anyway.\"/pause 500/speak Sterling \"{{i18n:SummitEvent_Dialogue3_Sterling.0}}\"/pause 1000/speak Sterling \"{{i18n:SummitEvent_Dialogue3_Sterling.1}}\"/pause 100/emote farmer 12/pause 200/speak Sterling \"{{i18n:SummitEvent_Dialogue3_Sterling.2}}\"/pause 1000/emote Sterling 40/pause 1000/speak Sterling \"{{i18n:SummitEvent_Dialogue3_Sterling.3}}\"/faceDirection Sterling 3/speak Sterling \"{{i18n:SummitEvent_Dialogue3_Sterling.4}}\"/pause 1000/speak Sterling \"{{i18n:SummitEvent_Dialogue3_Sterling.5}}\"/pause 500",
+
+
+			},
+		},
+	]
+}

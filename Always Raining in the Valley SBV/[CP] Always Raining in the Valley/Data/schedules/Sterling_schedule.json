@@ -1,0 +1,191 @@
+{
+  "Changes": 
+    [
+    //MAIN SCHEDULE
+      {
+      "LogName": "Sterling Schedule Vanilla",
+      "Action": "EditData",
+      "Target": "Characters/schedules/Sterling",
+      "Entries": 
+            {
+              "rain": "GOTO spring",
+              "GreenRain": "GOTO Wed",
+              "spring": "610 SeedShop 5 22 3 SterlingStocking/1710 Saloon 22 18 3 SterlingDrinking/2200 Custom_ARVHouse 21 20 1/2310 Custom_ARVHouse 29 8 3 Sterling_Sleep",
+              "Fri":"610 SeedShop 5 22 3 SterlingStocking/1710 Saloon 26 21 3 SterlingDrinking/2300 Custom_ARVHouse 21 20 1/110 Custom_ARVHouse 29 8 3 Sterling_Sleep",
+              "winter_15":"610 Custom_ARVHouse 25 5 0/830 Custom_ARVHouse 25 20 1/900 Custom_ARVHouse 22 20 1/1030 Custom_SBV_SunberryVillage 8 48 3/1400 Beach 32 15 1/1800 Beach 32 14 0/2200 Custom_ARVHouse 21 20 1/2320 Custom_ARVHouse 26 8 3/2350 Custom_ARVHouse 29 8 3 Sterling_Sleep",
+              "winter_16": "GOTO winter_15",
+              "winter_17": "GOTO winter_15",
+              "summer_15":"610 SeedShop 5 22 3 SterlingStocking/1300 SeedShop 5 22 2/1710 Custom_ARVHouse 24 24 0",
+              "Wed": "610 Custom_ARVHouse 25 5 0/830 Custom_ARVHouse 25 20 1/900 Custom_ARVHouse 22 20 1/1030 Custom_SBV_SunberryVillage 41 44 3/1230 Custom_SBV_SunberryVillage 15 76 2/1600 Custom_SBV_SunberryVillage 30 58 0/1710 Saloon 22 18 3 SterlingDrinking/2230 Custom_ARVHouse 29 8 3 Sterling_Sleep",
+              "Sat": "610 SeedShop 5 22 3 SterlingStocking/1600 Custom_SBV_SunberryVillage 63 79 3/1900 Custom_SBV_SunberryVillage 62 88 2/2200 Custom_ARVHouse 21 20 1/2310 Custom_ARVHouse 29 8 3 Sterling_Sleep",
+              "Sun": "610 Custom_ARVHouse 25 5 0/830 Custom_ARVHouse 25 20 1/900 Custom_ARVHouse 22 20 1/1000 Custom_SBV_SunberryVillage 8 92 1/1200 AnimalShop 29 15 3/1910 Saloon 39 22 0/2330 Custom_ARVHouse 29 8 3 Sterling_Sleep",
+              "skellady.SBVCP_TwilightFestival":"610 SeedShop 5 22 3 SterlingStocking/1000 SeedShop 9 26 0/1200 SeedShop 5 22 3 SterlingStocking/a1640 Custom_SBV_SunberryVillage 15 76 2/2310 Custom_ARVHouse 29 8 3 Sterling_Sleep",
+              "winter_Sat": "GOTO spring",
+              "marriage_Sun":"1130 SeedShop 6 19 0 \"Strings\\schedules\\Sterling:married.001\"/1910 Saloon 39 22 0 \"Strings\\schedules\\Sterling:married.003\"/1700 BusStop -1 23 3/1730 bed",
+              "marriage_skellady.SBVCP_TwilightFestival":"a1600 Custom_SBV_SunberryVillage 15 76 2/a1800 Custom_SBV_SunberryVillage 17 64 1 \"Strings\\schedules\\Sterling:halloween.003\"/2200 BusStop -1 23 3/2230 bed",
+              "marriage_winter_15": "1400 Beach 32 15 1/1800 Beach 32 14 0/2500 bed",
+              "marriage_winter_16": "1400 Beach 32 15 1/1800 Beach 32 14 0/2500 bed",
+              "marriage_winter_17": "1400 Beach 32 15 1/1800 Beach 32 14 0/2500 bed",
+            },
+        "When": 
+          { "HasConversationTopic |contains=SterlingRelapse": "false",
+            }    
+      },
+
+
+  //RELAPSE SCHEDULE
+
+  {
+    "LogName": "Sterling Schedule Relapse",
+    "Action": "EditData",
+    "Target": "Characters/schedules/Sterling",
+    "Entries": 
+          {
+            "rain": "GOTO spring",
+            "spring": "610 Custom_ARVHouse 29 8 3 Sterling_Sleep/930 Custom_ARVHouse 24 24 0/1025 Custom_ARVHouse 24 20 1/1120 Custom_ARVHouse 6 20 2/1240 Custom_SBV_SunberryVillage 15 39 0/1330 Custom_SBV_SunberryVillage 4 37 2/1430 Custom_SBV_SunberryVillage 17 48 2/a1600 Custom_SBV_SunberryVillage 19 50 2/1610 Custom_SBV_SunberryVillage 19 67 0/1900 Custom_ARVHouse 21 21 1/2000 Custom_ARVHouse 24 20 2/2100 Custom_ARVHouse 21 30 0/2130 Custom_ARVHouse 20 20 1/2200 Custom_ARVHouse 24 71 1/2320 Custom_ARVHouse 26 8 3/2350 Custom_ARVHouse 29 8 3 Sterling_Sleep",
+            "Fri": "610 Custom_ARVHouse 29 8 3 Sterling_Sleep/930 Custom_ARVHouse 24 24 0/1025 Custom_ARVHouse 24 20 1/1120 Custom_ARVHouse 6 20 2/1240 Custom_SBV_SunberryVillage 30 55 2/1330 Saloon 26 21 3 SterlingDrinking/2300 Custom_ARVHouse 21 20 1/110 Custom_ARVHouse 29 8 3 Sterling_Sleep",
+            "winter_15":"610 Custom_ARVHouse 25 5 0/830 Custom_ARVHouse 25 20 1/900 Custom_ARVHouse 22 20 1/1030 Custom_SBV_SunberryVillage 8 48 3/1400 Beach 32 15 1/1800 Beach 32 14 0/2200 Custom_ARVHouse 21 20 1/2320 Custom_ARVHouse 26 8 3/2350 Custom_ARVHouse 29 8 3 Sterling_Sleep",
+            "winter_16": "GOTO winter_15",
+            "winter_17": "GOTO winter_15",
+            "summer_15":"610 Custom_ARVHouse 29 8 3 Sterling_Sleep/930 Custom_ARVHouse 24 24 0/1025 Custom_ARVHouse 24 20 1/1120 Custom_ARVHouse 6 20 2/1240 Custom_SBV_SunberryVillage 9 34 1/1230 Custom_SBV_SunberryVillage 10 50 1/1400 Custom_SBV_SunberryVillage 15 76 2/1530 Custom_SBV_SunberryVillage 8 92 1/1700 Custom_SBV_SunberryVillage 8 92 0/1900 Custom_ARVHouse 21 21 1/2000 Custom_ARVHouse 24 20 2/2100 Custom_ARVHouse 21 30 0/2130 Custom_ARVHouse 20 20 1/2200 Custom_ARVHouse 24 71 1/2320 Custom_ARVHouse 26 8 3/2350 Custom_ARVHouse 29 8 3 Sterling_Sleep",
+            "Wed": "610 Custom_ARVHouse 25 5 0/830 Custom_ARVHouse 25 20 1/900 Custom_ARVHouse 22 20 1/1030 Custom_SBV_SunberryVillage 41 44 3/1230 Custom_SBV_SunberryVillage 15 76 2/1600 Custom_SBV_SunberryVillage 30 58 0/1710 Saloon 22 18 3 SterlingDrinking/2230 Custom_ARVHouse 29 8 3 Sterling_Sleep",
+            "Sun": "610 Custom_ARVHouse 25 5 0/830 Custom_ARVHouse 25 20 1/900 Custom_ARVHouse 22 20 1/1000 Custom_SBV_SunberryVillage 8 92 1/1200 AnimalShop 29 15 3/1910 Saloon 39 22 0/2330 Custom_ARVHouse 29 8 3 Sterling_Sleep",
+            },
+            
+      "When": 
+        { "HasConversationTopic |contains=SterlingRelapse": "true"}    
+    },
+      //BYE SHANE
+    {
+      "LogName": "Sterling Schedule No Shane",
+      "Action": "EditData",
+      "Target": "Characters/schedules/Sterling",
+      "Entries": 
+            {
+              "spring": "610 SeedShop 5 22 3 SterlingStocking/1710 Saloon 38 18 3 SterlingDrinking/2200 Custom_ARVHouse 21 20 1/2310 Custom_ARVHouse 29 8 3 Sterling_Sleep",
+              "Fri": "610 SeedShop 5 22 3 SterlingStocking/1710 Saloon 26 21 2 SterlingDrinking/2300 Custom_ARVHouse 21 20 1/110 Custom_ARVHouse 29 8 3 Sterling_Sleep",
+              "Wed":  "610 Custom_ARVHouse 25 5 0/830 Custom_ARVHouse 25 20 1/900 Custom_ARVHouse 22 20 1/1030 Custom_SBV_SunberryVillage 41 44 3/1230 Custom_SBV_SunberryVillage 15 76 2/1600 Custom_SBV_SunberryVillage 30 58 0/1710 Saloon 38 18 3 SterlingDrinking/2230 Custom_ARVHouse 29 8 3 Sterling_Sleep",
+              "Sun": "610 Custom_ARVHouse 25 5 0/830 Custom_ARVHouse 25 20 1/900 Custom_ARVHouse 22 20 1/1000 Custom_SBV_SunberryVillage 8 92 1/1100 Custom_SBV_SunberryVillage 7 90 2/1200 Custom_SBV_SunberryVillage 8 92 1/1230 Custom_SBV_SunberryVillage 19 91 0/1530 Custom_SBV_SunberryVillage 21 83 3/1600 Saloon 39 22 0/2330 Custom_ARVHouse 29 8 3 Sterling_Sleep",
+            },
+        "When": 
+          { "HasConversationTopic |contains=SterlingRelapse": "false",
+            "HasSeenEvent |contains= 40180010": true,}    
+      },
+      {
+        "LogName": "Sterling Schedule Sober",
+        "Action": "EditData",
+        "Target": "Characters/schedules/Sterling",
+        "Entries": 
+              {
+                "spring": "610 SeedShop 5 22 3 SterlingStocking/1710 Town 74 92 1/1900 Custom_ARVHouse 21 20 1/2310 Custom_ARVHouse 29 8 3 Sterling_Sleep",
+                "Fri": "610 SeedShop 5 22 3 SterlingStocking/1710 Saloon 26 21 2 SterlingDrinking/2300 Custom_ARVHouse 21 20 1/110 Custom_ARVHouse 29 8 3 Sterling_Sleep",
+                "Wed":  "610 Custom_ARVHouse 25 5 0/830 Custom_ARVHouse 25 20 1/900 Custom_ARVHouse 22 20 1/1030 Custom_SBV_SunberryVillage 41 44 3/1230 Custom_SBV_SunberryVillage 15 76 2/1600 Custom_SBV_SunberryVillage 30 58 0/1710 Saloon 38 18 3 SterlingDrinking/2230 Custom_ARVHouse 29 8 3 Sterling_Sleep",
+                "Sun": "610 Custom_ARVHouse 25 5 0/830 Custom_ARVHouse 25 20 1/900 Custom_ARVHouse 22 20 1/1000 Custom_SBV_SunberryVillage 8 92 1/1100 Custom_SBV_SunberryVillage 7 90 2/1200 Custom_SBV_SunberryVillage 8 92 1/1230 Custom_SBV_SunberryVillage 19 91 0/1530 Custom_SBV_SunberryVillage 21 83 3/1600 Saloon 39 22 0/2330 Custom_ARVHouse 29 8 3 Sterling_Sleep",
+                "winter_15":"610 Custom_ARVHouse 25 5 0/830 Custom_ARVHouse 25 20 1/900 Custom_ARVHouse 22 20 1/1030 Custom_SBV_SunberryVillage 8 48 3/1400 Beach 32 15 1/1800 Beach 32 14 0/2200 Custom_ARVHouse 21 20 1/2320 Custom_ARVHouse 26 8 3/2350 Custom_ARVHouse 29 8 3 Sterling_Sleep",
+                "winter_16": "GOTO winter_15",
+                "winter_17": "GOTO winter_15",
+                "summer_15":"610 SeedShop 5 22 3 SterlingStocking/1300 SeedShop 5 22 2/1710 Custom_ARVHouse 24 24 0",
+
+              },
+          "When": 
+            { "HasConversationTopic |contains=SterlingRelapse": "false",
+              "HasSeenEvent |contains= 40180019": true,}    
+        },
+
+    //MARRIAGE SCHEDULE
+
+      {
+        "LogName": "Sterling Married Schedule Spring ",
+        "Action": "EditData",
+        "Target": "Characters/schedules/Sterling",
+        "Entries": 
+              {
+             "marriage_Mon":"1000 SeedShop 5 22 3 \"Strings\\schedules\\Sterling:married.000\"/1130 SeedShop 6 19 0 \"Strings\\schedules\\Sterling:married.001\"/1500 Town 25 23 2 \"Strings\\schedules\\Sterling:married.002\"/1730 bed",
+              "marriage_Thu":"1000 SeedShop 5 22 3 \"Strings\\schedules\\Sterling:married.000\"/1200 SeedShop 13 28 1 \"Strings\\schedules\\Sterling:married.004\"/1230 SeedShop 13 25 1 \"Strings\\schedules\\Sterling:married.004\"/1300 SeedShop 13 28 1 \"Strings\\schedules\\Sterling:married.004\"/1430 SeedShop 6 19 0 \"Strings\\schedules\\Sterling:married.001\"/1730 bed"
+              },
+          "When": {"Season":"Spring"}
+        },
+        {
+          "LogName": "Sterling Married Schedule Summer",
+          "Action": "EditData",
+          "Target": "Characters/schedules/Sterling",
+          "Entries": 
+                {
+                "marriage_Tue":"1100 SeedShop 5 22 3 \"Strings\\schedules\\Sterling:married.004\"/1200 SeedShop 13 28 1 \"Strings\\schedules\\Sterling:married.004\"/1230 SeedShop 13 25 1 \"Strings\\schedules\\Sterling:married.004\"/1300 SeedShop 13 28 1 \"Strings\\schedules\\Sterling:married.004\"/1400 SeedShop 6 19 0 \"Strings\\schedules\\Sterling:married.001\"/1440 Beach 33 19 2 \"Strings\\schedules\\Sterling:married.005\"/1930 BusStop -1 23 3/2100 bed",
+                "marriage_Sat": "920 Beach 21 20 2 \"Strings\\schedules\\Sterling:married.005\"/1500 Custom_ARVHouse 21 20 1 \"Strings\\schedules\\Sterling:married.006\"/a1900 Custom_SBV_SunberryVillage 62 88 2/2400 bed" //ADD SUNBERRY HANGOUTS HERE
+                },
+            "When": {"Season":"Summer"}
+          },
+
+          {
+            "LogName": "Sterling Married Schedule GARAGE Post Event",
+            "Action": "EditData",
+            "Target": "Characters/schedules/Sterling",
+            "Entries": 
+                  {
+                 "marriage_Mon":"800 Custom_SBV_SunberryVillage 13 12 2 \"Strings\\schedules\\Sterling:sterling.garage.000\"/a1900 BusStop -1 23 3/1930 bed", //Garage instead of Seedshop
+                 "marriage_Wed": "800 Custom_SBV_SunberryVillage 13 12 2 \"Strings\\schedules\\Sterling:sterling.garage.000\"/a1900 BusStop -1 23 3/1930 bed", //Garage Hours
+                 "marriage_Fri": "800 Custom_SBV_SunberryVillage 13 12 2 \"Strings\\schedules\\Sterling:sterling.garage.000\"/a1900 BusStop -1 23 3/1930 bed", //Garage Hours
+                  },
+              "When": {"HasSeenEvent |contains= 40180022": true,}
+            },
+
+
+         /* {
+            "LogName": "Sterling Married Schedule Fall",
+            "Action": "EditData",
+            "Target": "Characters/schedules/Sterling",
+            "Entries": 
+                  {
+                  "marriage_Wed":"1030 Custom_SBV_SunberryWarpRoom 6 7 3 \"Strings\\schedules\\Sterling:married.007\"/1800 BusStop -1 23 3\"Strings\\schedules\\Sterling:married.008\"/2100 bed",
+                  },
+              "When": {"Season":"Fall"}
+            },*/
+
+      //COMPAT PATCHES
+
+      {
+        "LogName": "Sterling Schedule Ripley",
+        "Action": "EditData",
+        "Target": "Characters/schedules/Sterling",
+        "Entries": 
+              {
+                "Tue": "610 SeedShop 5 22 3 SterlingStocking/1000 SeedShop 9 26 0/1200 SeedShop 5 22 3 SterlingStocking/1710 Saloon 22 18 3 SterlingDrinking/2200 Custom_ARVHouse 21 20 1/2310 Custom_ARVHouse 29 8 3 Sterling_Sleep",
+              },
+              "When": {
+                "HasMod": "Clara.Ripley",
+                "HasConversationTopic |contains=SterlingRelapse": false
+              }
+        },
+      {
+        "LogName": "Sterling Schedule Denver",
+        "Action": "EditData",
+        "Target": "Characters/schedules/Sterling",
+        "Entries": 
+              {
+                "Mon":"610 SeedShop 5 22 3 SterlingStocking/1230 SeedShop 5 21 3 SterlingStocking/1710 Saloon 22 18 3 SterlingDrinking/2200 Custom_ARVHouse 21 20 1/2310 Custom_ARVHouse 29 8 3 Sterling_Sleep",
+                "Fri":"610 SeedShop 5 22 3 SterlingStocking/1330 SeedShop 5 21 3 SterlingStocking/1710 Saloon 26 21 3 SterlingDrinking/2300 Custom_ARVHouse 21 20 1/2500 Custom_ARVHouse 29 8 3 Sterling_Sleep",
+                "Sat":"610 SeedShop 5 21 3 SterlingStocking/1430 SeedShop 5 22 3 SterlingStocking/1710 Saloon 22 18 3 SterlingDrinking/2200 Custom_ARVHouse 21 20 1/2310 Custom_ARVHouse 29 8 3 Sterling_Sleep"
+              },
+              "When": {
+                "HasMod": "balverines.Denver",
+                "HasConversationTopic |contains=SterlingRelapse": false
+              }
+        },
+        {
+          "LogName": "Sterling Schedule Denver",
+          "Action": "EditData",
+          "Target": "Characters/schedules/Sterling",
+          "Entries": 
+                {
+                 "Tue":"610 SeedShop 5 21 3 SterlingStocking/1230 SeedShop 5 22 3 SterlingStocking/1710 Saloon 22 18 3 SterlingDrinking/2200 Custom_ARVHouse 21 20 1/2310 Custom_ARVHouse 29 8 3 Sterling_Sleep",
+                },
+                "When": {
+                  "HasMod": "Fernandtea.NewNPCWilford",
+                  "HasConversationTopic |contains=SterlingRelapse": false
+                }
+          }
+
+
+    ]
+}

@@ -1,0 +1,143 @@
+{
+    "Changes": 
+    [
+        {
+        
+            "LogName": "Normal Dialogue",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/MarriageDialogueSterling",
+            "Entries": 																																	
+            {
+                //SPECIAL DATES    
+                "patio_Sterling": "{{i18n:Sterling.Marriage.patio_Sterling.{{Random: 1,2,3,4}} }}",
+                "spouseRoom_Sterling": "{{i18n:Sterling.Marriage.spouseRoom_Sterling.{{Random: 1,2,3,4,5,6,7,8,9,10}} }}",
+
+
+               "SpouseStardrop": "{{i18n:Sterling.Marriage.SpouseStardrop}}",
+                "FlowerDance_Accept_Spouse": "{{i18n:Sterling.Marriage.FlowerDance_Accept_Spouse}}",
+                "funLeave_Sterling": "{{Random:{{i18n:Sterling.Marriage.Outdoor_{{Random:0,1,2,3,4,5,6}}}}++{{i18n:Sterling.Marriage.Good_{{Random:0,1,2,3,4,5,6,7,8,9,10,11,12,13}}}}|inputSeparator=++}}",
+                "funReturn_Sterling": "{{i18n:Sterling.Marriage.funReturn_Sterling}}",
+                "spring_Sterling": "{{i18n:Sterling.Marriage.spring_Sterling}}",
+                "spring_8": "{{i18n:Sterling.Marriage.spring_8}}",
+                "spring_13": "{{i18n:Sterling.Marriage.spring_13}}",
+                "spring_23": "{{i18n:Sterling.Marriage.spring_23}}",
+                "spring_24": "{{i18n:Sterling.Marriage.spring_24}}",
+                "spring_20": "{{i18n:Sterling.Marriage.spring_20}}",
+                "spring_28": "{{i18n:Sterling.Marriage.spring_28}}",
+                "summer_11": "{{i18n:Sterling.Marriage.summer_11}}",
+                "summer_Sterling": "{{i18n:Sterling.Marriage.summer_Sterling}}",
+                "summer_15": "{{i18n:Sterling.Marriage.summer_15}}",
+                "summer_28": "{{i18n:Sterling.Marriage.summer_28}}",
+                "fall_Sterling": "{{i18n:Sterling.Marriage.fall_Sterling}}",
+                "fall_15": "{{i18n:Sterling.Marriage.fall_15}}",
+                "fall_16": "{{i18n:Sterling.Marriage.fall_16}}",
+                "fall_23": "{{i18n:Sterling.Marriage.fall_23}}",
+                "fall_25": "{{i18n:Sterling.Marriage.fall_25}}",
+                "winter_Sterling": "{{i18n:Sterling.Marriage.winter_Sterling}}",
+                "winter_7": "{{i18n:Sterling.Marriage.winter_7}}",
+                "winter_24": "{{i18n:Sterling.Marriage.winter_24}}",
+                "winter_28": "{{i18n:Sterling.Marriage.winter_28}}",
+
+                
+                //GENERIC DIALOGUE
+                "Rainy_Day_0": "{{i18n:Sterling.Marriage.Rainy_Day_{{Random:0,1,2,3,4,5,6,7}}}}",
+                "Rainy_Day_1": "{{i18n:Sterling.Marriage.Rainy_Day_{{Random:0,1,2,3,4,5,6,7}}}}",
+                "Rainy_Day_2": "{{i18n:Sterling.Marriage.Rainy_Day_{{Random:0,1,2,3,4,5,6,7}}}}",
+                "Rainy_Day_3": "{{i18n:Sterling.Marriage.Rainy_Day_{{Random:0,1,2,3,4,5,6,7}}}}",
+                "Rainy_Day_4": "{{i18n:Sterling.Marriage.Rainy_Day_{{Random:0,1,2,3,4,5,6,7}}}}",
+                "Rainy_Day_5": "{{i18n:Sterling.Marriage.Rainy_Day_{{Random:0,1,2,3,4,5,6,7}}}}",
+                "Rainy_Day_6": "{{i18n:Sterling.Marriage.Rainy_Day_{{Random:0,1,2,3,4,5,6,7}}}}",
+                "Rainy_Night_0": "{{i18n:Sterling.Marriage.Rainy_Night_{{Random:0,1,2,3,4,5,6,7}} }}",
+                "Rainy_Night_1": "{{i18n:Sterling.Marriage.Rainy_Night_{{Random:0,1,2,3,4,5,6,7}} }}",
+                "Rainy_Night_2": "{{i18n:Sterling.Marriage.Rainy_Night_{{Random:0,1,2,3,4,5,6,7}} }}",
+                "Rainy_Night_3": "{{i18n:Sterling.Marriage.Rainy_Night_{{Random:0,1,2,3,4,5,6,7}} }}",
+                "Rainy_Night_4": "{{i18n:Sterling.Marriage.Rainy_Night_{{Random:0,1,2,3,4,5,6,7}} }}",
+                "Rainy_Night_Sterling": "{{i18n:Sterling.Marriage.Rainy_Night_Sterling}}",
+                "Indoor_Day_0": "{{i18n:Sterling.Marriage.Indoor_Day_{{Random:0,1,2,3,4,5,6,7}}}}",
+                "Indoor_Day_1": "{{i18n:Sterling.Marriage.Indoor_Day_{{Random:0,1,2,3,4,5,6,7}}}}",
+                "Indoor_Day_2": "{{i18n:Sterling.Marriage.Indoor_Day_{{Random:0,1,2,3,4,5,6,7}}}}",
+                "Indoor_Day_3": "{{i18n:Sterling.Marriage.Indoor_Day_{{Random:0,1,2,3,4,5,6,7}}}}",
+                "Indoor_Day_4": "{{i18n:Sterling.Marriage.Indoor_Day_{{Random:0,1,2,3,4,5,6,7}}}}",
+                "Indoor_Day_5": "{{i18n:Sterling.Marriage.Indoor_Day_{{Random:0,1,2,3,4,5,6,7}}}}",
+                "Indoor_Night_0": "{{i18n:Sterling.Marriage.Indoor_Night_{{Random:0,1,2,3,4,5,6,7,8,9}} }}",
+                "Indoor_Night_1": "{{i18n:Sterling.Marriage.Indoor_Night_{{Random:0,1,2,3,4,5,6,7,8,9}} }}",
+                "Indoor_Night_2": "{{i18n:Sterling.Marriage.Indoor_Night_{{Random:0,1,2,3,4,5,6,7,8,9}} }}",
+                "Indoor_Night_3": "{{i18n:Sterling.Marriage.Indoor_Night_{{Random:0,1,2,3,4,5,6,7,8,9}} }}",
+                "Indoor_Night_4": "{{i18n:Sterling.Marriage.Indoor_Night_{{Random:0,1,2,3,4,5,6,7,8,9}} }}",
+                "Indoor_Night_Sterling": "{{i18n:Sterling.Marriage.Indoor_Night_Sterling}}",
+                "Outdoor_0": "{{i18n:Sterling.Marriage.Outdoor_{{Random:0,1,2,3,4,5,6,7,8,9,10}}}}",
+                "Outdoor_1": "{{i18n:Sterling.Marriage.Outdoor_{{Random:0,1,2,3,4,5,6,7,8,9,10}}}}",
+                "Outdoor_2": "{{i18n:Sterling.Marriage.Outdoor_{{Random:0,1,2,3,4,5,6,7,8,9,10}}}}",
+                "Outdoor_3": "{{i18n:Sterling.Marriage.Outdoor_{{Random:0,1,2,3,4,5,6,7,8,9,10}}}}",
+                "Outdoor_4": "{{i18n:Sterling.Marriage.Outdoor_{{Random:0,1,2,3,4,5,6,7,8,9,10}}}}",
+                "Outdoor_Sterling": "{{i18n:Sterling.Marriage.Outdoor_Sterling}}",
+                "OneKid_0": "{{i18n:Sterling.Marriage.OneKid_{{Random:0,1,2,3,4}} }}",
+                "OneKid_1": "{{i18n:Sterling.Marriage.OneKid_{{Random:0,1,2,3,4}} }}",
+                "OneKid_2": "{{i18n:Sterling.Marriage.OneKid_{{Random:0,1,2,3,4}} }}",
+                "OneKid_3": "{{i18n:Sterling.Marriage.OneKid_{{Random:0,1,2,3,4}} }}",
+                "OneKid_4": "{{i18n:Sterling.Marriage.OneKid_{{Random:0,1,2,3,4}} }}",
+                "TwoKids_1": "{{i18n:Sterling.Marriage.TwoKids_{{Random:0,1,2,3,4}} }}",
+                "TwoKids_2": "{{i18n:Sterling.Marriage.TwoKids_{{Random:0,1,2,3,4}} }}",
+                "TwoKids_3": "{{i18n:Sterling.Marriage.TwoKids_{{Random:0,1,2,3,4}} }}",
+                "TwoKids_4": "{{i18n:Sterling.Marriage.TwoKids_{{Random:0,1,2,3,4}} }}",
+
+        
+                //AFFECTION DIALOGUE
+            
+                "Good_0": "{{i18n:Sterling.Marriage.Good_{{Random:0,1,2,3,4,5,6,7,8,9,10,11,12,13}}}}",
+                "Good_1": "{{i18n:Sterling.Marriage.Good_{{Random:0,1,2,3,4,5,6,7,8,9,10,11,12,13}}}}",
+                "Good_2": "{{i18n:Sterling.Marriage.Good_{{Random:0,1,2,3,4,5,6,7,8,9,10,11,12,13}}}}",
+                "Good_3": "{{i18n:Sterling.Marriage.Good_{{Random:0,1,2,3,4,5,6,7,8,9,10,11,12,13}}}}",
+                "Good_4": "{{i18n:Sterling.Marriage.Good_{{Random:0,1,2,3,4,5,6,7,8,9,10,11,12,13}}}}",
+                "Neutral_0": "{{i18n:Sterling.Marriage.Neutral_0}}",
+                "Neutral_1": "{{i18n:Sterling.Marriage.Neutral_1}}",
+                "Neutral_2": "{{i18n:Sterling.Marriage.Neutral_2}}",
+                "Neutral_3": "{{i18n:Sterling.Marriage.Neutral_3}}",
+                "Neutral_4": "{{i18n:Sterling.Marriage.Neutral_4}}",
+                "Neutral_5": "{{i18n:Sterling.Marriage.Neutral_5}}",
+                "Neutral_6": "{{i18n:Sterling.Marriage.Neutral_6}}",
+                "Neutral_8": "{{i18n:Sterling.Marriage.Neutral_8}}",
+                "Bad_0": "{{i18n:Sterling.Marriage.Bad_0}}",
+                "Bad_1": "{{i18n:Sterling.Marriage.Bad_1}}",
+                "Bad_2": "{{i18n:Sterling.Marriage.Bad_2}}",
+                "Bad_3": "{{i18n:Sterling.Marriage.Bad_3}}",
+                "Bad_4": "{{i18n:Sterling.Marriage.Bad_4}}",
+                "Bad_5": "{{i18n:Sterling.Marriage.Bad_5}}",
+                "Bad_6": "{{i18n:Sterling.Marriage.Bad_6}}",
+                "Bad_7": "{{i18n:Sterling.Marriage.Bad_7}}",
+                "Bad_8": "{{i18n:Sterling.Marriage.Bad_8}}",
+
+            
+            
+            }
+            
+            //(0 = up, 1 = right, 2 = down, 3 = left)
+            
+        },
+        {
+            "LogName": "Dirty Dialogue",
+            "Action": "editData",
+            "Target": "Characters/Dialogue/MarriageDialogueSterling",
+            "When": {
+            "SpicyDialogue": "true"
+            },
+            "Entries": 																																	
+            
+            {
+            
+                "Rainy_Day_0": "{{i18n:Sterling.Marriage.Spicy.Rainy_Day_0}}",
+                "Rainy_Night_2": "{{i18n:Sterling.Marriage.Spicy.Rainy_Night_2.{{Random:1,2}}}}",
+                "Rainy_Night_4": "{{i18n:Sterling.Marriage.Spicy.Rainy_Night_4}}",
+                "Rainy_Night_5": "{{i18n:Sterling.Marriage.Spicy.Rainy_Night_5}}",
+                "Good_8": "{{i18n:Sterling.Marriage.Spicy.Good_8.{{Random:1,2}}}}",
+                "Indoor_Night_2": "{{i18n:Sterling.Marriage.Spicy.Indoor_Night_2.{{Random:1,2}}}}",
+                "Good_9": "{{i18n:Sterling.Marriage.Spicy.Good_9}}",
+
+               
+            }
+            
+            //(0 = up, 1 = right, 2 = down, 3 = left)
+            
+        }
+    ]
+}

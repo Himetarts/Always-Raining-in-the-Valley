@@ -1,0 +1,39 @@
+{
+  "Changes": [
+    {
+            "Action": "EditData",
+            "Target": "UnlockableBundles/Bundles",
+            "Entries":  {
+            "ARV.GarageBuild": { //The bundle key has to be unique!
+                "Location": "Custom_SBV_SunberryVillage", //You can use the ub location command in the smapi console to get the current location name
+                "BundleDescription": "{{i18n:GarageBundle.BundleDescription}}",
+                "ShopPosition": "11, 11", //The coordinates of the bundle shop the player interacts with
+                "ShopTexture":"ARV/GarageDebris", //A game asset containing the bundles shop texture
+                "DrawQuestionMark": true, //Draws a yellow question mark above the shop texture
+                "QuestionMarkOffset": "32, 32",
+                "Price": 
+                    {
+                        "Money": 70000,
+                        "388": 400, //388 is the ItemID for Wood
+                        "390": 150, //390 is the ItemID for Stone
+                        
+                    },
+
+                "EditMap": "Maps/ARVGarage", //A map patch that will be applied after purchase
+                "EditMapPosition": "5, 1" //The top left coordinates of where the EditMap patch will be applied
+                    }
+                        }
+    },
+
+    { //Loading the map file into a map asset
+        "Action": "Load",
+        "Target": "Maps/ARVGarage", //This and "EditMap" need to be the same!
+        "FromFile": "Assets/Maps/ARVGarage.tmx"
+    },
+    { // Loading a 32x64 px texture of a broken off bridge that will replace the sign
+        "Action": "Load",
+        "Target": "ARV/GarageDebris", //This and "ShopTexture" need to be the same!
+        "FromFile": "Assets/Maps/ARVDebris.png",
+    },
+]
+}

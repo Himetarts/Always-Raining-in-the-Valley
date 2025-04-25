@@ -1,0 +1,316 @@
+{
+"Changes": [
+	
+//------------------------
+// FESTIVAL DIALOGUE   
+//------------------------
+
+	//Egg Festival----------------------
+	
+		{
+			"LogName": "EggFestival",
+			"Action": "EditData",
+			"Target": "Data/Festivals/spring13",
+			"Entries": {
+			
+				"Sterling": "{{i18n:EggFestival.Sterling}}",
+				"Sterling_y2": "{{i18n:EggFestival.Sterling_y2}}",
+				"Mia": "{{i18n:EggFestival.Mia}}",
+				"Henry": "{{i18n:EggFestival.Henry}}",
+				"Henry_y2": "{{i18n:EggFestival.Henry_y2}}",
+
+			}
+		},
+				//Sterling Married 
+					{
+						"LogName": "EggFestival",
+						"Action": "EditData",
+						"Target": "Data/Festivals/spring13",
+						"Entries": {
+						
+							"Sterling_y2": "{{i18n:MarriedSterling.EggFestival.Sterling_y2.{{Random:1,2,3,4}} }}",
+							"Mia_y2": "{{i18n:MarriedSterling.EggFestival.Mia_y2.{{Random:1,2,3}} }}",
+							"Henry_y2": "{{i18n:MarriedSterling.Henry_y2}}",
+
+						},
+						"When":
+							{ "Relationship:Sterling": "Married"}
+					},
+		
+	//Flowerdance----------------------
+	
+		//Flower Dance Accept
+		
+		{
+			"LogName": "Marriage Flower Dance Accept Sterling",
+			"Action": "EditData",
+			"Target": "Strings/Events",
+			"Entries": {
+			"SpouseFlowerDanceAccept_Sterling": "{{i18n:SpouseFlowerDanceAccept_Sterling}}",
+
+			}
+		},
+
+		//Dialogue 
+		{
+			"LogName": "FlowerDance",
+			"Action": "EditData",
+			"Target": "Data/Festivals/spring24",
+			"Entries": {
+			
+        		"Sterling": "{{i18n:FlowerDance.Sterling}}",
+				"Sterling_y2": "{{i18n:FlowerDance.Sterling_y2}}",
+				"Mia": "{{i18n:FlowerDance.Mia}}",
+				"Mia_y2": "{{i18n:FlowerDance.Mia_y2}}",
+				"Henry": "{{i18n:FlowerDance.Henry}}",
+				"Henry_y2": "{{i18n:FlowerDance.Henry_y2}}",
+
+			},
+		},
+				//Sterling Married
+				{
+					"LogName": "FlowerDance",
+					"Action": "EditData",
+					"Target": "Data/Festivals/spring24",
+					"Entries": {
+					
+						"Sterling_y2": "{{i18n:FlowerDance.SterlingMarried.Sterling_y2.{{Random:1,2,3}} }}",
+ 						"Henry_y2": "{{i18n:FlowerDance.SterlingMarried.Henry_y2.{{Random:1,2}} }}",
+
+					},
+					"When":
+							{ "Relationship:Sterling": "Married"}
+					
+				},
+		
+	//Luau----------------------
+	
+		{
+			"LogName": "Luau",
+			"Action": "EditData",
+			"Target": "Data/Festivals/summer11",
+			"Entries": {
+			
+        		"Sterling": "{{i18n:Luau.Sterling}}",
+				"Sterling_y2": "{{i18n:Luau.Sterling_y2}}",
+				"Mia": "{{i18n:Luau.Mia}}",
+				"Mia_y2": "{{i18n:Luau.Mia_y2}}",
+				"Henry": "{{i18n:Luau.Henry}}",
+				"Henry_y2": "{{i18n:Luau.Henry_y2.{{Random:1,2}} }}",
+
+			},
+		},
+				{
+				"LogName": "Luau",
+					"Action": "EditData",
+					"Target": "Data/Festivals/summer11",
+					"Entries": {
+						
+							"Sterling_y2": "{{i18n:Luau.SterlingMarried.Sterling_y2.{{Random:1,2,3}} }}",
+							"Henry_y2": "{{i18n:Luau.SterlingMarried.Henry_y2}}",
+
+				},
+					"When":
+					{ "Relationship:Sterling": "Married"}
+
+			},
+	//Jellies----------------------
+	
+		{
+			"LogName": "Jellies",
+			"Action": "EditData",
+			"Target": "Data/Festivals/summer28",
+			"Entries": {
+
+				"Sterling": "{{i18n:MoonlightJellies.Sterling}}",
+				"Mia": "{{i18n:MoonlightJellies.Mia}}",
+				"Mia_y2": "{{i18n:MoonlightJellies.Mia_y2.{{Random:1,2}} }}",
+				"Henry": "{{i18n:MoonlightJellies.Henry}}",
+				"Henry_y2": "{{i18n:MoonlightJellies.Henry_y2}}",
+
+			}
+		},
+				{
+					"LogName": "Jellies",
+					"Action": "EditData",
+					"Target": "Data/Festivals/summer28",
+					"Entries": {
+						"Sterling_y2": "{{i18n:MoonlightJellies.SterlingMarried.Sterling_y2.{{Random:1,2,3}}}}",
+						"Henry_y2": "{{i18n:MoonlightJellies.SterlingMarried.Henry_y2.{{Random:1,2,3}}}}",
+						"Mia_y2": "{{i18n:MoonlightJellies.SterlingMarried.Mia_y2.{{Random:1,2,3}}}}",
+
+				},
+					"When":
+					{ "Relationship:Sterling": "Married"}
+				},
+
+
+	//SVFair----------------------
+	
+		{
+			"LogName": "SVFair",
+			"Action": "EditData",
+			"Target": "Data/Festivals/fall16",
+			"Entries": {
+				
+			"Sterling": "{{i18n:SVFair.Sterling}}",
+			"Sterling_y2": "{{i18n:SVFair.Sterling_y2.{{Random:1,2}} }}",
+			"Mia": "{{i18n:SVFair.Mia.{{Random:1,2}} }}",
+			"Henry": "{{i18n:SVFair.Henry}}",
+			"Henry_y2": "{{i18n:SVFair.Henry_y2}}",
+
+			}
+		},
+				{
+					"LogName": "SVFair",
+					"Action": "EditData",
+					"Target": "Data/Festivals/fall16",
+					"Entries": {
+					
+						"Sterling_y2": "{{i18n:SVFair.SterlingMarried.Sterling_y2.{{Random:1,2,3,4}} }}",
+						"Henry_y2": "{{i18n:SVFair.SterlingMarried.Henry_y2.{{Random:1,2}} }}",
+						"Mia_y2": "{{i18n:SVFair.SterlingMarried.Mia_y2.{{Random:1,2,3}} }}",
+
+					},
+					"When":
+					{ "Relationship:Sterling": "Married"}
+				},
+		
+	//IceFest----------------------
+	
+		{
+			"LogName": "IceFest",
+			"Action": "EditData",
+			"Target": "Data/Festivals/winter8",
+			"Entries": {
+			
+      			"Sterling": "{{i18n:IceFestival.Sterling}}",
+				"Henry": "{{i18n:IceFestival.Henry}}",
+				"Henry_y2": "{{i18n:IceFestival.Henry_y2}}",
+				"Mia": "{{i18n:IceFestival.Mia}}",
+				"Mia_y2": "{{i18n:IceFestival.Mia_y2}}",
+
+
+			}
+		},
+				{
+					"LogName": "IceFest",
+					"Action": "EditData",
+					"Target": "Data/Festivals/winter8",
+					"Entries": {
+					
+						"Sterling_y2": "{{i18n:IceFestival.SterlingMarried.Sterling_y2.{{Random:1,2,3}} }}",
+						"Mia_y2": "{{i18n:IceFestival.SterlingMarried.Mia_y2.{{Random:1,2,3}}}}",
+						"Henry_y2": "{{i18n:IceFestival.SterlingMarried.Henry_y2}}",
+
+
+					},
+						"When":
+						{ "Relationship:Sterling": "Married"}
+				},
+		
+	//WinterStar----------------------
+	
+		{
+			"LogName": "WinterStar",
+			"Action": "EditData",
+			"Target": "Data/Festivals/winter25",
+			"Entries": {
+			
+      			"Sterling": "{{i18n:WinterStar.Sterling}}",
+				"Sterling_y2": "{{i18n:WinterStar.Sterling_y2}}",
+				"Mia": "{{i18n:WinterStar.Mia}}",
+				"Henry": "{{i18n:WinterStar.Henry}}",
+				"Henry_y2": "{{i18n:WinterStar.Henry_y2}}",
+
+			
+			},
+		},
+				{
+					"LogName": "WinterStar",
+					"Action": "EditData",
+					"Target": "Data/Festivals/winter25",
+					"Entries": {
+					
+						"Sterling_y2": "{{i18n:WinterStar.SterlingMarried.Sterling_y2.{{Random:1,2,3}} }}",
+						"Henry_y2": "{{i18n:WinterStar.SterlingMarried.Henry_y2.{{Random:1,2,3}} }}",
+						"Mia_y2": "{{i18n:WinterStar.SterlingMarried.Mia_y2.{{Random:1,2,3}} }}",
+					
+					},
+						"When":
+							{ "Relationship:Sterling": "Married"}
+				},
+
+	//RSV Ember of Resolutions----------------------
+	
+	{
+		"LogName": "RSV Ember of Resolutions Dialogue",
+		"Action": "EditData",
+		"Target": "Data/Festivals/winter28",
+		"Entries": {
+		
+				"Sterling": "{{i18n:EmberofResolutions.Sterling}}",
+				"Sterling_y2": "{{i18n:EmberofResolutions.Sterling_y2}}",
+				"Mia": "{{i18n:EmberofResolutions.Mia}}",
+				"Mia_y2": "{{i18n:EmberofResolutions.Mia_y2.{{Random:1,2}} }}",
+				"Henry": "{{i18n:EmberofResolutions.Henry}}",
+				"Henry_y2": "{{i18n:EmberofResolutions.Henry_y2}}",
+
+		},
+		"When":
+		{ "HasMod":"Rafseazz.RSVCP"}
+	},
+			//Sterling Married 
+				{
+					"LogName": "RSV Ember of Resolutions Dialogue Married Sterling",
+					"Action": "EditData",
+					"Target": "Data/Festivals/winter28",
+					"Entries": {
+					
+					"Sterling_y2": "{{i18n:EmberofResolutions.MarriedSterling.Sterling_y2.{{Random:1,2}} }}",
+					"Mia_y2": "{{i18n:EmberofResolutions.MarriedSterling.Mia_y2.{{Random:1,2}} }}",
+					"Henry_y2": "{{i18n:EmberofResolutions.MarriedSterling.Henry_y2.{{Random:1,2}} }}",
+
+					},
+					"When":
+						{ "Relationship:Sterling": "Married",
+						  "HasMod":"Rafseazz.RSVCP"}
+				},
+
+	//RSV Gathering Festival----------------------
+	
+	{
+		"LogName": "RSV Gathering Festival Dialogue",
+		"Action": "EditData",
+		"Target": "Data/Festivals/fall20",
+		"Entries": {
+		
+			"Sterling": "{{i18n:GatheringFestival.Sterling}}",
+			"Sterling_y2": "{{i18n:GatheringFestival.Sterling_y2.{{Random: 1,2,3}} }}",
+			"Mia": "{{i18n:GatheringFestival.Mia}}",
+			"Mia_y2": "{{i18n:GatheringFestival.Mia_y2}}",
+			"Henry": "{{i18n:GatheringFestival.Henry}}",
+			"Henry_y2": "{{i18n:GatheringFestival.Henry_y2}}",
+
+		},
+		"When":
+		{ "HasMod":"Rafseazz.RSVCP"}
+	},
+			//Sterling Married 
+				{
+					"LogName": "RSV Gathering Festival Dialogue Sterling Married",
+					"Action": "EditData",
+					"Target": "Data/Festivals/fall20",
+					"Entries": {
+					
+						"Sterling_y2": "{{i18n:GatheringFestival.MarriedSterling.Sterling_y2.{{Random: 1,2,3}} }}",
+						"Mia_y2": "{{i18n:GatheringFestival.MarriedSterling.Mia_y2.{{Random: 1,2}} }}",
+						"Henry_y2": "{{i18n:GatheringFestival.MarriedSterling.Henry_y2.{{Random: 1,2}} }}",
+
+					},
+					"When":
+						{ "Relationship:Sterling": "Married",
+						  "HasMod":"Rafseazz.RSVCP"}
+				},
+]
+}

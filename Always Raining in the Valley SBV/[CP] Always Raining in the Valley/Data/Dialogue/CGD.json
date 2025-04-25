@@ -1,0 +1,223 @@
+{
+    "Changes": [
+        {
+            "LogName": "Sterling custom gift reactions - not dating, engaged, or married",
+            "When": { "Relationship:Sterling |contains=Dating, Engaged, Married": false },
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Sterling",
+            "Entries": {
+                // Stardrop Tea
+                "AcceptGift_(O)StardropTea": "{{i18n:Sterling.Gift.AcceptGift_(O)StardropTea}}",
+
+                // Sunflower
+                "AcceptBirthdayGift_(O)421": "{{i18n:Sterling.Gift.AcceptBirthdayGift_(O)421}}",
+                "AcceptGift_(O)421": "{{i18n:Sterling.Gift.AcceptGift_(O)421}}",
+                
+                //Flowers category
+                "AcceptGift_category_flowers": "{{i18n:Sterling.Gift.AcceptGift_category_flowers}}",
+
+                // Beer
+                "AcceptBirthdayGift_(O)346": "{{i18n:Sterling.Gift.AcceptBirthdayGift_(O)346}}",
+				"AcceptGift_(O)346": "{{i18n:Sterling.Gift.AcceptGift_(O)346.{{Random:0,1,2,3}} }}",
+
+                // Pale Ale
+                "AcceptGift_(O)303": "{{i18n:Sterling.Gift.AcceptGift_(O)303.{{Random:0,1,2}} }}",
+                
+                // Mead
+                "AcceptGift_(O)459": "{{i18n:Sterling.Gift.AcceptGift_(O)459.{{Random:0,1,2}} }}",
+                
+                // Wine
+                "AcceptGift_(O)348": "{{i18n:Sterling.Gift.AcceptGift_(O)348.{{Random:0,1,2}} }}",
+                
+                // Piña Colada
+                "AcceptGift_(O)873": "{{i18n:Sterling.Gift.AcceptGift_(O)873.{{Random:0,1,2}} }}",
+
+                // Strange Bun
+                "AcceptBirthdayGift_(O)203": "{{i18n:Sterling.Gift.AcceptBirthdayGift_(O)203}}",
+				"AcceptGift_(O)203": "{{i18n:Sterling.Gift.AcceptGift_(O)203}}",
+                
+                // Field Snack
+                "AcceptBirthdayGift_(O)403": "{{i18n:Sterling.Gift.AcceptBirthdayGift_(O)403}}",
+				"AcceptGift_(O)403": "{{i18n:Sterling.Gift.AcceptGift_(O)403.{{Random:0,1,2}} }}",
+                
+                // Bear Pancakes
+                "AcceptBirthdayGift_(O)HimeTarts.ARV_Bear_Pancakes": "{{i18n:Sterling.Gift.AcceptBirthdayGift_(O)HimeTarts.ARV_Bear_Pancakes}}",
+				"AcceptGift_(O)HimeTarts.ARV_Bear_Pancakes": "{{i18n:Sterling.Gift.AcceptGift_(O)HimeTarts.ARV_Bear_Pancakes}}",
+                
+                // Scalloped Potatoes
+                "AcceptBirthdayGift_(O)HimeTarts.ARV_Scalloped_Potatoes": "{{i18n:Sterling.Gift.AcceptBirthdayGift_(O)HimeTarts.ARV_Scalloped_Potatoes}}",
+				"AcceptGift_(O)HimeTarts.ARV_Scalloped_Potatoes": "{{i18n:Sterling.Gift.AcceptGift_(O)HimeTarts.ARV_Scalloped_Potatoes}}",
+                
+                // Kitty Muffin
+				"AcceptBirthdayGift_(O)HimeTarts.ARV_Kitty_Muffin": "{{i18n:Sterling.Gift.AcceptBirthdayGift_(O)HimeTarts.ARV_Kitty_Muffin}}",
+				"AcceptGift_(O)HimeTarts.ARV_Kitty_Muffin": "{{i18n:Sterling.Gift.AcceptGift_(O)HimeTarts.ARV_Kitty_Muffin}}",
+                
+                // Morning Cat Toast
+				"AcceptBirthdayGift_(O)HimeTarts.ARV_Cat_Toast": "{{i18n:Sterling.Gift.AcceptBirthdayGift_(O)HimeTarts.ARV_Cat_Toast}}",
+				"AcceptGift_(O)HimeTarts.ARV_Cat_Toast": "{{i18n:Sterling.Gift.AcceptGift_(O)HimeTarts.ARV_Cat_Toast}}",
+                
+                // Bear Muffin
+				"AcceptBirthdayGift_(O)HimeTarts.ARV_Bear_Muffin": "{{i18n:Sterling.Gift.AcceptBirthdayGift_(O)HimeTarts.ARV_Bear_Muffin}}",
+				"AcceptGift_(O)HimeTarts.ARV_Bear_Muffin": "{{i18n:Sterling.Gift.AcceptGift_(O)HimeTarts.ARV_Bear_Muffin}}",
+                
+                // Summer Pink Lemonade
+				"AcceptGift_(O)HimeTarts.ARV_Summer_Pink_Lemonade": "{{i18n:Sterling.Gift.AcceptGift_(O)HimeTarts.ARV_Summer_Pink_Lemonade}}",
+
+                // Crab Croissant
+                "AcceptGift_(O)HimeTarts.ARV_Crab_Croissant": "{{i18n:Sterling.Gift.AcceptGift_(O)HimeTarts.ARV_Crab_Croissant}}",
+    
+                // Cranberries - reject
+                "RejectItem_(O)282": "{{i18n:Sterling.Gift.RejectItem_(O)282}}",
+            }
+        },
+        {
+            "LogName": "Sterling custom gift reactions - dating or engaged",
+            "When": { "Relationship:Sterling |contains=Dating, Engaged": true },
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Sterling",
+            "Entries": {
+                /* Vanilla Items */
+
+                //Stardrop Tea
+                "AcceptGift_(O)StardropTea": "{{i18n:Sterling.Gift.AcceptGift_(O)StardropTea.Dating}}",
+                
+                // Sunflower
+				"AcceptBirthdayGift_(O)421": "{{i18n:Sterling.Gift.AcceptBirthdayGift_(O)421.Dating}}",
+				"AcceptGift_(O)421": "{{i18n:Sterling.Gift.AcceptGift_(O)421.Dating}}",
+                
+                // Flowers category
+                "AcceptGift_category_flowers": "{{i18n:Sterling.Gift.AcceptGift_category_flowers.Dating}}",
+                
+                // Strange Bun
+                "AcceptBirthdayGift_(O)203": "{{i18n:Sterling.Gift.AcceptBirthdayGift_(O)203.Dating}}",
+				"AcceptGift_(O)203": "{{i18n:Sterling.Gift.AcceptGift_(O)203.Dating}}",
+                
+                // Beer
+                "AcceptBirthdayGift_(O)346": "{{i18n:Sterling.Gift.AcceptBirthdayGift_(O)346.Dating}}",
+				"AcceptGift_(O)346": "{{i18n:Sterling.Gift.AcceptGift_(O)346.Dating.{{Random:0,1,2,3}} }}",
+                
+                // Pale Ale
+                "AcceptGift_(O)303": "{{i18n:Sterling.Gift.AcceptGift_(O)303.Dating.{{Random:0,1,2}} }}",
+                
+                // Alcoholic Drinks - generic
+                "AcceptGift_(O)459": "{{i18n:Sterling.Gift.AcceptGift_Alcohol.Dating.{{Random:0,1,2}} }}",
+				"AcceptGift_(O)348": "{{i18n:Sterling.Gift.AcceptGift_Alcohol.Dating.{{Random:0,1,2}} }}",
+				"AcceptGift_(O)873": "{{i18n:Sterling.Gift.AcceptGift_Alcohol.Dating.{{Random:0,1,2}} }}",  
+                
+                // Field Snack
+                "AcceptBirthdayGift_(O)403": "{{i18n:Sterling.Gift.AcceptBirthdayGift_(O)403}}",
+				"AcceptGift_(O)403": "{{i18n:Sterling.Gift.AcceptGift_(O)403.{{Random:0,1,2}} }}",
+                
+                /* ARV Modded Items */
+                
+                // Bear Pancakes
+                "AcceptBirthdayGift_(O)HimeTarts.ARV_Bear_Pancakes": "{{i18n:Sterling.Gift.AcceptBirthdayGift_(O)HimeTarts.ARV_Bear_Pancakes.Dating}}",
+				"AcceptGift_(O)HimeTarts.ARV_Bear_Pancakes": "{{i18n:Sterling.Gift.AcceptGift_(O)HimeTarts.ARV_Bear_Pancakes.Dating}}",
+                
+                // Scalloped Potatoes
+                "AcceptBirthdayGift_(O)HimeTarts.ARV_Scalloped_Potatoes": "{{i18n:Sterling.Gift.AcceptBirthdayGift_(O)HimeTarts.ARV_Scalloped_Potatoes.Dating}}",
+				"AcceptGift_(O)HimeTarts.ARV_Scalloped_Potatoes": "{{i18n:Sterling.Gift.AcceptGift_(O)HimeTarts.ARV_Scalloped_Potatoes.Dating}}",
+                
+                // Kitty Muffin
+                "AcceptBirthdayGift_(O)HimeTarts.ARV_Kitty_Muffin": "{{i18n:Sterling.Gift.AcceptBirthdayGift_(O)HimeTarts.ARV_Kitty_Muffin.Dating}}",
+                
+                // Morning Cat Toast
+                "AcceptBirthdayGift_(O)HimeTarts.ARV_Cat_Toast": "{{i18n:Sterling.Gift.AcceptBirthdayGift_(O)HimeTarts.ARV_Cat_Toast.Dating}}",
+				"AcceptGift_(O)HimeTarts.ARV_Cat_Toast": "{{i18n:Sterling.Gift.AcceptGift_(O)HimeTarts.ARV_Cat_Toast.Dating}}",
+                
+                // Bear Muffin
+                "AcceptBirthdayGift_(O)HimeTarts.ARV_Bear_Muffin": "{{i18n:Sterling.Gift.AcceptBirthdayGift_(O)HimeTarts.ARV_Bear_Muffin.Dating}}",    
+                
+                // Summer Pink Lemonade
+                "AcceptGift_(O)HimeTarts.ARV_Summer_Pink_Lemonade": "{{i18n:Sterling.Gift.AcceptGift_(O)HimeTarts.ARV_Summer_Pink_Lemonade.Dating}}",
+                
+                // Crab Croissant
+                "AcceptGift_(O)HimeTarts.ARV_Crab_Croissant": "{{i18n:Sterling.Gift.AcceptGift_(O)HimeTarts.ARV_Crab_Croissant.Dating}}",          
+                
+                /* Rejections */
+                
+                //Cranberries - reject
+                "RejectItem_(O)282": "{{i18n:Sterling.Gift.RejectItem_(O)282.Dating}}", 
+            }
+        },
+        {
+            "LogName": "Sterling custom gift reactions - marriage",
+            "When": { "Relationship:Sterling |contains=Married": true },
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Sterling",
+            "Entries": 
+            {
+                
+                /* Vanilla */
+                
+                //Stardrop Tea
+                "AcceptGift_(O)StardropTea": "{{i18n:Sterling.Dialogue.AcceptGift_(O)StardropTea.Marriage}}",
+
+                // Sunflower
+				"AcceptBirthdayGift_(O)421": "{{i18n:Sterling.Gift.AcceptBirthdayGift_(O)421.Marriage}}",
+                "AcceptGift_(O)421":"{{i18n:Sterling.Gift.AcceptGift_(O)421.Marriage}}",
+                
+                // Flowers
+                "AcceptGift_category_flowers": "{{i18n:Sterling.Gift.AcceptGift_category_flowers.Marriage.{{Random:0,1,2}} }}",
+				
+				// Strange Bun
+				"AcceptBirthdayGift_(O)203": "{{i18n:Sterling.Gift.AcceptBirthdayGift_(O)203.Marriage}}",
+				"AcceptGift_(O)203": "{{i18n:Sterling.Gift.AcceptGift_(O)203.Marriage}}",
+                
+                // Blueberry Tart
+                "AcceptGift_(O)234": "{{i18n:Sterling.Gift.AcceptGift_(O)234.Marriage}}",
+				
+				// Field Snack - the regular acceptgift is the same from dating to marriage
+				"AcceptBirthdayGift_(O)403": "{{i18n:Sterling.Gift.AcceptBirthdayGift_(O)403.Marriage}}",
+				"AcceptGift_(O)403": "{{i18n:Sterling.Gift.AcceptGift_(O)403.Dating.{{Random:0,1,2}} }}",
+                
+                /* ARV Modded Items */
+                
+                // Scalloped Potatoes
+                "AcceptBirthdayGift_(O)HimeTarts.ARV_Scalloped_Potatoes": "{{i18n:Sterling.Gift.AcceptBirthdayGift_(O)HimeTarts.ARV_Scalloped_Potatoes.Marriage}}",
+				"AcceptGift_(O)HimeTarts.ARV_Scalloped_Potatoes": "{{i18n:Sterling.Gift.AcceptGift_(O)HimeTarts.ARV_Scalloped_Potatoes.Marriage}}",
+				
+				// Bear Pancakes
+                "AcceptBirthdayGift_(O)HimeTarts.ARV_Bear_Pancakes": "{{i18n:Sterling.Gift.AcceptBirthdayGift_(O)HimeTarts.ARV_Bear_Pancakes.Marriage}}",
+                "AcceptGift_(O)HimeTarts.ARV_Bear_Pancakes": "{{i18n:Sterling.Gift.AcceptGift_(O)HimeTarts.ARV_Bear_Pancakes.Marriage}}",
+
+                // Kitty Muffin
+                "AcceptBirthdayGift_(O)HimeTarts.ARV_Kitty_Muffin": "{{i18n:Sterling.Gift.AcceptBirthdayGift_(O)HimeTarts.ARV_Kitty_Muffin.Marriage}}",
+                "AcceptGift_(O)HimeTarts.ARV_Kitty_Muffin": "{{i18n:Sterling.Gift.AcceptGift_(O)HimeTarts.ARV_Kitty_Muffin.Marriage}}",
+
+                // Bear Muffin
+                "AcceptGift_(O)HimeTarts.ARV_Bear_Muffin": "{{i18n:Sterling.Gift.AcceptGift_(O)HimeTarts.ARV_Bear_Muffin.Marriage}}",
+                
+                // Summer Pink Lemonade
+                "AcceptGift_(O)HimeTarts.ARV_Summer_Pink_Lemonade": "{{i18n:Sterling.Gift.AcceptGift_(O)HimeTarts.ARV_Summer_Pink_Lemonade.Marriage.{{Random:0,1}} }}",
+
+                /* Rejections */
+                
+                // Wine - reject
+                "RejectItem_(O)348": "{{i18n:Sterling.Gift.RejectItem_(O)348.Marriage.{{Random:0,1,2}} }}",
+                
+                // Generic alcohol - reject
+                "RejectItem_alcohol_item": "{{i18n:Sterling.Gift.RejectItem_alcohol_item.Marriage.{{Random:0,1,2,3}} }}",
+                
+                //Cranberries - reject
+                "RejectItem_(O)282": "{{i18n:Sterling.Gift.RejectItem_(O)282.Marriage}}", 
+            }
+        }
+        
+        /* Henry */
+        
+        //{
+        //    "LogName": "Henry Trash flowers",
+        //    "Action": "EditData",
+        //    "Target": "Characters/Dialogue/Henry",
+        //    "Entries": {
+        //        
+        //        "AcceptGiftCategory_-20": "More litter? Where does this stuff keep coming from?#$b#Whatever the case, thanks for picking that up. I'll go ahead and throw that away for you.$10",
+        //
+        //    
+        //    
+        //
+        //    }
+        //}
+    ]
+}

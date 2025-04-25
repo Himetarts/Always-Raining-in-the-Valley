@@ -1,0 +1,865 @@
+{
+    "Format": "2.3.0",
+
+    /*********
+    ** Custom Locations
+    *********/    
+    "CustomLocations":
+    [
+        /*********
+        ** Adds ARV House
+        *********/ 
+        { 
+            "Name": "Custom_ARVHouse",
+            "FromMapFile": "assets/Maps/ARVHouse.tmx"
+        },
+
+        /*********
+        ** Adds ARV Exterior
+        *********/ 
+        { 
+            "Name": "Custom_ARVExterior",
+            "FromMapFile": "assets/Maps/ARVExterior.tmx"
+        },
+    ],
+
+    /*********
+    ** ARV Config 
+    *********/ 
+    "ConfigSchema":
+    {
+        "SpicyDialogue":
+        {
+            "AllowValues": "true, false",
+            "Default": "false",
+            "AllowBlank": false,
+            "Description": "Possible nsfw dirty talk when flirting."
+        },
+
+        "CustomToddlers":
+        {
+            "AllowValues": "true, false",
+            "Default": "true",
+            "AllowBlank": false,
+            "Description": "Turns on custom toddler sprites that look like Sterling. Change to false for vanilla toddler sprites."
+        },
+        
+        "SeasonalsLite":
+        {
+            "AllowValues": "true, false",
+            "Default": "false",
+            "AllowBlank": false,
+            "Description": "Loads only 1 seasonal outfit per season as opposed to 4. For people using or who want to make ARV ALT portraits."
+        },
+        "Nyapu's Portraits":
+        {
+            "AllowValues": "true, false",
+            "Default": "false",
+            "AllowBlank": false,
+            "Description": "Changes all portraits to Nyapu's art style."
+        }		
+    },
+
+    "DynamicTokens":
+    [
+        
+        //Mini Date 1: 
+        //Does Sterling get the kids ready for bed?
+        {
+            "Name": "ARVReadyForBed",
+            "Value": "and put %kid1 to bed.$1",
+            "When": {
+                "HasValue: {{ChildGenders}}": "true"
+                    }
+        },
+        {
+            "Name": "ARVReadyForBed",
+            "Value": "and put %kid1 and %kid2 to bed. Not to brag, but they gave me quite a fight.$10",
+            "When": {
+                "HasValue: {{ChildGenders|valueAt=1}}": true
+                    }
+        },
+        {
+            "Name": "ARVReadyForBed",
+            "Value": "and left everything ready for bed.$1",
+            "When": {
+                "HasValue: {{ChildGenders}}": "false"
+                    }
+        },
+        //Do you want to hear about the scar on Sterling's butt?
+        {
+            "Name": "ARVBiterA",
+            "Value": "speak Sterling \"I got married to a biter.$10\"\\message \"'By Yoba's grace, Sterling'\"\\showFrame Sterling 11\\pause 500\\shake Sterling 1000\\showFrame Sterling 12",
+            "When": { "SpicyDialogue": "true" } 
+        },
+        {
+            "Name": "ARVBiterA",
+            "Value": "speak Sterling \"Alright, alright. I guess couples do deserve some secrets.$10#$b#But if you ever want to know all of uncomfortable, intimate details, all you have to do is ask.$10\"",
+            "When": { "SpicyDialogue": "false" } 
+        },
+        {
+            "Name": "ARVBiterB",
+            "Value": "speak Sterling \"I got married to a biter.$10\"\\message \"'By Yoba's grace, Sterling'\"\\showFrame Sterling 11\\pause 500\\shake Sterling 1000\\showFrame Sterling 12",
+            "When": { "SpicyDialogue": "true" } 
+        },
+
+        {
+            "Name": "ARVBiterB",
+            "Value": "speak Sterling \"You know what? I think even I'm entitled to some secrets. Maybe some humiliating lore about me is better left unsaid.$10\"",
+            "When": { "SpicyDialogue": "false" } 
+        },
+        {
+            "Name": "SBVKidMail",
+            "Value": "Amina especially loves it!"
+        },
+        {
+            "Name": "SBVKidMail",
+            "Value": "Amina and Spanner especially love it!",
+            "When": {
+                "HasSeenEvent |contains= SpannerIntroConclusion": true
+            }
+        },
+
+        
+       //Mini Date 4:
+        //Add children to winter event
+        
+        {
+            "Name": "ARV.Winter.MaleToken",
+            "Value": ""
+          },
+          {
+            "Name": "ARV.Winter.MaleToken",
+            "Value": "ARVCookie -801 -801 0",
+            "When": {
+              "ChildGenders" : "Male"
+            }
+          },
+          {
+            "Name": "ARV.Winter.FemaleToken",
+            "Value": ""
+          },
+          {
+            "Name": "ARV.Winter.FemaleToken",
+            "Value": "ARVMuffin -800 -800 0",
+            "When": {
+              "ChildGenders" : "Female"
+            }
+          },
+          //Are the kids in their pjs?
+          {
+            "Name": "ARVKidsInPjs",
+            "Value": "%kid1 is in their pjs.#$b#",
+            "When": {
+                "HasValue: {{ChildGenders}}": "true"
+                    }
+        },
+        {
+            "Name": "ARVKidsInPjs",
+            "Value": "The kids are in their pjs.#$b#",
+            "When": {
+                "HasValue: {{ChildGenders|valueAt=1}}": true
+                    }
+        },
+        {
+            "Name": "ARVKidsInPjs",
+            "Value": "",
+            "When": {
+                "HasValue: {{ChildGenders}}": "false"
+                    }
+        },
+            //The kids look ready to doze against your arms
+            {
+                "Name": "ARVKidsDozing",
+                "Value": "",
+                "When": {
+                    "HasValue: {{ChildGenders}}": "false"
+                        }
+            },
+            {
+                "Name": "ARVKidsDozing",
+                "Value": "/message \"%kid1 looks ready to doze against your arm.\"",
+                "When": {
+                    "HasValue: {{ChildGenders|valueAt=0}}": true
+                        }
+            },
+            {
+                "Name": "ARVKidsDozing",
+                "Value": "/message \"The kids look ready to doze against your arms\"",
+                "When": {
+                    "HasValue: {{ChildGenders|valueAt=1}}": true
+                        }
+            },
+            
+
+            //Always dreamed of having the cutest kids in the world
+            {
+                "Name": "ARVCutestKids",
+                "Value": "",
+                "When": {
+                    "HasValue: {{ChildGenders}}": "false"
+                        }
+            },
+            {
+                "Name": "ARVCutestKids",
+                "Value": "#$b#And being a dad to the cutest kid in the world.$22",
+                "When": {
+                    "HasValue: {{ChildGenders|valueAt=0}}": true
+                        }
+            },
+            {
+                "Name": "ARVCutestKids",
+                "Value": "#$b#And being a dad to the cutest kids in the world.$22",
+                "When": {
+                    "HasValue: {{ChildGenders|valueAt=1}}": true
+                        }
+            },
+           
+            //Cookie Heart emotes
+
+              {
+                "Name": "ARVCookieHeart",
+                "Value": "",
+                "When": {
+                    "HasValue: {{ChildGenders}}": "false"
+                        }
+              },
+              {
+                "Name": "ARVCookieHeart",
+                "Value": "/emote ARVCookie 20",
+                "When": {
+                  "ChildGenders" : "Male"
+                }
+              },
+             
+
+              //Daddy is a kept husband
+              {
+                "Name": "ARVKeptHusband",
+                "Value": "",
+            },
+              {
+                "Name": "ARVKeptHusband",
+                "Value": "speak ARVMuffin \"As though you don't have a whole garage to take care of, daddy.\"/pause 500/speak Sterling \"Bah. It's too much work. I might just hand it over to you two.$10\"/emote ARVCookie 16 true/emote ARVMuffin 16 false/pause 500/speak ARVMuffin \"For real?$17\"/pause 500/speak Sterling \"No.$10\"/pause 500/emote ARVMuffin 12 true/emote ARVCookie 12 false/pause 900/speak Sterling \"But we can revisit the matter of your inheritance once either of you is tall enough to open the garage door.$10\"/pause 500/emote ARVMuffin 32/",
+                "When": {
+                    "HasValue: {{ChildGenders|valueAt=1}}": true
+                        },
+            },
+            
+
+            //Should Cookie move out?
+            {
+                "Name": "ARVMoveOut",
+                "Value": "",
+
+                },
+            {
+                "Name": "ARVMoveOut",
+                "Value": "/pause 500/emote ARVCookie 40/speak ARVCookie \"Should I move out then...?\"/pause 500/speak Sterling \"Not until you're 40, cookie.$10\"/",
+                "When": {
+                  "ChildGenders" : "Male"
+                }
+              },
+
+              //The kids get free ice cream when you go to Pierre's
+              {
+                "Name": "ARVFreeIceCream",
+                "Value": "",
+              },
+              {
+                "Name": "ARVFreeIceCream",
+                "Value": "speak ARVMuffin \"And get free ice cream.$1\"/pause 500/speak Sterling \"And get free ice cream.$10\"/",
+                "When": {
+                "ChildGenders" : "Female"
+                }
+              },
+
+            //When I grow up I want to be like daddy
+
+            {
+                "Name": "ARVBeLikeYou",
+                "Value": "",
+
+            },
+          {
+            "Name": "ARVBeLikeYou",
+            "Value": "speak ARVMuffin \"When I grow up, *I* want to be just like you.$4\"/pause 500/message \"Sterling smiles, reaching over to pull your daughter into his lap with a feigned groan.\"/pause 500/emote Sterling 40/pause 500/speak Sterling \"Let's think.$14#$b#Handsome. Funny. Smile that could light up a room.$0#$b#A complete menace to society\"/speak ARVMuffin \"...$17\"/pause 500/speak Sterling \"Yeah. You're already just like your daddy.$10\"/pause 500/emote farmer 20/",
+            "When": {
+                "HasValue: {{ChildGenders|valueAt=1}}": true
+                    },
+        },
+
+        //Muffin wants to go to seven pennants
+        {
+            "Name": "ARVSevenPennants",
+            "Value": "",
+          },
+          {
+            "Name": "ARVSevenPennants",
+            "Value": "speak ARVMuffin \"We could go to Seven Pennants.$3\"/pause 500/speak Sterling \"Well I wasn't exactly thinking-\"/pause 500/speak ARVMuffin \"You said you wanted to go somewhere.$6#$b#Seven Pennants is somewhere.$7#$b#We could go to Seven Pennants.$10\"/pause 500/emote Sterling 40/pause 500/speak Sterling \"Pff.$21#$b#Yes, Muffin, I guess we *could* go to Seven Pennants.$10\"/pause 500/emote ARVMuffin 56/",
+            "When": {
+            "ChildGenders" : "Female"
+            }
+          },
+
+      
+
+
+        //Love the smell of dog
+
+        {
+            "Name": "ARVSmellofDog",
+            "Value": "",
+        },
+        {
+            "Name": "ARVSmellofDog",
+            "Value": "/speak ARVCookie \"And of %pet rolling around in the mud.\"/",
+            "When": {
+              "ChildGenders" : "Male",
+            }
+        },
+
+          //Muffin wants to go to Zuzu
+          {
+            "Name": "ARVGoingToZuzu",
+            "Value": "",
+          },
+          {
+            "Name": "ARVGoingToZuzu",
+            "Value": "speak ARVMuffin \"But Zuzu City has world's largest water park!$17\"/pause 500/emote Sterling 12/speak Sterling \"Farmer.$11#$b#Your daughter is making eyes at me she knows I can't resist.$6\"/speak ARVMuffin \"...$17\"/pause 500/emote farmer 56/",
+            "When": {
+            "ChildGenders" : "Female"
+            }
+          },
+
+          //Kids climbing the hayloft
+          {
+            "Name": "ARVHaylofts",
+            "Value": "",
+        },
+          {
+            "Name": "ARVHaylofts",
+            "Value": "speak ARVMuffin \"Climbing up to the hayloft and making forts out of bales.$1\"/speak ARVCookie \"Swinging from the old tire swing tied to the big tree in the yard.$1\"/pause 500/speak Sterling \"Your ${father's^mother's^parent's}$ cold sweet tea on the porch after a long day.$14\"/pause 500/emote farmer 56/pause 500/emote Sterling 16/speak Sterling \"Wait.$11#$b#What did we say about getting into the hayloft without supervision?$11\"/pause 500/speak ARVMuffin \"...$15#$b#We had %pet watching over us.$1\"/message \"Sterling squints. But drops it for the time being.\"/",
+            "When": {
+                "HasValue: {{ChildGenders|valueAt=1}}": true
+                    },
+        },
+        //Chicks love Cookie
+
+        {
+            "Name": "ARVChicks",
+            "Value": "",
+        },
+        {
+            "Name": "ARVChicks",
+            "Value": "speak ARVCookie \"Chicks love me too!$4\"/pause 500/emote farmer 40 true/emote Sterling 40 false/pause 500/emote Sterling 60/speak Sterling \"Chickens.$3#$b#How about 'Chickens love me too', cookie?$3\"/pause 500/speak ARVCookie \"Okay.$0\"/emote farmer 28/",
+            "When": {
+              "ChildGenders" : "Male",
+            }
+        },
+
+        //Movie Night!
+
+        {
+            "Name": "ARVMovies!Girl",
+            "Value": "",
+        },
+        {
+            "Name": "ARVMovies!Girl",
+            "Value": "speak ARVMuffin \"Movie night! Movie night!$17\"/",
+            "When": {
+              "ChildGenders" : "Female",
+            }
+        },
+        {
+            "Name": "ARVMovies!Boy",
+            "Value": "",
+        },
+        {
+            "Name": "ARVMovies!Boy",
+            "Value": "speak ARVCookie \"Fresh caramel popcorn...$5\"/",
+            "When": {
+              "ChildGenders" : "Male",
+            }
+        },
+             
+         //Banished to bed so Sterling can tell sad stories 
+
+         {
+            "Name": "ARVBanished",
+            "Value": "",
+        },
+        {
+            "Name": "ARVBanished",
+            "Value": "faceDirection Sterling 3/pause 500/speak Sterling \"Alright kids, it's bed time for you.\"/pause 500/emote ARVCookie 12/pause 500/speak ARVCookie \"What? No. I want to listen to the story.$2\"/speak Sterling \"Your daddy was just real sad about his life in the city, and your uncle Henry helped him decide it was a good time.\"/emote ARVCookie 12 true/emote ARVMuffin? 12 false/pause 500/globalFade/viewport -700 -700/warp ARVCookie -500 -500/warp ARVMuffin? -501 -501/pause 500/faceDirection Sterling 0/viewport 5 6/",
+            "When": {
+              "ChildGenders" : "Male",
+            }
+        },
+        {
+            "Name": "ARVBanished",
+            "Value": "faceDirection Sterling 3/pause 500/speak Sterling \"Alright kids, it's bed time for you.\"/pause 500/emote ARVMuffin 12/pause 500/speak ARVMuffin \"What? No. I want to listen to the story.$8\"/speak Sterling \"Your daddy was just real sad about his life in the city, and your uncle Henry helped him decide it was a good time.\"/emote ARVCookie? 12 true/emote ARVMuffin 12 false/pause 500/globalFade/viewport -700 -700/warp ARVCookie? -500 -500/warp ARVMuffin -501 -501/faceDirection Sterling 0/pause 500/viewport 5 6/",
+            "When": {
+              "ChildGenders" : "Female",
+            }
+        },
+              
+              
+        
+    ],
+    "Changes":
+    [
+        
+
+
+
+        /*********
+        ** Sets up ARV World Map Patch
+        *********/
+        {
+            "LogName": "ARV World Map Patch",
+            "Action": "EditImage",
+            "Target": "Mods/skellady.SBVCP/SBVMap",
+            "FromFile": "Assets/Maps/WorldMap/{{Season}}_SBVMap.png",
+ 
+            "FromArea": {
+                "X": 12,
+                "Y": 37,
+                "Width": 15,
+                "Height": 23
+            },
+            "ToArea":  {
+                "X": 48,
+                "Y": 78,
+                "Width": 15,
+                "Height": 23
+            },
+            "PatchMode": "Replace"
+        },
+
+        /*********
+        ** Sets up ARV House Exterior
+        *********/
+        {
+            "Action": "EditMap",
+            "Target": "Maps/Custom_SBV_SunberryVillage",
+            "PatchMode": "Replace",
+             "FromFile": "Assets/Maps/ARVExterior.tmx",
+              "ToArea": {
+                "X": 2,
+                "Y": 30,
+                "Width": 20,
+                "Height": 21
+              },
+        },
+        
+        
+        
+        /*********
+        ** Sets up ARV House's door warp - Outside
+        *********/
+        {
+            "Action": "EditMap",
+            "Target": "Maps/Custom_SBV_SunberryVillage",
+            "MapTiles":
+            [
+                {
+                    "Position":
+                    {
+                        "X":12,
+                        "Y":42
+                    },
+
+                    "Layer": "Buildings",
+                    "SetProperties":
+                    {
+                        "Action": "Warp 13 25 Custom_ARVHouse"
+                    }
+                }
+            ],
+                "When": { "HasMod: |contains=skellady.SBVCP": true },
+        },
+
+        /*********
+        ** Sets up ARV House's door warp - Inside
+        *********/
+        {
+            "Action": "EditMap",
+            "Target": "Maps/Custom_ARVHouse",
+            "AddWarps":
+            [
+                "13 27 Custom_SBV_SunberryVillage 12 43"
+            ]
+        },
+
+         /*********
+            ** Sets up ARV House in Twilight Festival
+            *********/
+
+            {
+                "Action": "EditMap",
+                "Target": "Maps/Custom_SBV_TwilightFestival", 
+                "PatchMode": "Replace", 
+                "FromFile": "Assets/Maps/ARVExterior.tmx",
+                "ToArea": {
+                    "X": 2,
+                    "Y": 30,
+                    "Width": 20,
+                    "Height": 21
+                }
+              },
+
+              /*********
+        ** Sets up ARV House's door warp - Outside TW Festival
+        *********/
+        {
+            "Action": "EditMap",
+            "Target": "Maps/Custom_SBV_TwilightFestival",
+            "MapTiles":
+            [
+                {
+                    "Position":
+                    {
+                        "X":12,
+                        "Y":42
+                    },
+
+                    "Layer": "Buildings",
+                    "SetProperties":
+                    {
+                        "Action": "Warp 13 25 Custom_ARVHouse"
+                    }
+                }
+            ],
+                "When": { "HasMod: |contains=skellady.SBVCP": true },
+        },
+
+        /*********
+        ** Sets up ARV House's door warp - Inside TW Festival
+        *********/
+        {
+            "Action": "EditMap",
+            "Target": "Maps/Custom_ARVHouse",
+            "When": 
+            { "Season":"Fall",
+              "Day": "27"},
+            "AddWarps":
+            [
+                "13 27 Custom_SBV_TwilightFestival 12 43"
+            ]
+        },
+
+        /*********
+        ** Temp Maps
+        *********/
+            /*********
+            ** Adds SterlingSunset Map
+            *********/
+        {
+            "Action": "Load",
+            "Target": "Maps/SterlingSunset",
+            "FromFile": "assets/Maps/SunsetBikeRide.tmx"
+        },
+
+            /*********
+            ** Adds BikeBeach Map
+            *********/
+        {
+            "Action": "Load",
+            "Target": "Maps/BikeBeach",
+            "FromFile": "assets/Maps/BikeBeach.tmx"
+        },
+
+            /*********
+            ** Adds TitleARVHouse Map
+            *********/
+        {
+            "Action": "Load",
+            "Target": "Maps/TitleARVHouse",
+            "FromFile": "assets/Maps/TitleARVHouse.tmx"
+        },
+        
+            /*********
+            ** Adds ARVAAHall Map
+            *********/
+            {
+                "Action": "Load",
+                "Target": "Maps/ARVAAHall",
+                "FromFile": "assets/Maps/AAHall.tmx"
+            },
+             /*********
+            ** Adds The Cooper farms
+            *********/
+            {
+                "Action": "Load",
+                "Target": "Maps/CooperFarms",
+                "FromFile": "assets/Maps/Farm/CooperFarms.tmx"
+            },
+            
+            /*********
+            ** Adds Stargazing Date Map
+            *********/
+            {
+                "Action": "Load",
+                "Target": "Maps/SterlingDate1",
+                "FromFile": "assets/Maps/SterlingDate1.tmx"
+            },
+            /*********
+            ** Adds Sunflowers Date Map
+            *********/
+            {
+                "Action": "Load",
+                "Target": "Maps/SterlingDate3",
+                "FromFile": "assets/Maps/SterlingDate3.tmx"
+            },
+            /*********
+            ** Adds Winter Home Date Map
+            *********/
+            {
+                "Action": "Load",
+                "Target": "Maps/SterlingDate4",
+                "FromFile": "assets/Maps/SterlingDate4.tmx"
+            },
+
+               
+            
+
+        /*********
+        ** Temp Actors
+        *********/
+            /*********
+             Sterling Bike
+            *********/
+        {
+            "Action": "Load",
+            "Target": "Characters/SterlingBikeA",
+            "FromFile": "assets/Maps/tempActors/SterlingBikeA.png"
+        },
+        {
+            "Action": "Load",
+            "Target": "Characters/SterlingBikeB",
+            "FromFile": "assets/Maps/tempActors/SterlingBikeB.png"
+        },
+        {
+            "Action": "Load",
+            "Target": "Characters/SterlingBikeC",
+            "FromFile": "assets/Maps/tempActors/SterlingBikeC.png"
+        },
+        {
+            "Action": "Load",
+            "Target": "Characters/SterlingBikeD",
+            "FromFile": "assets/Maps/tempActors/SterlingBikeD.png"
+        },
+        {
+            "Action": "Load",
+            "Target": "Characters/CanvasA",
+            "FromFile": "assets/maps/tempActors/CanvasA.png"
+          },
+          {
+            "Action": "Load",
+            "Target": "Characters/Props",
+            "FromFile": "assets/maps/tempActors/Props.png"
+          },
+          {
+            "Action": "Load",
+            "Target": "Characters/Props2",
+            "FromFile": "assets/maps/tempActors/Props2.png"
+          },
+          {
+            "Action": "Load",
+            "Target": "Characters/Mess1",
+            "FromFile": "assets/maps/tempActors/Mess1.png"
+          },
+          {
+            "Action": "Load",
+            "Target": "Characters/Mess3",
+            "FromFile": "assets/maps/tempActors/Mess3.png"
+          },
+          {
+            "Action": "Load",
+            "Target": "Characters/Mess2",
+            "FromFile": "assets/maps/tempActors/Mess2.png"
+          },
+          {
+            "Action": "Load",
+            "Target": "Characters/SterlingTractor",
+            "FromFile": "assets/maps/tempActors/{{season}}_sterlingtractor.png"
+          },
+          {
+            "Action": "Load",
+            "Target": "Characters/HenryDad, Portraits/HenryDad",
+            "FromFile": "assets/{{Target}}.png"
+          },
+
+        /*********
+        ** NPC Data
+        *********/    
+            /*********
+            ** Adds Sterling's Seasonal Outfits
+            *********/           
+
+            {
+                "LogName": "Default Load",
+                "Action": "Load",
+                "Target": "Characters/Mia, Portraits/Mia, Characters/Sterling, Portraits/Sterling, Characters/Henry, Portraits/Henry",
+                 "FromFile": "assets/{{Target}}/spring_{{TargetWithoutPath}}.png",
+                 "Priority": "Low"
+           },
+        {
+            "Action": "Load",
+            "Target": "Characters/Sterling, Portraits/Sterling",
+            "FromFile": "assets/{{Target}}/{{season}}/{{Random:01, 02, 03, 04 |key=sterling-outfit}}.png",
+                "When": { "SeasonalsLite": "false" } 
+        }, 
+
+            /*********
+            ** Adds Mia & Henry's Seasonal Outfits
+            *********/    
+        {
+            "LogName": "Mia & Henry Sprites & Portraits",
+            "Action": "Load",
+            "Target": "Characters/Mia, Portraits/Mia, Characters/Henry, Portraits/Henry",
+            "FromFile": "assets/{{Target}}/{{season}}_{{TargetWithoutPath}}.png",
+                "When": { "SeasonalsLite": "false"  } 
+        },
+
+            /*********
+            ** Adds Sterling, Mia & Henry's Seasonal Outfits - Lite Version
+            *********/    
+        {
+            "LogName": "Seasonals LITE",
+            "Action": "Load",
+            "Target": "Characters/Mia, Portraits/Mia, Characters/Sterling, Portraits/Sterling, Characters/Henry, Portraits/Henry",
+            "FromFile": "assets/{{Target}}/{{season}}_{{TargetWithoutPath}}.png", 
+                "When": { "SeasonalsLite": "true" }
+        },
+
+           /*********
+            ** Adds Cookie and Muffin for ARV Date 4
+            *********/    
+            {
+                "LogName": "Muffin Portrait Load",
+                "Action": "Load",
+                "Target": "Characters/ARVMuffin, Portraits/ARVMuffin, Characters/ARVCookie, Portraits/ARVCookie",
+                "FromFile": "assets/{{TargetPathOnly}}/{{TargetWithoutPath}}.png", 
+            },
+
+            /*********
+            ** Adds Sterling's Uniform Portrait
+            *********/          
+        {
+            "LogName": "Sterling Uniform",
+            "Action": "Load",
+            "Target": "Portraits/Sterling_uniform",
+            "FromFile": "assets/Portraits/Sterling/sterling_uniform.png"
+        },
+        
+      
+    {
+      "LogName": "Shane Drunk",
+      "Action": "Load",
+      "Target": "Portraits/Shane_HappyDrunk",
+      "FromFile": "assets/Portraits/Shane_HappyDrunk.png"
+    },
+   {
+    "LogName": "NPC Dialogue blanks",
+    "Action": "Load",
+    "Target": "Characters/Dialogue/Sterling, Characters/Dialogue/Mia, Characters/Dialogue/Henry, Characters/Dialogue/MarriageDialogueSterling",
+    "FromFile": "Data/Dialogue/blank.json",
+ 
+   },
+   {
+    "LogName": "NPC Schedule blanks",
+    "Action": "Load",
+    "Target": "Characters/schedules/Sterling, Characters/schedules/Mia, Characters/schedules/Henry",
+    "FromFile": "Data/Dialogue/blank.json",
+ 
+   },
+   {
+    "LogName": "NPC Schedule Strings blanks",
+    "Action": "Load",
+    "Target": "Strings/schedules/Sterling, Strings/schedules/Mia, Strings/schedules/Henry",
+    "FromFile": "Data/Dialogue/blank.json",
+ 
+   },
+   
+//ARV Files
+  //ARV Includes
+    {
+      "Action": "Include",
+      "FromFile": "Data/Animations.json, Data/DynamicChanges.json, Data/FestivalDialogue.json, Data/Mail.json, Data/NPCData.json, Data/Romance.json, Data/DogPathing.json,  Data/Dialogue/Mia_Dialogue.json, Data/Dialogue/Henry_Dialogue.json, Data/Dialogue/Sterling_Dialogue.json, Data/MarriageDialogue/MarriageDialogueSterling.json, Data/schedules/Sterling_schedule.json, Data/schedules/Mia_schedule.json, Data/schedules/Henry_schedule.json, Data/Strings.json, Data/ConversationTopics.json, Data/Music.json, Data/Objects.json, Data/TriggerActions.json"
+    },
+    
+    //Event Includes
+    {
+      "Action": "Load",
+      "Target": "Data/Events/Custom_ARVHouse",
+      "FromFile": "Data/Dialogue/blank.json",
+    },
+    {
+      "Action": "Include",
+      "FromFile": "Data/EventData/SterlingEvents.json, Data/EventData/SterlingMarriage.json"
+
+    },
+      //Unlockable Sterling Garage
+      {
+        "Action": "Include",
+        "FromFile": "Data/SterlingGarage.json",
+        "When": { "HasSeenEvent |contains= 40180020": true,} 
+        },
+
+  //Festival Locations
+   {
+    "Action": "Include",
+    "FromFile": "Data/Festivals/locations/EggFestival.json, Data/Festivals/locations/FlowerDance.json, Data/Festivals/locations/Luau.json, Data/Festivals/locations/MoonlightJellies.json, Data/Festivals/locations/SVFair.json, Data/Festivals/locations/IceFestival.json, Data/Festivals/locations/WinterStar.json, Data/Festivals/locations/EmberOfResolutions.json, Data/Festivals/locations/GatheringFestival.json, "
+   },  
+ 
+//MOD COMPATIBILITY
+
+ //Compatiblity Includes
+ {
+    "Action": "Include",
+    "FromFile": "Data/Compatibility/SVE.json, Data/Dialogue/CGD.json"
+    },
+
+
+   //Custom Fixed Dialogue
+   
+		{
+			"LogName": "Custom Fixed Dialogue",
+			"Action": "Include",
+			"FromFile": "Data/Compatibility/CFD.json",
+			"When": {
+				"HasMod": "aedenthorn.CustomFixedDialogue"
+			}
+		},
+
+    //Custom Fixed Dialogue
+   
+		{
+			"LogName": "Mobile Phone Compat",
+			"Action": "Include",
+			"FromFile": "Data/Compatibility/MobilePhone.json",
+			"When": {
+				"HasMod": "aedenthorn.MobilePhone"
+			}
+		},
+
+            {
+                "Action": "EditImage",
+                "Target": "Maps/z_RSVspousePic",
+                "FromFile": "assets/Characters/Sterling/wedding_sterling.png", 
+                "When": 
+                    {
+                    "Query: '{{Spouse}}' = 'Sterling'": true 
+                    },
+        
+                "Update": "OnLocationChange, OnTimeChange",
+            }, 
+		{
+			"Action": "Include",
+			"FromFile": "Data/PortraitsNyapu.json",
+			"When": {"Nyapu's Portraits": true}
+		},                                          
+  ]
+}

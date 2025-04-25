@@ -1,0 +1,223 @@
+{
+    "Changes": 
+      [
+    
+
+
+
+    //CONVERSATION TOPICS
+
+    //STERLING
+{
+    "LogName": "Conversation Topics - Sterling",
+    "Action": "EditData",
+    "Target": "Characters/Dialogue/Sterling",
+    "Entries": 
+    {
+        "SterlingTrash": "{{i18n:Sterling.SterlingTrash}}",
+        "SterlingTrain": "{{i18n:Sterling.SterlingTrain}}",
+        "SterlingShaneParty": "{{i18n:Sterling.SterlingShaneParty}}",
+        "SterlingSwim": "{{i18n:Sterling.SterlingSwim}}",
+        "SterlingBike": "{{i18n:Sterling.SterlingBike}}",
+        "SterlingDrugs": "{{i18n:Sterling.SterlingDrugs}}",
+        "SterlingSobriety": "{{i18n:Sterling.SterlingSobriety}}",
+        "SterlingRelapse": "{{i18n:Sterling.SterlingRelapse}}",
+        "SterlingApology": "{{i18n:Sterling.SterlingApology}}",
+        "SterlingDinner": "{{i18n:Sterling.SterlingDinner}}",
+        "SterlingRiver": "{{i18n:Sterling.SterlingRiver}}",
+
+    }
+},
+    //HENRY
+/*{
+    "LogName": "Conversation Topics - Henry",
+    "Action": "EditData",
+    "Target": "Characters/Dialogue/Henry",
+    "Entries": 
+    {
+        "SterlingTrash": "{{i18n:Henry.SterlingTrash}}",
+        "SterlingTrain": "{{i18n:Henry.SterlingTrain}}",
+        "SterlingShaneParty": "{{i18n:Henry.SterlingShaneParty}}",
+        "SterlingSwim": "{{i18n:Henry.SterlingSwim}}",
+        "SterlingBike": "{{i18n:Henry.SterlingBike}}",
+        "SterlingDrugs": "{{i18n:Henry.SterlingDrugs}}",
+        "SterlingRelapse": "{{i18n:Henry.SterlingRelapse}}",
+        "SterlingApology": "{{i18n:Henry.SterlingApology}}",
+        "SterlingDinner": "{{i18n:Henry.SterlingDinner}}",
+        "SterlingRiver": "{{i18n:Henry.SterlingRiver}}",
+
+    }
+},
+    //MIA
+{
+    "LogName": "Conversation Topics - Mia",
+    "Action": "EditData",
+    "Target": "Characters/Dialogue/Mia",
+    "Entries": 
+    {
+        "SterlingTrash": "",
+        "SterlingTrain": "",
+        "SterlingShaneParty": "",
+        "SterlingSwim":"",
+        "SterlingBike":"",
+        "SterlingDrugs":"",
+        "SterlingSobriety":"",
+        "SterlingRelapse":"",
+        "SterlingApology":"",
+        "SterlingDinner":"",
+        "SterlingRiver":"",   
+    }
+},
+*/
+    //VANILLA TOWNIES
+    //SHANE
+{
+    "LogName": "Conversation Topics - Shane",
+    "Action": "EditData",
+    "Target": "Characters/Dialogue/Shane",
+    "Entries": 
+        {
+            "SterlingTrash": "{{i18n:Shane.SterlingTrash}}",
+            "SterlingTrain": "{{i18n:Shane.SterlingTrain}}",
+            "SterlingShaneParty": "{{i18n:Shane.SterlingShaneParty}}",
+            "SterlingSwim": "{{i18n:Shane.SterlingSwim}}",
+            "SterlingBike": "{{i18n:Shane.SterlingBike}}",
+            "SterlingDrugs": "{{i18n:Shane.SterlingDrugs}}",
+            "SterlingRelapse": "{{i18n:Shane.SterlingRelapse}}",
+            "SterlingDinner": "{{i18n:Shane.SterlingDinner}}",
+            "SterlingRiver": "{{i18n:Shane.SterlingRiver}}",
+            
+        }
+},
+
+   //Pierre
+   {
+    "LogName": "Conversation Topics - Pierre",
+    "Action": "EditData",
+    "Target": "Characters/Dialogue/Pierre",
+    "Entries": 
+        {
+        "SterlingTrash": "{{i18n:Pierre.SterlingTrash}}",
+        "SterlingTrain": "{{i18n:Pierre.SterlingTrain}}",
+        "SterlingShaneParty": "{{i18n:Pierre.SterlingShaneParty}}",
+        "SterlingSwim": "{{i18n:Pierre.SterlingSwim}}",
+        "SterlingBike": "{{i18n:Pierre.SterlingBike}}",
+        "SterlingDrugs": "{{i18n:Pierre.SterlingDrugs}}",
+        "SterlingSobriety": "{{i18n:Pierre.SterlingSobriety}}",
+        "SterlingRelapse": "{{i18n:Pierre.SterlingRelapse}}",
+        "SterlingApology": "{{i18n:Pierre.SterlingApology}}",
+        "SterlingRiver": "{{i18n:Pierre.SterlingRiver}}",
+
+        }
+},
+    //CAROLINE
+{
+    "LogName": "Conversation Topics - Caroline",
+    "Action": "EditData",
+    "Target": "Characters/Dialogue/Caroline",
+    "Entries": 
+        {
+        "SterlingTrash": "{{i18n:Caroline.SterlingTrash}}",
+        "SterlingTrain": "{{i18n:Caroline.SterlingTrain}}",
+        "SterlingSwim": "{{i18n:Caroline.SterlingSwim}}",
+        "SterlingDrugs": "{{i18n:Caroline.SterlingDrugs}}",
+        "SterlingSobriety": "{{i18n:Caroline.SterlingSobriety}}",
+        "SterlingRelapse": "{{i18n:Caroline.SterlingRelapse}}",
+        "SterlingApology": "{{i18n:Caroline.SterlingApology}}",
+
+        }
+},
+    //GUS
+{
+    "LogName": "Conversation Topics - Gus",
+    "Action": "EditData",
+    "Target": "Characters/Dialogue/Gus",
+    "Entries": 
+        {
+            "SterlingTrash": "{{i18n:Gus.SterlingTrash}}",
+            "SterlingTrain": "{{i18n:Gus.SterlingTrain}}",
+            "SterlingRiver": "{{i18n:Gus.SterlingRiver}}",
+
+        }
+},
+    //EVELYN
+{
+    "LogName": "Conversation Topics - Evelyn",
+    "Action": "EditData",
+    "Target": "Characters/Dialogue/Evelyn",
+    "Entries": 
+        {
+        "SterlingTrain": "{{i18n:Evelyn.SterlingTrain}}",
+        "SterlingRelapse": "{{i18n:Evelyn.SterlingRelapse}}",
+        }
+},
+   //HALEY
+   {
+    "LogName": "Conversation Topics - Haley",
+    "Action": "EditData",
+    "Target": "Characters/Dialogue/Haley",
+    "Entries": 
+        {
+        "SterlingShaneParty": "{{i18n:Haley.SterlingShaneParty}}",
+        "SterlingBike": "{{i18n:Haley.SterlingBike}}",
+        "SterlingDrugs": "{{i18n:Haley.SterlingDrugs}}",
+        "SterlingSobriety": "{{i18n:Haley.SterlingSobriety}}",
+        "SterlingRelapse": "{{i18n:Haley.SterlingRelapse}}",
+        "SterlingApology": "{{i18n:Haley.SterlingApology}}",
+        "SterlingRiver": "{{i18n:Haley.SterlingRiver}}",
+
+        }
+},
+   //HARVEY
+   {
+    "LogName": "Conversation Topics - Harvey",
+    "Action": "EditData",
+    "Target": "Characters/Dialogue/Harvey",
+    "Entries": 
+        {
+
+        "SterlingShaneParty": "{{i18n:Harvey.SterlingShaneParty}}",
+        "SterlingSwim": "{{i18n:Harvey.SterlingSwim}}",
+        "SterlingBike": "{{i18n:Harvey.SterlingBike}}",
+        "SterlingDrugs": "{{i18n:Harvey.SterlingDrugs}}",
+        "SterlingSobriety": "{{i18n:Harvey.SterlingSobriety}}",
+        "SterlingRelapse": "{{i18n:Harvey.SterlingRelapse}}",
+        "SterlingDinner": "{{i18n:Harvey.SterlingDinner}}",
+        "SterlingRiver": "{{i18n:Harvey.SterlingRiver}}",
+
+        }
+},
+   //EMILY
+   {
+    "LogName": "Conversation Topics - Emily",
+    "Action": "EditData",
+    "Target": "Characters/Dialogue/Emily",
+    "Entries": 
+        {
+"SterlingShaneParty": "{{i18n:Emily.SterlingShaneParty}}",
+"SterlingSobriety": "{{i18n:Emily.SterlingSobriety}}",
+"SterlingRelapse": "{{i18n:Emily.SterlingRelapse}}",
+
+
+        }
+},
+ 
+    //PAM
+    {
+        "LogName": "Conversation Topics - Pam",
+        "Action": "EditData",
+        "Target": "Characters/Dialogue/Pam",
+        "Entries": 
+            {
+"SterlingShaneParty": "{{i18n:Pam.SterlingShaneParty}}",
+            }
+        }
+
+
+
+
+
+
+
+      ]
+}

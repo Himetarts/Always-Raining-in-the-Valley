@@ -1,0 +1,68 @@
+{
+"Changes": 
+    [
+        {
+            "LogName": "Henry Dialogue",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Henry",
+            "Entries": 	
+            {
+			//Conversation Topics
+				"Introduction": "{{i18n:Henry.Dialogue.Introduction}}",
+				"danceRejection": "{{i18n:Henry.Dialogue.danceRejection}}",
+				"divorced": "{{i18n:Henry.Dialogue.divorced}}",
+				"dumped_Girls": "{{i18n:Henry.Dialogue.dumped_Girls}}",
+				"breakUp": "{{i18n:Henry.Dialogue.breakUp}}",
+
+			//Special Dates
+				"spring_12": "{{i18n:Henry.Dialogue.spring_12}}",
+				"spring_23": "{{i18n:Henry.Dialogue.spring_23}}",
+				"spring_7": "{{i18n:Henry.Dialogue.spring_7}}",
+				"spring_28": "{{i18n:Henry.Dialogue.spring_28}}",
+				"summer_10": "{{i18n:Henry.Dialogue.summer_10}}",
+				"summer_14": "{{i18n:Henry.Dialogue.summer_14}}",
+				"summer_28": "{{i18n:Henry.Dialogue.summer_28}}",
+				"fall_15": "{{i18n:Henry.Dialogue.fall_15}}",
+				"fall_23": "{{i18n:Henry.Dialogue.fall_23}}",
+				"fall_26": "{{i18n:Henry.Dialogue.fall_26}}",
+				"fall_28": "{{i18n:Henry.Dialogue.fall_28}}",
+				"winter_7": "{{i18n:Henry.Dialogue.winter_7}}",
+				"winter_15": "{{i18n:Henry.Dialogue.winter_15}}",
+				"winter_16": "{{i18n:Henry.Dialogue.winter_16}}",
+				"winter_17": "{{i18n:Henry.Dialogue.winter_17}}",
+				"winter_24": "{{i18n:Henry.Dialogue.winter_24}}",
+				"winter_28": "{{i18n:Henry.Dialogue.winter_28}}",
+
+			//Daily Dialogue
+				"Mon": "{{i18n:Henry.Dialogue.Mon}}",
+				"Tue": "{{i18n:Henry.Dialogue.Tue}}",
+				"Wed": "{{i18n:Henry.Dialogue.Wed}}",
+				"Thu": "{{i18n:Henry.Dialogue.Thu}}",
+				"Fri": "{{i18n:Henry.Dialogue.Fri}}",
+				"Sat": "{{i18n:Henry.Dialogue.Sat}}",
+				"Sun": "{{i18n:Henry.Dialogue.Sun}}",
+				"summer_Mon": "{{i18n:Henry.Dialogue.summer_Mon}}",
+				"summer_Tue": "{{i18n:Henry.Dialogue.summer_Tue}}",
+				"summer_Wed": "{{i18n:Henry.Dialogue.summer_Wed}}",
+				"summer_Thu": "{{i18n:Henry.Dialogue.summer_Thu}}",
+				"summer_Fri": "{{i18n:Henry.Dialogue.summer_Fri}}",
+				"summer_Sat": "{{i18n:Henry.Dialogue.summer_Sat}}",
+				"summer_Sun": "{{i18n:Henry.Dialogue.summer_Sun}}",
+				"fall_Mon": "{{i18n:Henry.Dialogue.fall_Mon}}",
+				"fall_Tue": "{{i18n:Henry.Dialogue.fall_Tue}}",
+				"fall_Wed": "{{i18n:Henry.Dialogue.fall_Wed}}",
+				"fall_Thu": "{{i18n:Henry.Dialogue.fall_Thu}}",
+				"fall_Fri": "{{i18n:Henry.Dialogue.fall_Fri}}",
+				"fall_Sat": "{{i18n:Henry.Dialogue.fall_Sat}}",
+				"fall_Sun": "{{i18n:Henry.Dialogue.fall_Sun}}",
+				"winter_Mon": "{{i18n:Henry.Dialogue.winter_Mon}}",
+				"winter_Tue": "{{i18n:Henry.Dialogue.winter_Tue}}",
+				"winter_Wed": "{{i18n:Henry.Dialogue.winter_Wed}}",
+				"winter_Thu": "{{i18n:Henry.Dialogue.winter_Thu}}",
+				"winter_Fri": "{{i18n:Henry.Dialogue.winter_Fri}}",
+				"winter_Sat": "{{i18n:Henry.Dialogue.winter_Sat}}",
+				"winter_Sun": "{{i18n:Henry.Dialogue.winter_Sun}}"
+            }
+        }
+    ]
+}

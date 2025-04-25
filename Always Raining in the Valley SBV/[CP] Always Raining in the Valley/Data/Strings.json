@@ -1,0 +1,234 @@
+{
+  "Changes": 
+    [
+      {
+    "LogName": "Sterling Strings",
+    "Action": "EditData",
+    "Target": "Strings/schedules/Sterling",
+    "Entries": 
+          {
+
+        //Married Sterling working the garage
+        "sterling.garage.000": "{{i18n:ARV.sterling.garage.00{{Random:1, 2, 3, 4, 5, 6, 7, 8, 9, 10}}}}",
+        //Random Spirit's Eve Dialogue
+       "halloween.001": "{{i18n:ARV.halloween.00{{Random:1,2}} }}",
+        //Married Spirit's Eve Bodyguarding
+         "halloween.002": "Sorry love, no can do. No one can come in until 1, not even if they're the hottest, smartest, most talented spouse in the world.$10#$b#Bummer, I know.",
+        //Married Random Spirit's Eve Dialogue  
+        "halloween.003": "{{i18n:ARV.halloween.married.00{{Random:1,2,3}}}}",
+
+        //Sterling at Pierre's
+         "married.000": "{{i18n:ARV.married.000}}",
+
+        //Sterling talking to Pierre
+          "married.001": "{{i18n:MarriedPierreChat.married.00{{Random:1,2,3,4}}}}",
+
+        //Random outside dialogue   
+          "married.002": "{{i18n:MarriedSterlingOutsideDialogue.married.00{{Random:1,2,3,4,5.6}}}}",
+
+        //Sunday Saloon dialogue
+          "married.003": "{{i18n:SundaySaloonDialogueSterling.married.00{{Random:1,2,3,4,5,6}}}}",
+
+        //Random Sterling Shopping
+        "married.004": "{{i18n:MarriedSterlingShopping.married.00{{Random:1,2,3,4,5,6,7,8}}}}",
+
+        //Random Beach Dialogue
+         "married.005": "{{i18n:MarriedSterlingBeach.married.00{{Random:1,2,3,4,5,6,7}}}}",
+
+        //Random ARV House Dialogue
+         "married.006": "{{i18n:MarriedSterlingARVHouse.married.00{{Random:1,2,3}}}}",
+
+        //Henry Help Dialogue
+        "married.007": "{{i18n:MarriedSterling.HenryHelp.married.00{{Random:1,2,3,4}}}}",
+
+        //Coming home from helping Henry
+       "married.008": "{{i18n:HelpHenryHome.married.00{{Random:1,2}}}}",
+
+      },
+    },   
+
+    {
+      "LogName": "Mia Strings",
+      "Action": "EditData",
+      "Target": "Strings/schedules/Mia",
+      "Entries": 
+            {
+          //Spirit's Eve Bodyguarding
+           "halloween.000":"Just keeping Sterling some company while he keeps watch at the door!$1#$b#Sorry farmer, I can't let you in either. But I do hope to see you tonight at the party.$1",
+          //Random Spirit's Eve Dialogue
+           "halloween.001":"{{Random: .|inputSeparator=++}}",
+          //Married Spirit's Eve Bodyguarding
+           "halloween.002":".",
+          //Married Random Spirit's Eve Dialogue
+           "halloween.003":"",
+
+          }
+        },
+
+    //Map Strings
+    {
+      "LogName": "Map Strings",
+      "Action": "EditData",
+      "Target": "Strings/StringsFromMaps",
+      "Entries": 
+          {
+        //Sterling Room
+          "SterlingDiary": "{{i18n:ARV.SterlingDiary}}",
+          "SterlingPlant": "{{i18n:ARV.SterlingPlant}}",
+          "SterlingShoes.1": "{{i18n:ARV.SterlingShoes.1}}",
+          "SterlingShoes.2": "{{i18n:ARV.SterlingShoes.2}}",
+          "SterlingMove.1": "{{i18n:ARV.SterlingMove.1}}",
+          "SterlingMove.2": "{{i18n:ARV.SterlingMove.2}}",
+          "SterlingMove.3": "{{i18n:ARV.SterlingMove.3}}",
+          "SterlingFridge": "{{i18n:ARV.SterlingFridge}}",
+          "SterlingNote": "{{i18n:ARV.SterlingNote}}",
+
+        //Mia Room
+          "MiaVanity": "{{i18n:ARV.MiaVanity}}",
+          "MiaSmell": "{{i18n:ARV.MiaSmell}}",
+          "MiaSnoop": "{{i18n:ARV.MiaSnoop}}",
+          "MiaBottle": "{{i18n:ARV.MiaBottle}}",
+          "MiaClothes": "{{i18n:ARV.MiaClothes}}",
+          "MiaWallpaper": "{{i18n:ARV.MiaWallpaper}}",
+          "MiaNote": "{{i18n:ARV.MiaNote}}",
+          "MiaFlower": "{{i18n:ARV.MiaFlower}}",
+
+        //Henry Room
+          "HenryNote": "{{i18n:ARV.HenryNote}}",
+          "HenryBoots": "{{i18n:ARV.HenryBoots}}",
+          "HenryStand": "{{i18n:ARV.HenryStand}}",
+          "HenryClothes": "{{i18n:ARV.HenryClothes}}",
+          "MaxBed": "{{i18n:ARV.MaxBed}}",
+          "HenryBookshelf.1": "{{i18n:ARV.HenryBookshelf.1}}",
+          "HenryBookshelf.2": "{{i18n:ARV.HenryBookshelf.2}}",
+          "HenryBookshelf.3": "{{i18n:ARV.HenryBookshelf.3}}",
+          "HenryBookshelf.4": "{{i18n:ARV.HenryBookshelf.4}}",
+          "HenryTie": "{{i18n:ARV.HenryTie}}",
+          "MaxMedals": "{{i18n:ARV.MaxMedals}}",
+
+
+        //ARV House
+          "ARVFrame.1": "{{i18n:ARV.ARVFrame.1}}",
+          "ARVFrame.2": "{{i18n:ARV.ARVFrame.2}}",
+          "ARVFrame.3": "{{i18n:ARV.ARVFrame.3}}",
+          "ARVNotebook": "{{i18n:ARV.ARVNotebook}}",
+          "ARVBookshelf.1": "{{i18n:ARV.ARVBookshelf.1}}",
+          "ARVBookshelf.2": "{{i18n:ARV.ARVBookshelf.2}}",
+          "ARVBookshelf.3": "{{i18n:ARV.ARVBookshelf.3}}",
+          "ARVBookshelf.4": "{{i18n:ARV.ARVBookshelf.4}}",
+          "ARVTrash": "{{i18n:ARV.ARVTrash}}",
+          "ARVShoes": "{{i18n:ARV.ARVShoes}}",
+          "ARVFridge.1": "{{i18n:ARV.ARVFridge.1}}",
+          "ARVFridge.2": "{{i18n:ARV.ARVFridge.2}}",
+          "ARVFridge.3": "{{i18n:ARV.ARVFridge.3}}",
+          "MiaPie": "Mia's made pie! It's {{Random:Blueberry, Raspberry, Strawberry, Apricot, Sheppard's, Melon, Bean...?}} Pie!",
+          "MaxBowl.1": "{{i18n:ARV.MaxBowl.1}}",
+          "MaxBowl.2": "{{i18n:ARV.MaxBowl.2}}",
+
+          //Spouse Room Sterling
+          "SterlingConsole": "{{i18n:ARV.SterlingConsole}}",
+          "SterlingControllers": "{{i18n:ARV.SterlingControllers}}",
+          "SterlingTherapyPlant": "{{i18n:ARV.SterlingTherapyPlant}}",
+          "SterlingPhotographs": "{{i18n:ARV.SterlingPhotographs}}",
+          "RoomSterlingShoes.1": "{{i18n:ARV.RoomSterlingShoes.1}}",
+          "RoomSterlingShoes.2": "{{i18n:ARV.RoomSterlingShoes.2}}",
+          "RoomSterlingFlowerVase": "{{i18n:ARV.RoomSterlingFlowerVase}}",
+          "RoomSterlingDiary": "{{i18n:ARV.RoomSterlingDiary}}",
+          "RoomSterlingTV.1": "{{i18n:ARV.RoomSterlingTV.1}}",
+          "RoomSterlingTV.2": "You carefully sort through the movies and settle on {{Random:Wumbus 2: Electric Wubaloo++It's Always Hailing in the Valley++Eternal Whine of a Useless Mind++Attack of the Killer Tomatoes!++Wee Movie|inputSeparator=++}} for movie night tonight.",
+          "RoomSterlingTV.3": "{{i18n:ARV.RoomSterlingTV.3}}",
+          "RoomSterlingFridge": "{{i18n:ARV.RoomSterlingFridge}}",
+          "RoomSterlingPlant": "{{i18n:ARV.RoomSterlingPlant}}",
+
+          }
+    },
+     //Diary Post 1st Date
+     {
+      "LogName": "Diary",
+      "Action": "EditData",
+      "Target": "strings/StringsFromMaps",
+      "Entries": 
+      {
+      "SterlingDiary": "{{i18n:ARV.SterlingDiary.1}}",
+
+      },
+      "When": {"HasSeenEvent": "40180005"}
+    },
+    //Diary Post 2nd Date
+     {
+      "LogName": "Diary",
+      "Action": "EditData",
+      "Target": "strings/StringsFromMaps",
+      "Entries": 
+      {
+        "SterlingDiary": "{{i18n:ARV.SterlingDiary.2}}",
+
+      },
+      "When": {"HasSeenEvent": "40180006"}
+    },
+    //Diary
+     {
+      "LogName": "Diary",
+      "Action": "EditData",
+      "Target": "strings/StringsFromMaps",
+      "Entries": 
+      {
+        "SterlingDiary": "{{i18n:ARV.SterlingDiary.3}}",//thinking about drugs
+      },
+      "When": {"HasSeenEvent": "40180007",
+              "Hearts:Sterling": "5,6"}
+    },
+      //Diary Relapse
+      {
+        "LogName": "Diary",
+        "Action": "EditData",
+        "Target": "strings/StringsFromMaps",
+        "Entries": 
+        {
+         "SterlingDiary": "{{i18n:ARV.SterlingDiary.4}}",//relapse
+        },
+        "When": {"HasSeenEvent": "40180008",  }
+      },
+      //Diary It's gonna be OK
+      {
+        "LogName": "Diary",
+        "Action": "EditData",
+        "Target": "strings/StringsFromMaps",
+        "Entries": 
+        {
+          "SterlingDiary": "{{i18n:ARV.SterlingDiary.5}}",
+
+        },
+        "When": {"HasSeenEvent": "40180009",  }
+      },
+     //Diary Dating
+     {
+      "LogName": "Diary",
+      "Action": "EditData",
+      "Target": "strings/StringsFromMaps",
+      "Entries": 
+      {
+        "SterlingDiary": "{{i18n:ARV.SterlingDiary.6}}",
+
+      },
+      "When": {"HasSeenEvent": "40180009",
+               "Relationship:Sterling": "Dating"  }
+    },
+    //Diary Pledges Away from Alcohol
+    {
+      "LogName": "Diary",
+      "Action": "EditData",
+      "Target": "strings/StringsFromMaps",
+      "Entries": 
+      {
+        "SterlingDiary": "{{i18n:Sober.SterlingDiary}}",
+        "SterlingFridge": "{{i18n:Sober.SterlingFridge}}",
+        "SterlingShoes.1": "{{i18n:Sober.SterlingShoes.1}}",
+      },
+      "When": {"HasSeenEvent": "40180010",  }
+    },
+    
+
+    ]
+}
+    

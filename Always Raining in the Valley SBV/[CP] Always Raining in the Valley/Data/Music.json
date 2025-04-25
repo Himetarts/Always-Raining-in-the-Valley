@@ -1,0 +1,61 @@
+{
+    "Changes": [
+        {
+            "LogName": "Sterling Rainy Train Music",
+            "Action": "EditData",
+            "Target": "Data/AudioChanges",
+            "Entries": {
+                "musicTrain": {
+                    "ID": "musicTrain",
+                    "Category": "Music",
+                    "FilePaths": [ "{{AbsoluteFilePath: assets/Music/SterlingTrain.ogg}}" ],
+                    "StreamedVorbis": true,
+                    "Looped": true
+                }
+            }
+        },
+        {
+            "LogName": "Horn and Train sound",
+            "Action": "EditData",
+            "Target": "Data/AudioChanges",
+            "Entries": {
+                "arv.passingTrain": {
+                    "ID": "passingTrain",
+                    "Category": "Music",
+                    "FilePaths": [ "{{AbsoluteFilePath: assets/Music/HornAndTrain.ogg}}" ],
+                    "StreamedVorbis": true,
+                    "Looped": true
+                }
+            }
+        },
+        {
+            "LogName": "ARV Theme",
+            "Action": "EditData",
+            "Target": "Data/AudioChanges",
+            "Entries": {
+                "ARVTheme": {
+                    "ID": "ARVTheme",
+                    "Category": "Music",
+                    "FilePaths": [ "{{AbsoluteFilePath: assets/Music/ARVTheme.ogg}}" ],
+                    "StreamedVorbis": true,
+                    "Looped": true
+                }
+            }
+        },
+        {
+            "LogName": "ARV Crowd Sounds",
+            "Action": "EditData",
+            "Target": "Data/AudioChanges",
+            "Entries": {
+                "ARVCrowds": {
+                    "ID": "ARVCrowds",
+                    "Category": "Music",
+                    "FilePaths": [ "{{AbsoluteFilePath: assets/Music/ARVCrowds.ogg}}" ],
+                    "StreamedVorbis": true,
+                    "Looped": true
+                }
+            }
+        },
+     ]
+
+}
